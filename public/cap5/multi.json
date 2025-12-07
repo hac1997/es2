@@ -1,0 +1,362 @@
+[
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Qualidade de Software",
+            "Visões da Qualidade"
+        ],
+        "questão": "Qual visão da qualidade define que o software apresenta qualidade se ele atende às especificações originais do produto, focando na precisão dos detalhes de projeto?",
+        "alternativas": [
+            "Visão Transcendental.",
+            "Visão do Usuário.",
+            "Visão do Fabricante.",
+            "Visão Baseada em Valor."
+        ],
+        "resposta": "C. Visão do Fabricante."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Custo da Qualidade",
+            "Falhas"
+        ],
+        "questão": "Qual categoria de custos da qualidade abrange os custos de solução de reclamações, suporte ao cliente por telefone/e-mail, perda de negócios e má reputação, pois são defeitos encontrados após a entrega do produto?",
+        "alternativas": [
+            "Custos de Prevenção.",
+            "Custos de Avaliação.",
+            "Custos de Falhas Internas.",
+            "Custos de Falhas Externas."
+        ],
+        "resposta": "D. Custos de Falhas Externas."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "V&V",
+            "Verificação"
+        ],
+        "questão": "A Verificação (\"Estamos criando o produto corretamente?\") é o conjunto de tarefas que garantem que o software implemente corretamente uma função específica. Em qual aspecto ela se concentra?",
+        "alternativas": [
+            "Na satisfação dos requisitos do cliente (Validação).",
+            "No teste de sistema, combinando software e hardware.",
+            "Na qualidade do processo e do produto intermediário.",
+            "Na medição da Complexidade Ciclomática (V(G)) apenas."
+        ],
+        "resposta": "C. Na qualidade do processo e do produto intermediário."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Teste de Unidade",
+            "Scaffolding"
+        ],
+        "questão": "Ao realizar o Teste de Unidade, o Pseudocontrolado (Stub) é um componente de scaffolding que tem a função de:",
+        "alternativas": [
+            "Simular o módulo chamador (superior) que fornece dados de teste.",
+            "Simular os módulos subordinados (ausentes) que seriam chamados pelo componente testado, retornando valores simulados.",
+            "Ser o código principal que aceita a entrada do usuário.",
+            "Garantir a execução de todos os caminhos independentes do código."
+        ],
+        "resposta": "B. Simular os módulos subordinados (ausentes) que seriam chamados pelo componente testado, retornando valores simulados."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Teste Caixa-Branca",
+            "Complexidade Ciclomática"
+        ],
+        "questão": "Qual técnica de teste Caixa-Branca permite derivar uma medida da complexidade lógica de um projeto procedimental e usar essa medida para definir um conjunto-base de caminhos de execução linearmente independentes?",
+        "alternativas": [
+            "Particionamento de Equivalência.",
+            "Análise de Valor Limite (BVA).",
+            "Teste de Caminho Básico.",
+            "Teste Baseado em Cenários."
+        ],
+        "resposta": "C. Teste de Caminho Básico."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Teste Caixa-Branca",
+            "V(G) Cálculo"
+        ],
+        "questão": "A Complexidade Ciclomática ($mathbf{V(G)}$) pode ser calculada de três maneiras, incluindo a contagem do número de regiões do grafo de fluxo, ou através da fórmula $mathbf{V(G) = P + 1}$. O que $mathbf{P}$ representa nesta fórmula?",
+        "alternativas": [
+            "O número total de comandos procedurais.",
+            "O número de arestas do grafo de fluxo.",
+            "O número de nós predicados (decisões lógicas) no grafo de fluxo.",
+            "O número de componentes conexos."
+        ],
+        "resposta": "C. O número de nós predicados (decisões lógicas) no grafo de fluxo."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Teste Caixa-Preta",
+            "BVA"
+        ],
+        "questão": "Qual técnica de Teste Caixa-Preta é complementar ao Particionamento de Equivalência e foca a seleção de casos de teste nos limites ou fronteiras dos domínios de entrada e saída, pois a maioria dos erros ocorre nessas transições?",
+        "alternativas": [
+            "Teste de Caminho Básico.",
+            "Análise de Valor Limite (BVA).",
+            "Teste de Tabela de Decisão.",
+            "Teste Baseado em Sequências de Execução."
+        ],
+        "resposta": "B. Análise de Valor Limite (BVA)."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Teste de Integração",
+            "Estratégia Ascendente"
+        ],
+        "questão": "Qual estratégia de Teste de Integração começa com os módulos atômicos (níveis mais baixos) e os combina em agregados (clusters), usando Pseudocontroladores (Drivers) para simular os módulos superiores?",
+        "alternativas": [
+            "Integração Não Incremental (Big Bang).",
+            "Integração Descendente (Top-Down).",
+            "Teste Fumaça (Smoke Test).",
+            "Integração Ascendente (Bottom-Up)."
+        ],
+        "resposta": "D. Integração Ascendente (Bottom-Up)."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Teste de Integração",
+            "Estratégia Descendente"
+        ],
+        "questão": "Uma das vantagens do Teste de Integração Descendente (Top-Down) é que ele verifica os principais pontos de controle ou decisão antecipadamente no processo de teste. Qual é uma das suas desvantagens?",
+        "alternativas": [
+            "Elimina a necessidade de drivers complexos.",
+            "É difícil demonstrar um protótipo funcional rapidamente.",
+            "Requer muitos stubs para simular os módulos inferiores.",
+            "Funcionalidades de baixo nível são testadas primeiro, garantindo sua robustez."
+        ],
+        "resposta": "C. Requer muitos stubs para simular os módulos inferiores."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Teste de Regressão",
+            "Propósito"
+        ],
+        "questão": "Qual é a principal função do Teste de Regressão?",
+        "alternativas": [
+            "Garantir a execução de todos os caminhos independentes de um novo módulo.",
+            "Descobrir erros em interfaces entre componentes que nunca funcionaram juntos.",
+            "Assegurar que as alterações no software não tenham propagado efeitos colaterais indesejados nas funcionalidades existentes.",
+            "Separar o desenvolvedor do teste do próprio código (conflito de interesses)."
+        ],
+        "resposta": "C. Assegurar que as alterações no software não tenham propagado efeitos colaterais indesejados nas funcionalidades existentes."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Teste de Integração",
+            "Smoke Test"
+        ],
+        "questão": "Qual abordagem de teste de integração é caracterizada por ser uma checagem de saúde diária para expor rapidamente erros 'bloqueadores' (show-stoppers) que atrasariam o cronograma, sendo frequentemente usada com Integração Contínua?",
+        "alternativas": [
+            "Teste Baseado em Cenários.",
+            "Teste de Regressão.",
+            "Teste Fumaça (Smoke Test).",
+            "Teste de Caminho Básico."
+        ],
+        "resposta": "C. Teste Fumaça (Smoke Test)."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Qualidade de Software",
+            "Dilema"
+        ],
+        "questão": "O Dilema da Qualidade estabelece que a busca por um software 'absolutamente perfeito' pode levar a organização à falência ou à perda da oportunidade de mercado. Qual é o resultado prático disso para as empresas?",
+        "alternativas": [
+            "Todas as empresas decidem fazer Teste Exaustivo, independente do custo.",
+            "As empresas tentam encontrar um 'meio-termo mágico' para produzir software de qualidade aceitável sem 'enterrar' o projeto.",
+            "Aumenta a satisfação do cliente, pois o software sempre será entregue sem erros conhecidos.",
+            "Garante a conformidade total com a Complexidade Ciclomática."
+        ],
+        "resposta": "B. As empresas tentam encontrar um 'meio-termo mágico' para produzir software de qualidade aceitável sem 'enterrar' o projeto."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Teste OO",
+            "Unidade Testável"
+        ],
+        "questão": "Em um sistema Orientado a Objetos (OO), qual é a menor unidade de projeto adequada para Teste de Unidade (Teste de Classe)?",
+        "alternativas": [
+            "O algoritmo mais complexo (Teste de Caminho Básico).",
+            "A classe (devido ao encapsulamento), sendo as operações os elementos testáveis menores.",
+            "O sistema completo (Teste de Integração).",
+            "O módulo subordinado (Stub)."
+        ],
+        "resposta": "B. A classe (devido ao encapsulamento), sendo as operações os elementos testáveis menores."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Teste Caixa-Preta",
+            "Casos de Teste"
+        ],
+        "questão": "Qual tipo de caso de teste é importante incluir no Teste Caixa-Preta para garantir que o componente não faça algo que não deveria fazer (ex: acessar dados privilegiados sem permissão)?",
+        "alternativas": [
+            "Teste de Caminho Básico.",
+            "Teste de Sequência Mínima.",
+            "Teste de Valor Limite (BVA).",
+            "Casos de Teste Negativos (ou antirrequisitos)."
+        ],
+        "resposta": "D. Casos de Teste Negativos (ou antirrequisitos)."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Qualidade de Software",
+            "Decisões Administrativas"
+        ],
+        "questão": "Como as Decisões de Cronograma apertado (Decisões Administrativas) podem impactar negativamente a qualidade de software, conforme discutido nas fontes?",
+        "alternativas": [
+            "Obrigando a equipe a usar apenas o Teste Caixa-Preta.",
+            "Garantindo que todos os caminhos independentes sejam exercitados.",
+            "Levando a atalhos como testar um módulo sem seus componentes subordinados (atrasados), ocultando defeitos que seriam descobertos muito mais tarde.",
+            "Impedindo a criação de Pseudocontroladores (Drivers)."
+        ],
+        "resposta": "C. Levando a atalhos como testar um módulo sem seus componentes subordinados (atrasados), ocultando defeitos que seriam descobertos muito mais tarde."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Teste de Integração",
+            "OO"
+        ],
+        "questão": "Em sistemas Orientados a Objetos (OO), o Teste Baseado em Sequências de Execução (Thread-Based Testing) foca em integrar e testar:",
+        "alternativas": [
+            "O módulo de controle principal e todos os stubs.",
+            "O conjunto de classes necessárias para responder a uma entrada ou um evento do sistema.",
+            "Apenas as operações herdadas pelas subclasses.",
+            "Módulos atômicos de baixo nível combinados em agregados."
+        ],
+        "resposta": "B. O conjunto de classes necessárias para responder a uma entrada ou um evento do sistema."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "ISO 25010",
+            "Fatores de Qualidade"
+        ],
+        "questão": "De acordo com o Modelo de Qualidade de Produto ISO 25010, qual característica se relaciona à tolerância a falhas e à recuperabilidade do produto?",
+        "alternativas": [
+            "Eficiência de Desempenho.",
+            "Compatibilidade.",
+            "Confiabilidade.",
+            "Facilidade de Manutenção."
+        ],
+        "resposta": "C. Confiabilidade."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Teste de Integração",
+            "Objetivo"
+        ],
+        "questão": "Qual é o principal objetivo do Teste de Integração?",
+        "alternativas": [
+            "Testar a lógica interna de processamento de um módulo isolado.",
+            "Garantir a ausência total de defeitos antes da entrega.",
+            "Construir a arquitetura de software de forma sistemática, enquanto se descobrem erros associados às interfaces entre componentes.",
+            "Simular o ambiente de produção usando apenas stubs."
+        ],
+        "resposta": "C. Construir a arquitetura de software de forma sistemática, enquanto se descobrem erros associados às interfaces entre componentes."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Teste Exaustivo",
+            "Limitação"
+        ],
+        "questão": "Por que o Teste Exaustivo é considerado impossível para grandes sistemas de software?",
+        "alternativas": [
+            "Porque o custo de correção é menor na manutenção.",
+            "Porque ele se concentra apenas na estrutura interna (Caixa-Branca).",
+            "Porque o número de caminhos lógicos e combinações de teste pode ser quase infinito, exigindo tempo impraticável (ex: 3.170 anos para um programa pequeno com laços).",
+            "Porque o desenvolvedor tem conflito de interesses ao testar o próprio código."
+        ],
+        "resposta": "C. Porque o número de caminhos lógicos e combinações de teste pode ser quase infinito, exigindo tempo impraticável (ex: 3.170 anos para um programa pequeno com laços)."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Teste de Integração",
+            "Vantagens Top-Down"
+        ],
+        "questão": "A Integração Descendente (Top-Down) tem como vantagem a verificação dos principais pontos de controle antecipadamente. Qual outro benefício ela proporciona?",
+        "alternativas": [
+            "Garante a robustez dos módulos atômicos de baixo nível mais cedo.",
+            "Permite a demonstração antecipada de uma função completa para os envolvidos.",
+            "Elimina a necessidade de stubs complexos, pois usa drivers simples.",
+            "Focaliza a lógica interna do processamento de cada módulo isolado."
+        ],
+        "resposta": "B. Permite a demonstração antecipada de uma função completa para os envolvidos."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Teste de Regressão",
+            "Conjunto de Testes"
+        ],
+        "questão": "Ao projetar o conjunto de testes de regressão, qual classe de casos de teste deve ser incluída para garantir a estabilidade do sistema?",
+        "alternativas": [
+            "Somente os testes que cobrem os stubs.",
+            "Testes adicionais que focalizam as funções de software que podem ser afetadas pela alteração.",
+            "Apenas testes aleatórios de valor limite para todas as entradas.",
+            "Somente testes que avaliam o custo de falhas externas."
+        ],
+        "resposta": "B. Testes adicionais que focalizam as funções de software que podem ser afetadas pela alteração."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Qualidade de Software",
+            "Bom o Suficiente"
+        ],
+        "questão": "Em domínios de aplicação críticos (p. ex., software embarcado para aplicações em tempo real, indústria automotiva), entregar software com erros conhecidos (filosofia 'bom o suficiente') é considerado perigoso porque:",
+        "alternativas": [
+            "É a única maneira de garantir um build verde.",
+            "Pode ser negligente e expor a empresa a litígios dispendiosos ou crimes, resultando em tragédias.",
+            "Garante que o ITG não encontre erros.",
+            "O custo de correção na codificação é alto."
+        ],
+        "resposta": "B. Pode ser negligente e expor a empresa a litígios dispendiosos ou crimes, resultando em tragédias."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Teste de Integração",
+            "OO Cenários"
+        ],
+        "questão": "Qual estratégia de teste de validação (caixa-preta), predominante em sistemas Orientados a Objetos, concentra-se no que o usuário faz (utilizando casos de uso) para detectar erros de interação entre subsistemas e falhas de especificação?",
+        "alternativas": [
+            "Teste Baseado em Falhas.",
+            "Teste de Conjunto (Cluster Testing).",
+            "Teste Baseado em Sequências de Execução.",
+            "Teste Baseado em Cenários (Scenario-Based Testing)."
+        ],
+        "resposta": "D. Teste Baseado em Cenários (Scenario-Based Testing)."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Teste Caixa-Branca",
+            "Classes de Ciclos"
+        ],
+        "questão": "Ao realizar o Teste de Ciclos (técnica Caixa-Branca), para ciclos simples (onde $n$ é o número máximo de passadas), qual conjunto de testes deve ser aplicado para garantir uma cobertura mínima e testar os limites?",
+        "alternativas": [
+            "Somente uma passagem e $n$ passagens.",
+            "Pular o ciclo, uma passagem, duas passagens, $m < n$ passagens e $n – 1, n, n + 1$ passagens.",
+            "Apenas o Teste de Caminho Básico.",
+            "Apenas o Teste de Estruturas de Dados Internas."
+        ],
+        "resposta": "B. Pular o ciclo, uma passagem, duas passagens, $m < n$ passagens e $n – 1, n, n + 1$ passagens."
+    }
+]

@@ -1,0 +1,81 @@
+[
+    {
+        "tipo": "dissertativo",
+        "tópicos": [
+            "Padrões de Projeto",
+            "Estrutura do Padrão",
+            "Sistema de Forças"
+        ],
+        "questão": "Defina um Padrão de Projeto conforme a literatura (regra de três partes). Explique o papel do Sistema de Forças na aplicação de um padrão e por que é ineficiente e arriscado para um engenheiro de software ignorar padrões comprovados.",
+        "resposta": "Um padrão de projeto é caracterizado como uma 'regra de três partes que expressa uma relação entre um contexto, um problema e uma solução'. O Sistema de Forças é um conjunto de requisitos, limitações e restrições que influenciam a maneira pela qual o problema pode ser interpretado em seu contexto e como a solução pode ser aplicada eficientemente. O Sistema de Forças faz o projetista escolher uma solução específica para melhor atendê-lo, mesmo quando as forças são contraditórias. Ignorar padrões comprovados é uma perda de tempo e energia porque significa 'reinventar a roda', o que pode resultar em uma 'nova roda' inadequada para o uso pretendido."
+    },
+    {
+        "tipo": "dissertativo",
+        "tópicos": [
+            "Tipos de Padrões",
+            "Generatividade"
+        ],
+        "questão": "Diferencie Padrões Não Generativos de Padrões Generativos no desenvolvimento de software. Explique o conceito de Generatividade e como os diferentes tipos de padrões (Arquitetura, Componentes, Idiomas) se relacionam em termos de abstração.",
+        "resposta": "Padrões Não Generativos descrevem um contexto e um problema, mas não fornecem nenhuma solução explícita. Já os padrões Generativos descrevem um aspecto repetível de um sistema e oferecem uma forma de construir esse aspecto, sendo o foco no desenvolvimento de software. A Generatividade é a aplicação sucessiva de vários padrões menores (cada um resolvendo seu próprio problema) que se desdobra em uma solução mais ampla que emerge indiretamente. Os Padrões de Arquitetura operam no nível mais alto de abstração, descrevendo problemas estruturais amplos ('esqueleto' do sistema). Os Padrões de Componentes (ou de Projeto) tratam de problemas no desenvolvimento de subsistemas. No nível mais baixo de abstração, os Idiomas (Idioms) descrevem como implementar parte de um algoritmo ou estrutura de dados no contexto de uma linguagem de programação específica."
+    },
+    {
+        "tipo": "dissertativo",
+        "tópicos": [
+            "Padrões Arquiteturais",
+            "Arquitetura em Camadas",
+            "MVC"
+        ],
+        "questão": "Descreva a finalidade da Arquitetura em Camadas (estrutura típica) e cite uma de suas desvantagens principais. Em seguida, explique como o padrão Modelo-Visão-Controlador (MVC) melhora a organização do código.",
+        "resposta": "A Arquitetura em Camadas foca na separação de responsabilidades em níveis hierárquicos, onde cada camada oferece serviços apenas para a camada superior. A estrutura típica inclui Camada de Apresentação (interface), Camada de Aplicação (lógica de negócio), Serviços Utilitários e Dados/Suporte. Uma desvantagem principal é que o desempenho pode ser afetado pela necessidade de passar por várias camadas para processar uma requisição. O padrão Modelo-Visão-Controlador (MVC) melhora a organização do código ao dividir as responsabilidades em três componentes: o Modelo (gerencia dados e lógica de negócio), a Visão (apresenta as informações ao usuário) e o Controlador (interpreta as ações do usuário e coordena os outros componentes)."
+    },
+    {
+        "tipo": "dissertativo",
+        "tópicos": [
+            "Padrões Criacionais GoF",
+            "Singleton",
+            "Factory Method"
+        ],
+        "questão": "Descreva o problema que o padrão Singleton se propõe a resolver e cite duas desvantagens de seu uso. Em contraste, qual problema o Factory Method resolve, e qual princípio de design Orientado a Objetos (OO) ele aplica em sua solução?",
+        "resposta": "O Singleton resolve o problema de recurso compartilhado que não pode ser acessado ao mesmo tempo, garantindo que uma classe tenha apenas uma única instância. Duas desvantagens são que ele viola o Princípio de Responsabilidade Única (SRP) e pode dificultar a realização de testes unitários do código cliente. O Factory Method resolve o problema de acoplamento firme, delegando a criação de objetos concretos para um método que pode ser sobrescrito pelas subclasses, evitando que o código cliente saiba qual classe concreta é instanciada. Ele aplica o Princípio Aberto/Fechado (Open/Closed Principle - OCP), pois o código pode ser estendido (novo produto) sem modificar o código existente (o criador)."
+    },
+    {
+        "tipo": "dissertativo",
+        "tópicos": [
+            "Padrões Estruturais GoF",
+            "Adapter",
+            "Composite"
+        ],
+        "questão": "Explique o problema resolvido pelo padrão Adapter e como ele o soluciona. Em seguida, descreva o problema resolvido pelo padrão Composite e por que ele é crucial para trabalhar com estruturas de árvore.",
+        "resposta": "O Padrão Adapter resolve o problema de reutilização de um objeto que não tem o formato (interface) esperado pelo cliente. A solução é criar um objeto intermediário que converte a interface do objeto existente (o serviço) para a interface que o cliente espera. O Padrão Composite (Composição) resolve o problema de tratar sistemas de objetos simples e compostos da mesma maneira. Ele é crucial para estruturas de árvore porque fornece uma interface comum (Componente) para elementos simples (Folha) e para contêineres de elementos (Composto), permitindo que o cliente execute operações em toda a estrutura de forma uniforme."
+    },
+    {
+        "tipo": "dissertativo",
+        "tópicos": [
+            "Padrões Comportamentais GoF",
+            "Observer",
+            "Strategy"
+        ],
+        "questão": "Descreva o problema que o padrão Observer resolve e como ele implementa a comunicação entre os componentes. Qual é o problema fundamental resolvido pelo padrão Strategy, e qual é a principal desvantagem do seu uso?",
+        "resposta": "O Padrão Observer resolve a necessidade de manter múltiplos objetos (assinantes) sincronizados com as mudanças de estado de outro objeto (publicador). Ele implementa a comunicação permitindo que os objetos interessados se inscrevam para receber atualizações, e, quando o estado muda, a publicadora notifica todos os inscritos. O Padrão Strategy resolve o problema de trocar dinamicamente o algoritmo utilizado por um objeto durante a execução, sem precisar alterar o código desse objeto. A principal desvantagem é que o código pode se tornar desnecessário ou complicado se houver poucas variações de algoritmo, ou se a linguagem de programação já tiver suporte nativo à programação funcional."
+    },
+    {
+        "tipo": "dissertativo",
+        "tópicos": [
+            "Antipadrões",
+            "The Blob",
+            "Martelo de Ouro"
+        ],
+        "questão": "O que são Antipadrões e como eles são úteis para o processo de engenharia de software? Descreva o problema e a consequência do Antipadrão The Blob (Objeto Deus) e do Martelo de Ouro (Silver Bullet).",
+        "resposta": "Antipadrões descrevem soluções comuns a problemas de projeto que, em geral, têm efeitos negativos na qualidade do software. Eles são úteis porque fornecem ferramentas para os desenvolvedores reconhecerem problemas e oferecem planos detalhados para reverter as causas subjacentes e implementar soluções melhores. O Antipadrão The Blob (Objeto Deus) é uma única classe com grande quantidade de atributos e operações não relacionados. A consequência é o alto acoplamento, dificuldade de teste e a limitação da capacidade de modificar o sistema sem afetar a funcionalidade de outros objetos. O Martelo de Ouro (Silver Bullet) é o uso da mesma solução técnica favorita para todos os problemas, independente do contexto. O resultado é complexidade desnecessária e soluções inflexíveis."
+    },
+    {
+        "tipo": "dissertativo",
+        "tópicos": [
+            "Arquitetura Hexagonal",
+            "Frameworks",
+            "Linguagem de Padrões"
+        ],
+        "questão": "Descreva o foco e o mecanismo principal da Arquitetura Hexagonal (Ports & Adapters). Em seguida, diferencie um Framework de um Padrão de Projeto em termos de abstração e incorporação ao código.",
+        "resposta": "A Arquitetura Hexagonal (Ports & Adapters) coloca o domínio (lógica de negócio) no centro, tornando-o agnóstico de tecnologia. O domínio se comunica com o mundo exterior através de Portas (interfaces) e Adaptadores (mecanismos de comunicação externos, como Web ou Persistência). É priorizada quando a testabilidade do domínio é crucial e a troca de integrações é provável. Um Padrão de Projeto é mais abstrato e, em geral, independe do código, podendo ser aplicado em diversos domínios. Um Framework é uma 'miniarquitetura' reutilizável, um esqueleto com 'pontos de conexão' (ganchos) que pode ser 'incorporado ao código' e é tipicamente limitado a um domínio de aplicação. Um framework abrange mais de um único padrão e é um elemento de arquitetura maior."
+    }
+]

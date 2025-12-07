@@ -1,0 +1,103 @@
+QUALIDADE E TESTES
+1. Conceitos de Qualidade de Software
+A preocupação com a **Qualidade de Software** aumentou à medida que o software se integrou a todas as atividades da vida. Na década de 1990, as principais empresas reconheciam que bilhões de dólares por ano eram desperdiçados em software que não apresentava as características e as funcionalidades prometidas. Pior ainda, tanto o governo quanto as empresas estavam cada vez mais preocupados com o fato de que uma falha grave de software poderia inutilizar importantes infraestruturas, aumentando o custo em dezenas de bilhões. Na virada do século, a CIO Magazine anunciou a manchete: “Chega de desperdiçar US$ 78 bilhões por ano”, lamentando o fato de que “as empresas americanas gastavam bilhões em software que não fazia o que supostamente deveria fazer”. Infelizmente, ao menos um levantamento sobre o estado das práticas de qualidade de software, realizado em 2014, sugere que as atividades de manutenção e evolução de software representam até 90% do total dos custos de desenvolvimento de software. A baixa qualidade de software causada pela pressa em lançar produtos sem testes adequados continua a ser um problema enorme para a indústria de software.
+O que é? A resposta não é tão simples quanto se imagina. Sabe-se o que é qualidade ao vê-la e, mesmo assim, pode ser algo difícil de definir. Todos os participantes – engenheiros de software, gerentes, envolvidos – da produção de software são responsáveis pela qualidade. Ou você faz certo da primeira vez ou faz tudo de novo. Se uma equipe de software buscar a qualidade em todas as atividades de engenharia de software, a quantidade de retrabalho será reduzida. Isso resulta em custos menores e, mais importante, menor tempo para disponibilização do produto no mercado. Para obter software de alta qualidade, devem ocorrer quatro atividades: processo e prática comprovados de engenharia de software, gerenciamento consistente de projetos, controle global de qualidade e a presença de uma infraestrutura para garantir a qualidade. O artefato é o software que atenda às necessidades do cliente, tenha um desempenho preciso e confiável e gere valor para todos que o utilizam.
+Em um sentido geral, a **Qualidade de Software** pode ser definida como: uma gestão de qualidade efetiva aplicada de modo a criar um produto útil que forneça valor mensurável para aqueles que o produzem e para aqueles que o utilizam. A **Satisfação do Usuário** é a combinação de produto compatível + boa qualidade + entrega dentro do orçamento e do prazo previsto. Uma visão moderna sobre qualidade de software exige atenção tanto à satisfação do cliente quanto à conformidade com os requisitos do produto.
+A qualidade é percebida sob diferentes perspectivas (visões):
+• **Visão Transcendental**: Qualidade é algo que se reconhece intuitivamente, mas é difícil de definir explicitamente.
+• **Visão do Usuário**: Qualidade é medida pela capacidade do software de atender às metas e objetivos específicos do usuário.
+• **Visão do Fabricante**: Qualidade é a conformidade do produto com suas especificações originais.
+• **Visão do Produto**: Qualidade está ligada às características inerentes (funções e recursos) de um produto.
+• **Visão Baseada em Valor**: Qualidade é medida pelo quanto um cliente estaria disposto a pagar por um produto.
+1.1 FATORES E MODELOS DE QUALIDADE (ISO 25010)
+Os **Fatores de Qualidade de McCall** se concentram em três aspectos: Operação do produto (Correção, Confiabilidade, Usabilidade, Integridade, Eficiência), Revisão do produto (Flexibilidade, Testabilidade) e Transição do produto (Portabilidade, Reusabilidade, Interoperabilidade).
+A norma **ISO 25010 (SQuaRE)** define dois modelos de qualidade:
+1. **Modelo da Qualidade de Produto**: Descreve características como **Adequação funcional** (completo, correto, apropriado), **Eficiência de desempenho** (comportamento temporal, capacidade), **Compatibilidade** (coexistência, interoperabilidade), **Confiabilidade** (tolerância a falhas, recuperabilidade, ausência de falhas, disponibilidade), **Segurança** (confidencialidade, integridade, autenticidade, responsabilidade, resistência), **Facilidade de Manutenção** (modularidade, reusabilidade, analisabilidade, modificabilidade, testabilidade), **Flexibilidade** (adaptabilidade, escalabilidade, substituibilidade, instalabilidade) e **Segurança Operacional** (restrição operacional, falha segura, identificação de riscos, aviso de perigo, integração segura).
+2. **Modelo da Qualidade em Uso**: Descreve cinco características focadas no contexto de uso: Eficácia, Eficiência (recursos despendidos), Satisfação (utilidade, confiança, prazer), Ausência de riscos e Cobertura do contexto.
+A avaliação quantitativa da qualidade é complexa, pois as métricas são indiretas, mas é útil para encontrar fragmentos de código que sinalizam alto acoplamento e níveis desnecessários de complexidade, problemas de qualidade que precisam ser investigados.
+1.2 O DILEMA E O CUSTO DA QUALIDADE
+O **Dilema da Qualidade** é que construir um software "absolutamente perfeito" exige esforço infinito, levando à perda da oportunidade de mercado ou à falência. O objetivo é encontrar o 'meio-termo mágico'. O conceito de software “bom o suficiente” é aceitável em alguns domínios (grandes empresas com grande orçamento de marketing), mas é perigoso em domínios críticos (software embarcado, aplicações em tempo real) ou para pequenas empresas, pois pode ser negligente e arruinar permanentemente a reputação.
+O CUSTO DA QUALIDADE (COQ)
+• **Custos de Prevenção**: Para evitar defeitos (planejamento, revisões, desenvolvimento de modelos de requisitos completos).
+• **Custos de Avaliação**: Para compreender a condição do produto (revisões técnicas, coleta de métricas, testes e depuração).
+• **Custos de Falhas**: Custos que desapareceriam se não houvesse erros.
+    - **Falhas Internas**: Erros detectados antes da entrega (custo de reformulações/reparos).
+    - **Falhas Externas**: Defeitos encontrados após a entrega (suporte, perda de negócios/má reputação).
+Os custos relativos para corrigir erros aumentam drasticamente ao longo do ciclo de desenvolvimento. O custo médio para corrigir um defeito durante a codificação é de US977;duranteostestesdosistema,US 7.136; e na manutenção, US$ 14.102. A **Lei de Meskimen** resume: “Nunca há tempo para fazer a coisa certa, mas sempre há tempo para fazê-la de novo”.
+A segurança de software está inteiramente relacionada à qualidade. Para construir um sistema seguro, deve-se focar na eliminação de falhas (problemas de arquitetura) e bugs (problemas de implementação) ao longo de todo o ciclo. Decisões administrativas, como estimativas e cronogramas apertados, podem subverter as melhores práticas de engenharia de software e levar ao abandono de atividades que produziriam maior qualidade.
+2. Estratégia de Teste de Software (V&V)
+**Teste de Software** é um conjunto de atividades planejadas para revelar erros. Ele é parte do conceito mais amplo de Verificação e Validação (V&V):
+• **Verificação**: “Estamos criando o produto corretamente?” (Foco na qualidade do processo e do produto intermediário).
+• **Validação**: “Estamos criando o produto certo?” (Assegura que o software atenda aos requisitos do cliente).
+O teste não pode adicionar qualidade. Se a qualidade não for incorporada pelo processo, o teste não pode consertar tudo no final. O **Grupo de Teste Independente (ITG)** é responsável por remover o conflito de interesses de o desenvolvedor testar seu próprio código, embora o desenvolvedor ainda seja responsável pelo teste de unidade e, frequentemente, pelo teste de integração. Teste Exaustivo é impossível para grandes sistemas.
+3. Teste de Componente e Scaffolding
+O **Teste de Unidade** (ou Teste de Componente) focaliza a menor unidade de projeto (componente, módulo, classe), concentrando-se na lógica interna de processamento e nas estruturas de dados dentro dos limites do componente.
+O **Scaffolding** (estrutura temporária) é necessário para testar componentes isolados. Ele inclui:
+• **Pseudocontrolador (Driver)**: Simula o módulo chamador (superior) que aceita dados de teste e passa para o componente.
+• **Pseudocontrolado (Stub)**: Simula os módulos subordinados (chamados pelo componente testado), retornando valores simulados. Drivers e stubs são softwares auxiliares que não são fornecidos com o produto final.
+4. Tipos de Teste de Componente (Caixa-Branca e Caixa-Preta)
+TESTE CAIXA-BRANCA (WHITE-BOX)
+Focaliza a estrutura de controle interna do código. É usado para criar casos de teste que garantam que todos os caminhos independentes e todas as decisões lógicas sejam exercitados.
+• **Teste de Caminho Básico**: Técnica que permite derivar uma medida da complexidade lógica e usá-la para definir um conjunto-base de caminhos de execução, garantindo que todas as instruções do programa sejam executadas pelo menos uma vez.
+• **Complexidade Ciclomática (V(G))**: Métrica de software que fornece uma medida quantitativa da complexidade lógica de um programa. Define o número de caminhos independentes no conjunto-base (limite superior para o número de testes). Pode ser calculada pelo número de regiões, por V(G)=E−N+2 (arestas e nós) ou V(G)=P+1 (nós predicados).
+TESTE CAIXA-PRETA (BLACK-BOX)
+Focaliza os requisitos funcionais do software e o domínio das informações (entradas e saídas), sem considerar a estrutura interna. Tenta encontrar erros em funções incorretas/ausentes, erros de interface e erros de comportamento.
+• **Particionamento de Equivalência**: Divide o domínio de entrada em classes de dados válidas e inválidas, reduzindo o número de testes, pois se um valor da classe funciona, os outros da mesma classe também funcionarão.
+• **Análise de Valor Limite (BVA)**: Técnica complementar que foca na seleção de casos de teste nas fronteiras ou limites das classes de equivalência (onde um número maior de erros ocorre).
+• **Teste de Tabela de Decisão**: Usado quando há múltiplas regras de negócio ou validações combinadas.
+• **Casos de Teste Negativos**: Testes que garantem que o componente não faça algo que não deveria fazer (muitas vezes baseados em antirrequisitos).
+5. Estratégias de Teste de Integração
+O **Teste de Integração** é uma técnica sistemática para construir a arquitetura de software, enquanto se realizam testes para descobrir erros associados às interfaces entre componentes. A Integração Não Incremental (big bang) é ineficaz e resulta em caos.
+As estratégias de integração incremental são:
+• **Integração Descendente (Top-Down)**: Começa com o módulo de controle principal (driver). Módulos subordinados são inicialmente substituídos por pseudocontrolados (stubs). Vantagem: Verifica os principais pontos de controle e permite a demonstração antecipada.
+• **Integração Ascendente (Bottom-Up)**: Começa com os módulos atômicos (níveis mais baixos). Módulos de baixo nível são combinados em agregados (clusters) e testados usando pseudocontroladores (drivers). Vantagem: Elimina a necessidade de stubs complexos e garante a robustez de serviços fundamentais cedo.
+• **Integração Contínua (CI)**: Prática ágil de fundir componentes com o incremento de software em evolução uma ou mais vezes ao dia.
+• **Teste Fumaça (Smoke Test)**: Abordagem diária de teste de integração para expor erros “bloqueadores” (show-stoppers) que atrasariam o cronograma, minimizando o risco da integração.
+6. Teste Orientado a Objetos (OO) e Regressão
+Em sistemas OO, a classe é a menor unidade testável. O **Teste de Classe** (teste de unidade convencional) é controlado pelas operações e pelo comportamento de estado da classe.
+• **Teste de Conjunto (Cluster Testing)**: Etapa de teste de integração que exercita um agregado de classes colaboradoras.
+• **Teste Baseado em Sequências de Execução (Thread-Based Testing)**: Estratégia de integração que foca a integração do conjunto de classes necessário para responder a uma entrada ou um evento do sistema.
+• **Teste Baseado em Cenários (Scenario-Based Testing)**: Estratégia de teste de validação que foca no que o usuário faz (casos de uso) para detectar erros de interação.
+O **Teste de Regressão** é a reexecução do mesmo subconjunto de testes após qualquer alteração (integração de novos módulos, refatoração). O objetivo é assegurar que as alterações não tenham propagado efeitos colaterais indesejados.
+
+--------------------------------------------------------------------------------
+RESUMO CONCEITUAL COMPLETO: QUALIDADE E TESTES
+A **Qualidade de Software** é essencial, definida como a aplicação de uma gestão de qualidade efetiva para criar um produto útil que gere valor mensurável para produtores e usuários. O conceito é multifacetado, com visões que abrangem a conformidade com especificações (**Visão do Fabricante**) e a satisfação de objetivos (**Visão do Usuário**).
+O **Dilema da Qualidade** exige encontrar um equilíbrio, pois a busca pelo software "perfeito" é inviável, e o conceito de software “bom o suficiente” é perigoso em domínios críticos. O **Custo da Qualidade (CoQ)** se divide em **Prevenção**, **Avaliação** e **Falhas** (internas ou externas). Corrigir erros nas fases iniciais (Requisitos/Projeto) é drasticamente mais barato do que corrigi-los em Testes ou Manutenção. A **Lei de Meskimen** sintetiza: “Nunca há tempo para fazer a coisa certa, mas sempre há tempo para fazê-la de novo”.
+A qualidade é alcançada por meio de **Verificação** (criando o produto corretamente?) e **Validação** (criando o produto certo?). O **Teste** é um processo sistemático que deve ser incremental, começando no **Teste de Unidade** (componentes isolados) e progredindo para o **Teste de Integração** (interfaces e colaborações). O **Grupo de Teste Independente (ITG)** pode assumir o teste de ordem superior para mitigar o conflito de interesses.
+Técnicas de Teste de Componente:
+1. **Teste Caixa-Branca**: Focado na estrutura interna. O Teste de **Caminho Básico** usa a **Complexidade Ciclomática (V(G))**, que mede a complexidade lógica e define o número de caminhos independentes que precisam ser testados para garantir a cobertura. O **Scaffolding** (com Pseudocontrolador e Pseudocontrolado) é usado para isolar os componentes durante o teste.
+2. **Teste Caixa-Preta**: Focado nos requisitos funcionais (entradas e saídas). Técnicas incluem **Particionamento de Equivalência** e **Análise de Valor Limite (BVA)** (focando em fronteiras/limites de entrada e saída).
+Estratégias de Teste de Integração: O teste de integração é incremental (evitando o big bang).
+• **Descendente (Top-Down)**: Começa pelo módulo principal, usando Pseudocontrolados (Stubs) para simular módulos inferiores.
+• **Ascendente (Bottom-Up)**: Começa pelos módulos de baixo nível (atômicos), usando Pseudocontroladores (Drivers) para simular módulos superiores.
+• **Teste Fumaça (Smoke Test)**: Checagem de saúde diária para expor rapidamente erros bloqueadores (show-stoppers) após cada build.
+O **Teste de Regressão** é a reexecução de testes existentes após qualquer alteração. É crucial para garantir que novas alterações não propaguem efeitos colaterais indesejados.
+
+--------------------------------------------------------------------------------
+GLOSSÁRIO DE CONCEITOS-CHAVE
+• **Qualidade de Software** (Definição Geral): Gestão de qualidade efetiva aplicada para criar um produto útil que forneça valor mensurável para aqueles que o produzem e utilizam.
+• **Visão do Usuário**: Qualidade medida pela capacidade do software de atender aos objetivos do usuário.
+• **Visão do Fabricante**: Qualidade como conformidade com as especificações originais do produto.
+• **ISO 25010 (Modelo de Qualidade de Produto)**: Norma que define características como Adequação Funcional, Confiabilidade, Segurança, Manutenibilidade, entre outras.
+• **Custo da Qualidade (CoQ)**: Inclui custos de Prevenção, Avaliação e Falhas (internas ou externas).
+• **Lei de Meskimen**: O ditado "Nunca há tempo para fazer a coisa certa, mas sempre há tempo para fazê-la de novo".
+• **Verificação**: Tarefa que garante que o produto está sendo desenvolvido corretamente (Estamos criando o produto corretamente?).
+• **Validação**: Tarefa que garante que o software atende às necessidades do cliente (Estamos criando o produto certo?).
+• **Teste de Unidade (Componente)**: Foco na menor unidade de projeto (módulo, classe); visa erros na lógica interna e variáveis locais.
+• **Scaffolding**: Estrutura temporária de software auxiliar (Driver/Stub) para criar um ambiente de teste isolado.
+    - **Pseudocontrolador (Driver)**: Simula o módulo chamador (superior) do componente testado.
+    - **Pseudocontrolado (Stub)**: Simula módulos subordinados (chamados) pelo componente testado.
+• **Teste Caixa-Branca (White-Box)**: Foca na estrutura de controle interna do código.
+• **Teste de Caminho Básico**: Técnica que define o conjunto-base de caminhos de execução linearmente independentes.
+• **Complexidade Ciclomática (V(G))**: Métrica que fornece o limite superior para o número de caminhos independentes que precisam ser testados.
+• **Teste Caixa-Preta (Black-Box)**: Foca nos requisitos funcionais (entradas e saídas) sem olhar a estrutura interna.
+• **Particionamento de Equivalência**: Método que divide o domínio de entrada em classes de dados válidas e inválidas para derivar casos de teste.
+• **Análise de Valor Limite (BVA)**: Técnica que seleciona casos de teste nas fronteiras dos domínios de entrada e saída.
+• **Teste de Integração**: Técnica sistemática para construir e testar a arquitetura de software, focando nas interfaces entre componentes.
+• **Integração Descendente (Top-Down)**: Começa pelo módulo principal, usando stubs para simular os módulos inferiores.
+• **Integração Ascendente (Bottom-Up)**: Começa pelos módulos atômicos de baixo nível, usando drivers para simular os módulos superiores.
+• **Teste Fumaça (Smoke Test)**: Abordagem diária de teste de integração que realiza uma checagem rápida para expor erros “bloqueadores” (show-stoppers).
+• **Teste de Regressão**: Reexecução de um subconjunto de testes para garantir que as alterações não introduziram efeitos colaterais indesejados no software já funcional.
+• **Teste Baseado em Sequências de Execução**: Estratégia de integração OO que testa o conjunto de classes colaboradoras necessário para responder a um evento do sistema.
+• **Teste Baseado em Cenários**: Teste de validação (caixa-preta) que foca no que o usuário faz, usando casos de uso como base para detectar erros de interação.

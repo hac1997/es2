@@ -1,0 +1,242 @@
+[
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Manutenção de Software",
+            "Tipos de Manutenção"
+        ],
+        "questão": "Um sistema de software corporativo está em uso e a equipe de desenvolvimento decide proativamente revisar e otimizar rotinas para prevenir a degradação do desempenho e reduzir a probabilidade de futuros bugs serem relatados. Essa ação de antecipar a decadência do sistema é classificada como:",
+        "alternativas": [
+            "Manutenção Corretiva (Pois corrige falhas detectadas em testes internos).",
+            "Manutenção Adaptativa (Pois adapta o software ao ambiente operacional em evolução).",
+            "Manutenção Perfectiva (Pois adiciona novas funcionalidades de diagnóstico e monitoramento).",
+            "Manutenção Preventiva (Pois busca mitigar problemas de qualidade antes que se tornem emergências)."
+        ],
+        "resposta": "D. Manutenção Preventiva (Pois busca mitigar problemas de qualidade antes que se tornem emergências)."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Engenharia Reversa",
+            "Documentação"
+        ],
+        "questão": "A Engenharia Reversa (ER) é o processo de recuperação do projeto de um sistema legado. Contudo, a analogia do 'slot mágico' que transforma código não documentado em uma documentação completa do projeto é considerada irrealista porque:",
+        "alternativas": [
+            "A ER só pode ser realizada por ferramentas automáticas e não por analistas humanos.",
+            "A completude da documentação é difícil de ser atingida à medida que o nível de abstração aumenta, e as ferramentas não garantem abstração completa.",
+            "A ER só é eficaz para extrair informações de Interfaces de Usuário (UI) e não do código-fonte ou estruturas de dados.",
+            "A ER foca estritamente em extrair abstrações procedurais, e não em criar diagramas de classes UML ou modelos de dados."
+        ],
+        "resposta": "B. A completude da documentação é difícil de ser atingida à medida que o nível de abstração aumenta, e as ferramentas não garantem abstração completa."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Leis de Evolução de Software de Lehman",
+            "Evolução de Software"
+        ],
+        "questão": "A equipe de suporte percebe que, a cada nova funcionalidade adicionada ao sistema, a equipe demora mais tempo para desenvolver e o risco de introduzir bugs aumenta. De acordo com as Leis de Lehman, essa situação reflete qual lei?",
+        "alternativas": [
+            "Lei da Mudança Contínua, que exige adaptação perpétua.",
+            "Lei da Complexidade Crescente, que indica que a complexidade aumenta a menos que haja trabalho para reduzi-la.",
+            "Lei do Crescimento Contínuo, que exige expansão funcional para satisfazer o usuário.",
+            "Lei da Conservação da Familiaridade, que mantém o crescimento incremental médio invariante."
+        ],
+        "resposta": "B. Lei da Complexidade Crescente, que indica que a complexidade aumenta a menos que haja trabalho para reduzi-la."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Análise de Software",
+            "Análise Dinâmica"
+        ],
+        "questão": "Qual das seguintes atividades representa uma característica da <strong>Análise Dinâmica</strong> de software, que a diferencia fundamentalmente da Análise Estática?",
+        "alternativas": [
+            "Reconstruir a estrutura do software a partir da leitura do código-fonte ou binários sem execução.",
+            "Analisar a complexidade de funções (O(n), O(n²)) por meio da leitura direta do algoritmo.",
+            "Identificar comportamentos ocultos, monitorar chamadas de sistema ou analisar memória enquanto o software está em execução.",
+            "Detectar código morto, variáveis não utilizadas ou problemas de sintaxe em bytecode."
+        ],
+        "resposta": "C. Identificar comportamentos ocultos, monitorar chamadas de sistema ou analisar memória enquanto o software está em execução."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Análise Estática",
+            "Complexidade de Algoritmos"
+        ],
+        "questão": "Um desenvolvedor está realizando uma análise estática de código-fonte para identificar gargalos de performance e encontra uma função que utiliza dois laços `for` aninhados para iterar e imprimir todos os elementos de uma matriz bidimensional $N \times N$. Qual complexidade essa função demonstra, em notação Big O?",
+        "alternativas": [
+            "O(1), complexidade constante.",
+            "O(n), complexidade linear.",
+            "O(n²), complexidade quadrática, refletindo o uso de loops aninhados.",
+            "O($log$ n), complexidade logarítmica."
+        ],
+        "resposta": "C. O(n²), complexidade quadrática, refletindo o uso de loops aninhados."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Refatoração",
+            "Comportamento"
+        ],
+        "questão": "Qual é a característica fundamental que define a Refatoração de Software, diferenciando-a de uma simples modificação ou melhoria perfectiva?",
+        "alternativas": [
+            "Deve converter código procedural para arquitetura orientada a objetos (O(n²)).",
+            "Deve gerar um novo projeto com novas funcionalidades para atender aos objetivos de negócios revisados.",
+            "Deve ser realizada em módulos de 2 mil instruções ou mais, com poucas linhas de comentários.",
+            "A Refatoração deve alterar o sistema para melhorar a sua estrutura interna e manutenibilidade, mas SEMPRE mantendo o seu comportamento externo inalterado."
+        ],
+        "resposta": "D. A Refatoração deve alterar o sistema para melhorar a sua estrutura interna e manutenibilidade, mas SEMPRE mantendo o seu comportamento externo inalterado."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Reengenharia",
+            "Processo"
+        ],
+        "questão": "No modelo de processo de reengenharia de software (cíclico), em qual atividade é tomada a decisão estratégica sobre a viabilidade econômica do sistema legado, comparando sua criticidade, longevidade e manutenibilidade, antes de investir em Engenharia Reversa ou Reestruturação?",
+        "alternativas": [
+            "Análise de Inventário, onde a organização avalia o portfólio de aplicações ativas e classifica os candidatos à reengenharia com base em critérios como criticidade nos negócios e manutenibilidade atual.",
+            "Reestruturação dos Documentos, focada na criação de documentação mínima ou total.",
+            "Engenharia Reversa, focada na extração de informações do projeto de dados e procedural.",
+            "Engenharia Direta, focada na recodificação e reintegração de novos requisitos."
+        ],
+        "resposta": "A. Análise de Inventário, onde a organização avalia o portfólio de aplicações ativas e classifica os candidatos à reengenharia com base em critérios como criticidade nos negócios e manutenibilidade atual."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Dívida Técnica",
+            "Causas"
+        ],
+        "questão": "A Dívida Técnica se acumula em sistemas legados. Qual das seguintes é a causa principal citada para o surgimento do 'débito técnico'?",
+        "alternativas": [
+            "A Lei da Qualidade em Declínio (que é um efeito, não a causa).",
+            "Desenvolvedores que agregam recursos sob pressão por prazos curtos, resultando em código mal estruturado sem documentação.",
+            "A não utilização de ferramentas de decomposição e decompilação.",
+            "A falha na utilização de serviços de conveniência para suporte operacional continuado."
+        ],
+        "resposta": "B. Desenvolvedores que agregam recursos sob pressão por prazos curtos, resultando em código mal estruturado sem documentação."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Análise Estática",
+            "Ferramentas"
+        ],
+        "questão": "Qual das seguintes ferramentas é explicitamente mencionada como um recurso para realizar Análise Estática de código-fonte, visando a detecção de padrões ruins e potenciais vulnerabilidades?",
+        "alternativas": [
+            "IDA Pro (ferramenta de desmontagem/decompilação).",
+            "JDepend (analisador de dependências).",
+            "SonarQube (ferramenta de análise estática).",
+            "LinkedList (estrutura de dados linear)."
+        ],
+        "resposta": "C. SonarQube (ferramenta de análise estática)."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Engenharia Reversa",
+            "Análise Dinâmica"
+        ],
+        "questão": "Ao contrário da análise estática, a Análise Dinâmica exige que o software esteja em execução. Qual é uma das desvantagens da Análise Dinâmica?",
+        "alternativas": [
+            "Requer obrigatoriamente acesso total ao código-fonte.",
+            "Não consegue identificar vulnerabilidades de segurança.",
+            "Pode ser mais demorada e exige um ambiente controlado, além de, em algumas técnicas, requerer permissões elevadas.",
+            "Gera código de montagem (assembly) em vez de bytecode."
+        ],
+        "resposta": "C. Pode ser mais demorada e exige um ambiente controlado, além de, em algumas técnicas, requerer permissões elevadas."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Reestruturação de Dados",
+            "Impacto Arquitetural"
+        ],
+        "questão": "Qual das seguintes ações é considerada uma Reestruturação dos Dados (atividade de reengenharia completa) que invariavelmente resulta em mudanças de arquitetura ou em nível de código?",
+        "alternativas": [
+            "Remoção de código duplicado no módulo de acesso a dados.",
+            "Uso de padrões de projeto para refatorar o código da interface do usuário.",
+            "A conversão de um formato de arquivo de texto simples para um sistema de banco de dados relacional.",
+            "A Manutenção Adaptativa para ajustar o software a um novo sistema operacional."
+        ],
+        "resposta": "C. A conversão de um formato de arquivo de texto simples para um sistema de banco de dados relacional."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Refatoração de Código",
+            "Técnicas"
+        ],
+        "questão": "Um desenvolvedor modifica uma classe, alterando um atributo de `public` para `private` e adicionando métodos getter e setter com lógica de validação. Qual técnica de refatoração ele aplicou?",
+        "alternativas": [
+            "Extração de métodos.",
+            "Substituição de condições complexas por polimorfismo.",
+            "Encapsulamento de campos.",
+            "Racionalização de nomes de dados."
+        ],
+        "resposta": "C. Encapsulamento de campos."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Engenharia Direta",
+            "Evolução"
+        ],
+        "questão": "A Engenharia Direta, a última etapa do processo de reengenharia, distingue-se da refatoração simples porque, além de melhorar a qualidade do sistema, ela também:",
+        "alternativas": [
+            "Garante que o comportamento externo do sistema permaneça idêntico ao original.",
+            "É o processo de recuperação do projeto de dados e processamento.",
+            "Recria a função do sistema existente e acrescenta novas funções ou melhora o desempenho geral, integrando novos requisitos de usuário.",
+            "Ocorre apenas quando o código-fonte está indisponível e é realizada via desmontagem."
+        ],
+        "resposta": "C. Recria a função do sistema existente e acrescenta novas funções ou melhora o desempenho geral, integrando novos requisitos de usuário."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Engenharia Reversa",
+            "Abstração"
+        ],
+        "questão": "No contexto da Engenharia Reversa para entender o <strong>Processamento</strong>, a análise do código ocorre em vários níveis de abstração (sistema, programa, componente, padrão e instruções). Qual artefato é criado para representar a interação entre as abstrações funcionais de alto nível de cada programa?",
+        "alternativas": [
+            "O modelo entidade-relacionamento (MER).",
+            "O diagrama de classe UML (focado em Dados).",
+            "O diagrama de blocos.",
+            "O caso de uso informal (para comunicação com os envolvidos)."
+        ],
+        "resposta": "C. O diagrama de blocos."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Análise Estática",
+            "Técnicas Binárias"
+        ],
+        "questão": "Qual par de técnicas é fundamentalmente utilizado na Análise Estática quando o engenheiro de software trabalha com código binário compilado (sem código-fonte) para fins de reengenharia ou análise de malware?",
+        "alternativas": [
+            "Depuração e Monitoramento de Rede.",
+            "Desmontagem (Disassembly) e Decompilação.",
+            "Fuzzing e Análise de Memória.",
+            "Manutenção Preventiva e Manutenção Perfectiva."
+        ],
+        "resposta": "B. Desmontagem (Disassembly) e Decompilação."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Reestruturação de Código",
+            "Arquitetura"
+        ],
+        "questão": "Ao reestruturar um módulo 'Calculadora' que continha funções aritméticas e trigonométricas em classes separadas ('CalculadoraAritmetica' e 'CalculadoraTrigonometrica'), qual conceito fundamental de projeto foi primariamente aplicado, classificando essa mudança como <strong>Reestruturação do Código</strong> (e não apenas Refatoração)?",
+        "alternativas": [
+            "Remoção de Código Morto.",
+            "Conversão para Programação Procedural.",
+            "Separação de Responsabilidades e modularização.",
+            "Racionalização de nomes de dados."
+        ],
+        "resposta": "C. Separação de Responsabilidades e modularização."
+    }
+]

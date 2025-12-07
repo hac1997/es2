@@ -1,0 +1,347 @@
+[
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Histórico de VCS",
+            "Cartões Perfurados"
+        ],
+        "questão": "Nas décadas de 1950 e 1960, quando o código era armazenado em cartões perfurados, como era realizado o 'check-out' do programa?",
+        "alternativas": [
+            "Através da comunicação serial com o SCCS no disco rígido.",
+            "Retirando fisicamente o cartão da gaveta, estabelecendo a posse física do programa.",
+            "Através da gravação do módulo em uma fita de trabalho.",
+            "Por meio do lock otimista, permitindo cópias simultâneas."
+        ],
+        "resposta": "B. Retirando fisicamente o cartão da gaveta, estabelecendo a posse física do programa."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Histórico de VCS",
+            "Lock Pessimista"
+        ],
+        "questão": "Qual ferramenta de controle de código-fonte, popularizada na década de 1980 com o advento dos discos, utilizava o conceito de lock pessimista?",
+        "alternativas": [
+            "Git (VCS distribuído).",
+            "Subversion (SVN) (lock otimista).",
+            "Source Code Control System (SCCS).",
+            "GitHub Actions (plataforma colaborativa)."
+        ],
+        "resposta": "C. Source Code Control System (SCCS)."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "VCS Moderno",
+            "Git"
+        ],
+        "questão": "O Git se tornou o padrão de mercado devido à sua arquitetura. Qual característica é central para o Git, diferentemente do SVN, permitindo maior resiliência e velocidade?",
+        "alternativas": [
+            "Uso de lock pessimista para garantir posse exclusiva.",
+            "Armazenamento centralizado onde apenas o servidor contém o histórico completo.",
+            "Trabalho distribuído, onde cada clone contém todo o histórico do repositório.",
+            "Foco na mesclagem manual de conflitos após o check-in."
+        ],
+        "resposta": "C. Trabalho distribuído, onde cada clone contém todo o histórico do repositório."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Controle de Versão",
+            "Exclusões"
+        ],
+        "questão": "De acordo com as boas práticas de gerenciamento de repositórios, qual item não deve ser controlado (comitado) em um sistema de controle de versão?",
+        "alternativas": [
+            "Scripts de build.",
+            "Configurações de IDEs (Editores).",
+            "Arquivos de migração de banco de dados (schemas).",
+            "Saídas que podem ser construídas, como arquivos .jar ou images (artefatos)."
+        ],
+        "resposta": "D. Saídas que podem ser construídas, como arquivos .jar ou images (artefatos)."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Organização de Repositórios",
+            "Mono-repo"
+        ],
+        "questão": "Qual é a principal vantagem de utilizar uma organização Mono-repo (repositório único para todos os projetos) em comparação com a abordagem Multi-repo?",
+        "alternativas": [
+            "Garantir o isolamento total de dependências entre projetos.",
+            "Maior facilidade na administração e na realização de refatorações globais.",
+            "Redução da necessidade de ferramentas de Integração Contínua.",
+            "A obrigatoriedade de utilizar o modelo Git Flow."
+        ],
+        "resposta": "B. Maior facilidade na administração e na realização de refatorações globais."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Ramificação",
+            "Trunk-based"
+        ],
+        "questão": "Qual modelo de ramificação foca em integrar código à linha principal (main) o mais rápido possível, utilizando ramos curtos apenas para cada funcionalidade?",
+        "alternativas": [
+            "Git Flow.",
+            "GitLab Flow.",
+            "Feature Branch Workflow.",
+            "Trunk-based development."
+        ],
+        "resposta": "D. Trunk-based development."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Sincronização de Ramos",
+            "Rebase"
+        ],
+        "questão": "A técnica de sincronização de ramos chamada Alteração da Base (Rebase) é preferida por alguns desenvolvedores em detrimento da Mesclagem (Merge) porque o Rebase:",
+        "alternativas": [
+            "Cria um merge commit explícito para a junção.",
+            "Mantém o histórico do repositório estritamente linear.",
+            "Permite múltiplos check-outs simultâneos usando lock otimista.",
+            "É um modelo distribuído de controle de versão."
+        ],
+        "resposta": "B. Mantém o histórico do repositório estritamente linear."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Integração Contínua",
+            "Build Verde"
+        ],
+        "questão": "A consolidação da Integração Contínua (CI) estabeleceu um padrão de mercado crucial para a integração. Qual é a exigência fundamental para que um desenvolvedor possa integrar seu código à linha principal?",
+        "alternativas": [
+            "Que o sistema seja submetido a testes de aceitação do usuário.",
+            "Que o build anterior e o build atual estejam 'verdes' (sem falhas).",
+            "Que o gerente de projeto revise manualmente todo o código-fonte.",
+            "Que o lock pessimista seja aplicado ao módulo a ser integrado."
+        ],
+        "resposta": "B. Que o build anterior e o build atual estejam 'verdes' (sem falhas)."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Pipeline de CI",
+            "Conceitos"
+        ],
+        "questão": "Em um pipeline de Integração Contínua, qual elemento define quando o pipeline deve rodar (ex: ao receber um pull_request, um push ou em um schedule fixo)?",
+        "alternativas": [
+            "O Runner.",
+            "O Job.",
+            "Os Segredos (Secrets).",
+            "Os Gatilhos (Triggers)."
+        ],
+        "resposta": "D. Os Gatilhos (Triggers)."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Pipeline de CI",
+            "Pipeline as Code"
+        ],
+        "questão": "O conceito de Pipeline as Code (PaC) é fundamental na CI moderna. O que isso significa na prática?",
+        "alternativas": [
+            "O pipeline deve ser escrito apenas em linguagens compiladas (Java, C++).",
+            "O pipeline só pode ser executado em runners na nuvem.",
+            "A configuração do pipeline é versionada em um arquivo (junto ao código), garantindo rastreabilidade.",
+            "A CI deve evitar a execução de testes automatizados."
+        ],
+        "resposta": "C. A configuração do pipeline é versionada em um arquivo (junto ao código), garantindo rastreabilidade."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Pipeline Canônico",
+            "Análise Estática"
+        ],
+        "questão": "Qual etapa do Pipeline Canônico de CI implementa a abordagem de segurança shift-left, realizando varreduras de segurança e análise de código e dependências sem executar a aplicação?",
+        "alternativas": [
+            "Testes de Integração.",
+            "Build / Empacotar.",
+            "Instalação de Dependências.",
+            "Análise Estática e Segurança."
+        ],
+        "resposta": "D. Análise Estática e Segurança."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Determinismo",
+            "Reprodutibilidade"
+        ],
+        "questão": "Para alcançar o Determinismo e a Reprodutibilidade no pipeline de CI, evitando o problema de 'funciona só na minha máquina', qual técnica deve ser usada em relação ao ambiente de execução?",
+        "alternativas": [
+            "Utilizar ambientes mutáveis e dependências do sistema operacional local.",
+            "Não utilizar lockfiles para permitir a instalação da versão mais recente das dependências.",
+            "Utilizar ambientes imutáveis (containers ou runners padronizados) para evitar dependências locais.",
+            "Usar lock pessimista para garantir que apenas um runner trabalhe por vez."
+        ],
+        "resposta": "C. Utilizar ambientes imutáveis (containers ou runners padronizados) para evitar dependências locais."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Determinismo",
+            "Idempotência"
+        ],
+        "questão": "A Idempotência é um princípio crucial do determinismo na CI. Qual é a definição de Idempotência neste contexto?",
+        "alternativas": [
+            "A capacidade de consertar um build quebrado em menos de 10 minutos.",
+            "A garantia de que o build será verde em 99% das execuções.",
+            "O princípio de que o mesmo commit deve produzir o mesmo resultado em qualquer execução do pipeline.",
+            "A eliminação de flakiness através da semeadura de aleatoriedade."
+        ],
+        "resposta": "C. O princípio de que o mesmo commit deve produzir o mesmo resultado em qualquer execução do pipeline."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "CI",
+            "Certificação"
+        ],
+        "questão": "De acordo com os critérios de certificação da CI, qual é o tempo máximo aproximado que a equipe deve levar para consertar um build quebrado?",
+        "alternativas": [
+            "Até 30 minutos.",
+            "Até 1 hora.",
+            "Aproximadamente 10 minutos.",
+            "Não há limite de tempo, desde que o conserto seja feito antes do próximo sprint."
+        ],
+        "resposta": "C. Aproximadamente 10 minutos."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Pipeline de CI",
+            "Artefatos"
+        ],
+        "questão": "No contexto do pipeline canônico de CI, o que são os Artefatos?",
+        "alternativas": [
+            "Os tokens e chaves armazenados em um cofre do provedor (Segredos).",
+            "As saídas do pipeline (ex: o arquivo .jar ou .zip) que são anexadas ao run.",
+            "As variações do mesmo job (Matriz).",
+            "Os scripts de checkout e setup."
+        ],
+        "resposta": "B. As saídas do pipeline (ex: o arquivo .jar ou .zip) que são anexadas ao run."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Modelos de Ramificação",
+            "GitHub Flow"
+        ],
+        "questão": "O GitHub Flow é um modelo de ramificação que se baseia no Feature Branch Workflow. Qual elemento adicional o GitHub Flow tipicamente inclui?",
+        "alternativas": [
+            "A criação de ramos permanentes release e hotfix.",
+            "A adição de environment branches (como staging e production) combinadas com pull requests.",
+            "O uso exclusivo de lock pessimista.",
+            "A eliminação de todos os ramos, exceto a linha principal."
+        ],
+        "resposta": "B. A adição de environment branches (como staging e production) combinadas com pull requests."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "VCS",
+            "Plataformas Colaborativas"
+        ],
+        "questão": "Qual funcionalidade se popularizou com as plataformas colaborativas (GitHub, GitLab, Bitbucket) e é essencial para o Feature Branch Workflow, permitindo a revisão e discussão do código antes da mesclagem?",
+        "alternativas": [
+            "Cartões perfurados.",
+            "Fitas magnéticas.",
+            "Pull Requests / Merge Requests.",
+            "Lock Pessimista."
+        ],
+        "resposta": "C. Pull Requests / Merge Requests."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "CI",
+            "Benefícios"
+        ],
+        "questão": "Qual benefício da Integração Contínua é diretamente relacionado à capacidade de gerar confiança na qualidade do código através da execução de testes automatizados a cada integração?",
+        "alternativas": [
+            "Feedback Lento.",
+            "Qualidade Consistente.",
+            "Qualidade Opaca.",
+            "Integração Tardia."
+        ],
+        "resposta": "B. Qualidade Consistente."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Pipeline de CI",
+            "Conceitos"
+        ],
+        "questão": "Em um pipeline de CI, qual conceito permite a variação de um mesmo Job para diferentes configurações de ambiente (ex: rodar testes no node 18 e node 20, ou em Linux e Windows)?",
+        "alternativas": [
+            "Cache.",
+            "Matriz.",
+            "Runner.",
+            "Segredos."
+        ],
+        "resposta": "B. Matriz."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Pipeline Canônico",
+            "Setup"
+        ],
+        "questão": "A primeira etapa do Pipeline Canônico é Checkout & Setup. O que a subetapa Setup envolve?",
+        "alternativas": [
+            "A anexação de relatórios de teste ao run.",
+            "A instalação de versões da linguagem e ferramentas e a preparação do cache.",
+            "A geração do artefato consumível (build).",
+            "A varredura de segurança do código-fonte (Análise Estática)."
+        ],
+        "resposta": "B. A instalação de versões da linguagem e ferramentas e a preparação do cache."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Determinismo",
+            "Flakiness"
+        ],
+        "questão": "Qual técnica é usada para eliminar flakiness (falhas intermitentes de teste) no pipeline de CI?",
+        "alternativas": [
+            "Aumentar o tempo de execução do build para um build noturno.",
+            "Usar lock pessimista para o runner.",
+            "Semear aleatoriedade e congelar o relógio para garantir que a ordem de execução seja a mesma e que o tempo seja fixo.",
+            "Remover todos os testes de unidade."
+        ],
+        "resposta": "C. Semear aleatoriedade e congelar o relógio para garantir que a ordem de execução seja a mesma e que o tempo seja fixo."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Histórico de VCS",
+            "Fitas Magnéticas"
+        ],
+        "questão": "Na década de 1970, com o uso de fitas magnéticas, qual artefato físico era usado para indicar que um módulo estava sendo editado?",
+        "alternativas": [
+            "Cartões perfurados.",
+            "O commit no SCCS.",
+            "Um alfinete colorido em um quadro de verificação.",
+            "O pull request na plataforma colaborativa."
+        ],
+        "resposta": "C. Um alfinete colorido em um quadro de verificação."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Pipeline de CI",
+            "Conceitos"
+        ],
+        "questão": "Qual conceito de CI permite o reaproveitamento de dependências ou compilações entre diferentes execuções do pipeline, visando reduzir o tempo de execução?",
+        "alternativas": [
+            "Gatilhos (Triggers).",
+            "Cache.",
+            "Matriz.",
+            "Jobs."
+        ],
+        "resposta": "B. Cache."
+    }
+]

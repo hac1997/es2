@@ -1,0 +1,79 @@
+[
+    {
+        "tipo": "dissertativo",
+        "tópicos": [
+            "Histórico de VCS",
+            "Lock Pessimista vs. Otimista",
+            "Git"
+        ],
+        "questão": "Explique a diferença entre as estratégias de Lock Pessimista (usada em ferramentas como SCCS) e Lock Otimista (introduzida pelo Subversion - SVN). Como o Git se distingue dessas abordagens centralizadas em termos de arquitetura?",
+        "resposta": "<p>O Lock Pessimista, usado em ferramentas como SCCS e CVS, bloqueava um módulo no disco, garantindo a posse exclusiva do arquivo para um único desenvolvedor durante a edição.</p><p>Em contraste, o Lock Otimista, introduzido pelo Subversion (SVN) nos anos 2000, não bloqueava o módulo e permitia múltiplos check-outs ao mesmo tempo. As alterações eram rastreadas e mescladas automaticamente, exigindo que os conflitos fossem resolvidos antes do check-in.</p><p>O Git se distingue por ser um sistema distribuído, onde cada clone contém todo o histórico do projeto, focando em velocidade e segurança, e não dependendo de um servidor central para a maioria das operações.</p>"
+    },
+    {
+        "tipo": "dissertativo",
+        "tópicos": [
+            "Organização de Repositórios",
+            "Mono-repo",
+            "Controle de Versão"
+        ],
+        "questão": "Compare a organização de repositórios Multi-repo e Mono-repo, citando uma vantagem clara do Mono-repo. O que, de acordo com as boas práticas, um sistema de controle de versão deve controlar (commit), e qual categoria de artefatos não deve ser controlada?",
+        "resposta": "<p>Na organização Multi-repo, cada projeto reside em seu próprio repositório. O Mono-repo, por outro lado, mantém um único repositório para todos os projetos da organização. Uma vantagem do Mono-repo é que ele oferece administração mais simples e facilita refatorações globais em todos os projetos de uma vez.</p><p>Um sistema de controle de versão deve controlar tudo o que é necessário para a construção do projeto, incluindo código, scripts, migrações, schemas e configurações de IDEs. O que não deve ser controlado são as saídas que podem ser construídas (build outputs), como gem, jar, image ou modules.</p>"
+    },
+    {
+        "tipo": "dissertativo",
+        "tópicos": [
+            "Boas Práticas de Ramificação",
+            "Merge vs. Rebase"
+        ],
+        "questão": "As Boas Práticas de ramificação aconselham que os ramos atrasam a integração. Explique por que isso ocorre e qual recomendação principal é dada para mitigar o problema. Em seguida, diferencie a sincronização de ramos usando Mesclagem (Merge) e Alteração da Base (Rebase) em relação ao histórico de commits.",
+        "resposta": "<p>Os ramos atrasam a integração porque, quanto mais tempo um ramo vive (ramos de vida longa), maior a probabilidade de divergência da linha principal, tornando a mesclagem mais burocrática e propensa a conflitos. A recomendação principal para mitigar isso é utilizar ramos de vida curta, que são mais simples de mesclar.</p><p>A diferença na sincronização é que a Mesclagem (Merge) cria um merge commit para a junção, e o histórico depende dos ramos (não sendo linear). Já a Alteração da Base (Rebase) altera a base do commit, resultando em um histórico linear, o que é frequentemente preferível.</p>"
+    },
+    {
+        "tipo": "dissertativo",
+        "tópicos": [
+            "Integração Contínua (CI)",
+            "Integration Hell"
+        ],
+        "questão": "A Integração Contínua (CI) surgiu como uma resposta ao problema conhecido como \"integration hell\" das décadas de 1990. Descreva o integration hell e explique como a CI resolve dois dos problemas clássicos: a integração tardia e o problema de \"funciona na minha máquina\".",
+        "resposta": "<p>O \"integration hell\" era caracterizado pela integração tardia (realizada somente ao fim da iteração), builds noturnos e integração manual. A CI resolve esses problemas por meio de automação e frequência:</p><p>1) Integração Tardia: É resolvida com a prática de integrações pequenas e frequentes (integração diária na linha principal).</p><p>2) \"Funciona na minha máquina\": É resolvida com a automação do build e dos testes em um ambiente reprodutível e padronizado (runner), evitando dependências do sistema operacional local do desenvolvedor.</p>"
+    },
+    {
+        "tipo": "dissertativo",
+        "tópicos": [
+            "Pipeline de CI",
+            "Pipeline Canônico",
+            "Security Shift-Left"
+        ],
+        "questão": "Explique o conceito de Pipeline as Code (PaC) na Integração Contínua. Listando quatro etapas do Pipeline Canônico que ocorrem após a instalação de dependências, detalhando o propósito da etapa de Análise Estática e Segurança.",
+        "resposta": "<p>O Pipeline as Code (PaC) significa que a configuração do pipeline de CI é versionada em um arquivo (junto com o código-fonte), garantindo reprodutibilidade e rastreabilidade.</p><p>Quatro etapas que ocorrem após a instalação de dependências são: 1) Checagens Rápidas (lint/format/typecheck); 2) Testes de Unidade / Testes de Integração; 3) Análise Estática e Segurança; e 4) Build / Empacotar.</p><p>A etapa de Análise Estática e Segurança realiza varreduras que analisam o código e as dependências sem executar a aplicação, sendo um exemplo de segurança shift-left, que busca identificar vulnerabilidades mais cedo no ciclo de desenvolvimento.</p>"
+    },
+    {
+        "tipo": "dissertativo",
+        "tópicos": [
+            "Determinismo",
+            "Reprodutibilidade",
+            "Idempotência"
+        ],
+        "questão": "O Determinismo e a Reprodutibilidade são essenciais para evitar falhas intermitentes (flakiness) e garantir que o resultado de um build seja consistente. Defina Idempotência nesse contexto e cite duas técnicas essenciais para garantir o Determinismo na instalação de dependências e no ambiente de execução.",
+        "resposta": "<p>A Idempotência na CI garante que o mesmo commit deve produzir o mesmo resultado em qualquer execução do pipeline.</p><p>Para garantir o Determinismo, duas técnicas essenciais são: 1) Fixar versões e usar lockfiles: Isso garante que as dependências baixadas sejam as mesmas entre execuções, usando ferramentas como npm ci ou pnpm install --frozen-lockfile; e 2) Utilizar ambiente imutável: Isso é feito por meio de containers ou runners padronizados que evitam dependências do sistema operacional local, garantindo que o ambiente seja o mesmo em todas as execuções.</p>"
+    },
+    {
+        "tipo": "dissertativo",
+        "tópicos": [
+            "CI",
+            "Certificação"
+        ],
+        "questão": "Quais são as três perguntas de certificação que uma equipe deve responder afirmativamente para demonstrar que está utilizando a Integração Contínua de forma eficaz e madura?",
+        "resposta": "<p>Os três critérios de certificação da CI são: 1) Você integra (commit) diariamente o seu código na linha principal (main, master, etc.) do projeto?; 2) Você executa testes e builds de maneira automatizada, trazendo confiança de que o software está correto?; e 3) Quando um build quebra, a equipe conserta em aproximadamente 10 minutos?.</p>"
+    },
+    {
+        "tipo": "dissertativo",
+        "tópicos": [
+            "Modelos de Ramificação",
+            "Git Flow",
+            "Trunk-based"
+        ],
+        "questão": "O Git Flow é conhecido por ser um modelo de ramificação complexo. Descreva a principal diferença conceitual entre o Trunk-based development e o Git Flow em relação ao uso de ramos.",
+        "resposta": "<p>O Trunk-based development é o modelo mais simples, pois evita ramificações (ou utiliza ramos de vida extremamente curta apenas para cada funcionalidade) e incentiva a integração contínua na linha principal.</p><p>Em contraste, o Git Flow é um modelo mais complexo que envolve o uso de diversos ramos permanentes (master e develop) e ramos temporários (release, hotfix, feature), exigindo mais burocracia e, potencialmente, atrasando a integração.</p>"
+    }
+]

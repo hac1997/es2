@@ -1,0 +1,50 @@
+PROCESSOS, AGILIDADE, GESTÃO DE RISCOS E MÉTRICAS DE SOFTWARE
+Os conceitos-chave tratados abrangem a estrutura metodológica para o desenvolvimento de software, os modelos de processo, a filosofia e frameworks ágeis (**Scrum**), técnicas de planejamento e estimativa (dimensionamento, custo e esforço), a gestão proativa de riscos (**RMMM**) e o uso de medições quantitativas (analytics) para avaliar a qualidade e a complexidade do produto.
+CONCEITOS-CHAVE IDENTIFICADOS
+• **Processo de Software** e **Fluxo de Processo** (Linear, Iterativo, Evolucionário, Paralelo)
+• **Modelos Prescritivos** (Cascata, Prototipação, Espiral) e **Processo Unificado (PU)**
+• **Agilidade**, **Manifesto Ágil** (Valores e Princípios) e **Custo das Mudanças**
+• **Frameworks Ágeis** (**Scrum**, **Extreme Programming - XP**, **Kanban**, **DevOps**)
+• **Planejamento** e **Estimativa** (Escopo, Viabilidade, Recursos, Decomposição)
+• **Técnicas de Dimensionamento** (**LOC**, **Pontos de Função - FP**, **Pontos de Caso de Uso - UCPs**)
+• **Cronograma** (**Caminho Crítico**, **Caixa de Tempo**) e **Equação do Software**
+• **Risco de Software** (Incerteza, Perda), **Débito Técnico**, e Categorias de Risco (Projeto, Técnico, Negócio)
+• **Gestão de Riscos (RMMM)** e **Exposição ao Risco (RE)**
+• **Métricas** (Medida, Medição, Métrica, Indicador, Software Analytics)
+• **Métricas de Produto** (**Complexidade Ciclomática**, **Métricas OO - CK Suite**)
+• **Métricas de Qualidade** (Correção, Manutenibilidade, Integridade, **Eficiência na Remoção de Defeitos - DRE**)
+
+--------------------------------------------------------------------------------
+RESUMO CONCEITUAL CONCISO E COMPLETO
+1. Processo de Software e Modelos Metodológicos
+O **Processo de Software** é a metodologia que define as atividades, ações e tarefas para desenvolver software de alta qualidade, incorporando o conhecimento coletado, denominado "capital de software". As cinco **Atividades Metodológicas Genéricas** são: Comunicação, Planejamento, Modelagem, Construção e Entrega. O **Conjunto de Tarefas (Task Set)** é a coleção específica de tarefas de trabalho, artefatos e marcos que precisam ser obtidos.
+O **Fluxo de Processo** descreve como as atividades são organizadas:
+• **Linear**: Sequencial (ex: **Modelo Cascata**), inadequado para requisitos mutáveis, pois o feedback é tardio.
+• **Iterativo**: Repete atividades (ex: **Prototipação**), usado quando os requisitos são obscuros, priorizando o feedback do cliente.
+• **Evolucionário**: Em ciclos circulares (ex: **Modelo Espiral**), combinando o iterativo com controle sistemático e focando na análise de risco a cada volta.
+O **Processo Unificado (PU)** é iterativo e incremental, dirigido a casos de uso, e centrado na arquitetura, seguindo as fases de Concepção, Elaboração, Construção, Transição e Produção.
+2. Agilidade e Frameworks Ágeis
+**Agilidade** é uma filosofia que facilita a adaptação a mudanças, a comunicação e a entrega incremental de software operacional. O **Manifesto Ágil** valoriza: Indivíduos e interações, Software em funcionamento, Colaboração com o cliente e Responder a mudanças. A agilidade consegue achatar a curva de custo das mudanças, diferentemente dos processos convencionais.
+O **Scrum** é um framework ágil popular, organizado em Sprints (períodos de 2 a 4 semanas).
+• Papéis: **Product Owner (PO)** (prioriza o valor de negócio); **Scrum Master (SM)** (facilitador que remove obstáculos); e **Equipe de Desenvolvimento** (auto-organizada).
+• Artefatos: **Backlog do Produto** (requisitos priorizados), **Backlog do Sprint** (itens para o sprint atual) e **Incremento** (versão utilizável do software).
+• Eventos: **Daily Scrum** (reunião diária de 15 minutos para sincronização), **Sprint Planning**, **Sprint Review** (demonstração do incremento) e **Sprint Retrospective** (melhoria do processo).
+Outros frameworks são: **Extreme Programming (XP)** (valoriza Programação em Pares e Refatoração contínua); **Kanban** (visualiza o fluxo e limita o Trabalho em Progresso - WIP); e **DevOps** (aplica a agilidade a toda a cadeia logística, para entrega contínua).
+3. Planejamento, Estimativa e Gestão de Riscos
+O **Planejamento do Projeto** estima recursos (Pessoas, Software Reutilizável, Ambiente), custos e cronograma, determinando o Escopo do Software e a Viabilidade do projeto. A confiabilidade das estimativas depende da complexidade, tamanho e incerteza estrutural.
+Técnicas de Estimativa usam Decomposição (baseada em funções ou processos) e Modelos Empíricos (fórmulas baseadas em dados históricos). O **Dimensionamento do Software** é feito em **LOC** (Linhas de Código), **Pontos de Função (FP)** ou **Pontos de Caso de Uso (UCPs)**. A **Harmonização de Estimativas** é crucial, comparando resultados de diferentes técnicas.
+O **Cronograma** é detalhado na Rede de Tarefas, que identifica o **Caminho Crítico**. Em projetos ágeis, a **Caixa de Tempo (Time-boxing)** limita o tempo das tarefas para garantir o progresso e o prazo. A **Equação do Software** demonstra que a compressão extrema do prazo leva a um aumento exponencial do custo, entrando na "região impossível".
+A **Gestão de Riscos** deve ser proativa. **Risco** é uma incerteza que, se ocorrer, causa perda.
+• **Débito Técnico**: Custo acumulado por adiar atividades de qualidade (como refatoração).
+• Categorias: **Projeto**, **Técnico** e **Negócio**.
+• Análise: A **Exposição ao Risco (RE)** é calculada por RE=P×C (Probabilidade x Custo/Impacto) para priorizar os riscos.
+• **RMMM (Mitigação, Monitoramento e Gestão)**: O plano define estratégias para Evitar (mitigação), Acompanhar os gatilhos (monitoramento) e o plano de Contingência (gestão) caso o risco se concretize.
+4. Métricas e Análise de Software
+A **medição** fornece critérios objetivos para a melhoria contínua. Medida é um valor numérico (e.g., 5 defeitos); Métrica é uma fórmula que relaciona medidas (e.g., defeitos por KLOC); Indicador é a interpretação da métrica para tomada de decisão. A **Análise de Software (Software Analytics)** é a análise sistemática de dados de engenharia para gerar insights em tempo real.
+Métricas de Produto e Qualidade:
+• **Complexidade Ciclomática (V(G))**: Quantifica o número de caminhos lineares independentes no código, calculado por V(G)=D+1 (D é o número de decisões). Valores altos indicam baixa manutenibilidade e maior dificuldade de teste.
+• **Métricas Orientadas a Objetos (CK Suite)**: Avaliam o design de classes (ex: Acoplamento entre Objetos de Classes - CBO e Falta de Coesão em Métodos - LCOM), sendo desejável mantê-los baixos.
+• **Eficiência na Remoção de Defeitos (DRE)**: Mede a capacidade de filtragem de erros, com valor ideal 1. DRE = E/(E+D), onde E é o número de erros encontrados antes da entrega e D é o número de defeitos após a entrega.
+• **Manutenibilidade**: Medida indiretamente pelo Tempo Médio para Alterar (MTTC).
+• **Integridade**: Mede a capacidade de resistência a ataques (probabilidade de ameaça e segurança do sistema).
+Nota: As métricas devem ser claras, não ambíguas e nunca utilizadas para punição individual.

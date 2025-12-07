@@ -1,0 +1,362 @@
+[
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Padrões de Projeto",
+            "Propósito"
+        ],
+        "questão": "Qual é o objetivo principal de um engenheiro de software ao utilizar padrões de projeto, conforme o conceito central da metodologia?",
+        "alternativas": [
+            "Criar uma solução técnica totalmente nova para um problema não documentado, validando sua eficácia experimentalmente.",
+            "Reduzir o custo das mudanças tardias através de métodos ágeis de codificação.",
+            "Reutilizar soluções comprovadas para problemas recorrentes, evitando 'reinventar a roda'.",
+            "Garantir que a classe principal (Controlador) tenha a maior coesão possível."
+        ],
+        "resposta": "C. Reutilizar soluções comprovadas para problemas recorrentes, evitando 'reinventar a roda'."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Padrões",
+            "GoF"
+        ],
+        "questão": "As três categorias de padrões de projeto Orientado a Objetos propostas pela Gang of Four (GoF) são:",
+        "alternativas": [
+            "Arquiteturais, de Dados e de Interfaces.",
+            "Monolíticos, Cliente-Servidor e em Camadas.",
+            "Criacionais, Estruturais e Comportamentais.",
+            "Generativos, Não Generativos e Idiomas."
+        ],
+        "resposta": "C. Criacionais, Estruturais e Comportamentais."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Padrões Criacionais",
+            "Singleton"
+        ],
+        "questão": "Qual das opções a seguir é uma desvantagem conhecida do padrão Singleton?",
+        "alternativas": [
+            "Aumenta a manutenibilidade e o acoplamento.",
+            "Viola o Princípio Aberto/Fechado (OCP).",
+            "Pode violar o Princípio de Responsabilidade Única (SRP) e dificultar testes unitários.",
+            "Exige a criação de múltiplas classes concretas para cada variação de objeto."
+        ],
+        "resposta": "C. Pode violar o Princípio de Responsabilidade Única (SRP) e dificultar testes unitários."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Padrões Criacionais",
+            "Factory Method"
+        ],
+        "questão": "A principal vantagem do padrão Factory Method é que ele evita o acoplamento firme entre o criador e os produtos concretos. Qual princípio de design OO isso sustenta?",
+        "alternativas": [
+            "A capacidade de trocar algoritmos durante a execução (Strategy).",
+            "O Princípio Aberto/Fechado (OCP), pois novas classes podem ser adicionadas sem modificar o código do criador.",
+            "A garantia de que uma classe terá apenas uma instância (Singleton).",
+            "O uso do lock pessimista para controle de concorrência."
+        ],
+        "resposta": "B. O Princípio Aberto/Fechado (OCP), pois novas classes podem ser adicionadas sem modificar o código do criador."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Padrões Estruturais",
+            "Adapter"
+        ],
+        "questão": "O padrão Adapter é classificado como estrutural porque foca em:",
+        "alternativas": [
+            "Centralizar a criação de objetos complexos.",
+            "Concentrar as operações e o estado em uma única classe (The Blob).",
+            "Converter a interface de um objeto (serviço) para que outro objeto (cliente) possa entendê-lo.",
+            "Separar a lógica de negócio da apresentação (MVC)."
+        ],
+        "resposta": "C. Converter a interface de um objeto (serviço) para que outro objeto (cliente) possa entendê-lo."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Padrões Comportamentais",
+            "Observer"
+        ],
+        "questão": "O padrão Observer mantém múltiplos objetos sincronizados com as mudanças de estado. Qual é o mecanismo de comunicação utilizado neste padrão?",
+        "alternativas": [
+            "O commit distribuído no repositório central.",
+            "O uso de chamadas sequenciais e síncronas entre o cliente e o servidor.",
+            "Objetos interessados se inscrevem (assinantes) para serem notificados pelo objeto publicador quando seu estado muda.",
+            "A delegação da criação de classes concretas para subclasses."
+        ],
+        "resposta": "C. Objetos interessados se inscrevem (assinantes) para serem notificados pelo objeto publicador quando seu estado muda."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Padrões Comportamentais",
+            "Strategy"
+        ],
+        "questão": "O padrão Strategy resolve o problema de trocar algoritmos dinamicamente. Qual técnica fundamental ele utiliza para implementar essa solução?",
+        "alternativas": [
+            "Utiliza herança e sobrescrita de métodos para cada algoritmo.",
+            "Define uma família de algoritmos como objetos intercambiáveis (composição).",
+            "Converte interfaces incompatíveis em uma interface unificada.",
+            "Garante que o domínio de negócio seja o centro agnóstico de tecnologia."
+        ],
+        "resposta": "B. Define uma família de algoritmos como objetos intercambiáveis (composição)."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Padrões de Arquitetura",
+            "Monolítica"
+        ],
+        "questão": "Qual é uma das principais desvantagens da Arquitetura Monolítica?",
+        "alternativas": [
+            "A dificuldade em realizar testes unitários localmente.",
+            "A centralização da gestão de dados em um único ponto de falha.",
+            "A dificuldade de escalar parcialmente e a manutenção complexa com o crescimento do sistema.",
+            "A necessidade de passar por múltiplas camadas para processar uma requisição, afetando o desempenho."
+        ],
+        "resposta": "C. A dificuldade de escalar parcialmente e a manutenção complexa com o crescimento do sistema."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Padrões de Arquitetura",
+            "Em Camadas"
+        ],
+        "questão": "Qual das seguintes estruturas NÃO faz parte da estrutura típica de uma Arquitetura em Camadas?",
+        "alternativas": [
+            "Camada de Apresentação (Interface com o Usuário).",
+            "Camada de Aplicação (Lógica de Negócio).",
+            "Camada de Serviços Utilitários.",
+            "Camada de Adapters e Ports (Arquitetura Hexagonal)."
+        ],
+        "resposta": "D. Camada de Adapters e Ports (Arquitetura Hexagonal)."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Padrões de Arquitetura",
+            "Hexagonal"
+        ],
+        "questão": "Qual é a prioridade fundamental da Arquitetura Hexagonal (Ports & Adapters)?",
+        "alternativas": [
+            "Garantir que a Visão e o Controlador estejam acoplados ao Modelo.",
+            "Garantir a implantação de todos os módulos em um único processo de execução.",
+            "Manter o Domínio (lógica de negócio) no centro, tornando-o agnóstico de tecnologia e priorizando a testabilidade.",
+            "Usar o padrão Singleton para todas as entidades de negócio."
+        ],
+        "resposta": "C. Manter o Domínio (lógica de negócio) no centro, tornando-o agnóstico de tecnologia e priorizando a testabilidade."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Antipadrões",
+            "The Blob"
+        ],
+        "questão": "O Antipadrão The Blob (Objeto Deus) é caracterizado por:",
+        "alternativas": [
+            "Usar o padrão Factory Method em demasia.",
+            "Ser uma única classe de controle que encapsula toda a funcionalidade, resultando em baixa coesão e alto acoplamento.",
+            "Manter código redundante e de baixa qualidade (Fluxo de Lava).",
+            "A replicação de código existente em vez de criar soluções genéricas."
+        ],
+        "resposta": "B. Ser uma única classe de controle que encapsula toda a funcionalidade, resultando em baixa coesão e alto acoplamento."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Antipadrões",
+            "Martelo de Ouro"
+        ],
+        "questão": "O Antipadrão Martelo de Ouro (Silver Bullet) ocorre quando o desenvolvedor:",
+        "alternativas": [
+            "Tenta abordar a solução pela modificação sucessiva do código para ver se funciona (Programação por Permutação).",
+            "Assume que uma solução técnica favorita (ex: Microsserviços) resolverá sempre qualquer problema, resultando em complexidade desnecessária.",
+            "Usa o padrão Composite para tratar objetos simples e compostos de forma diferente.",
+            "Copia e cola código existente em vez de criar soluções genéricas."
+        ],
+        "resposta": "B. Assume que uma solução técnica favorita (ex: Microsserviços) resolverá sempre qualquer problema, resultando em complexidade desnecessária."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Padrões de UI",
+            "Busca"
+        ],
+        "questão": "Qual padrão de Interface do Usuário (UI) é a solução para o problema de usuários que precisam encontrar um item ou informações específicas em meio a um grande conjunto de conteúdo, fornecendo um campo visível com botão e resultados em página separada?",
+        "alternativas": [
+            "Acordeão.",
+            "Notificações (Toasts).",
+            "Search Box (Caixa de Pesquisa).",
+            "Rolagem Infinita."
+        ],
+        "resposta": "C. Search Box (Caixa de Pesquisa)."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Padrões de UI",
+            "Listas Longas"
+        ],
+        "questão": "Para lidar com a exibição de muitos resultados em uma lista, qual padrão de interface é comumente usado, dividindo os itens em páginas discretas com botões 'próxima'/'anterior'?",
+        "alternativas": [
+            "Cards (Cartões).",
+            "Paginação.",
+            "Acordeão.",
+            "Top-level navigation."
+        ],
+        "resposta": "B. Paginação."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Padrões de UI",
+            "Informações Detalhadas"
+        ],
+        "questão": "O padrão Acordeão é a solução para qual problema de design de interface?",
+        "alternativas": [
+            "Como apresentar uma mensagem temporária e não intrusiva ao usuário.",
+            "Como organizar conteúdo funcional e visual em blocos independentes.",
+            "Como mostrar muitas informações detalhadas de forma compacta, usando itens expansíveis/colapsáveis.",
+            "Como realizar a navegação de alto nível em um sistema."
+        ],
+        "resposta": "C. Como mostrar muitas informações detalhadas de forma compacta, usando itens expansíveis/colapsáveis."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Padrões de Abstração",
+            "Idiomas"
+        ],
+        "questão": "Em termos de abstração, os Idiomas (Idioms) se encontram no nível mais baixo e são diferentes dos Padrões de Componentes e Arquitetura porque eles:",
+        "alternativas": [
+            "Descrevem a organização global dos componentes principais (esqueleto).",
+            "São modelos conceituais totalmente independentes de linguagem.",
+            "Descrevem como implementar um algoritmo ou estrutura de dados no contexto de uma linguagem de programação específica.",
+            "São soluções falhas que guiam a refatoração (Antipadrões)."
+        ],
+        "resposta": "C. Descrevem como implementar um algoritmo ou estrutura de dados no contexto de uma linguagem de programação específica."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Frameworks",
+            "Padrões"
+        ],
+        "questão": "Qual das seguintes afirmações descreve corretamente a relação entre um Padrão de Projeto e um Framework?",
+        "alternativas": [
+            "O Framework é mais abstrato e independente do código do que o Padrão de Projeto.",
+            "O Framework é uma 'miniarquitetura' reutilizável, maior que um padrão, que serve de esqueleto com 'pontos de conexão'.",
+            "O Padrão é um esqueleto com 'ganchos' que o desenvolvedor deve adaptar a um domínio específico.",
+            "Ambos são limitados a um único domínio de aplicação."
+        ],
+        "resposta": "B. O Framework é uma 'miniarquitetura' reutilizável, maior que um padrão, que serve de esqueleto com 'pontos de conexão'."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Padrões de Arquitetura",
+            "Separação de Responsabilidades"
+        ],
+        "questão": "O padrão Modelo-Visão-Controlador (MVC) alcança a separação de responsabilidades ao delegar a gestão de dados e lógica de negócio para qual componente?",
+        "alternativas": [
+            "A Visão.",
+            "O Controlador.",
+            "O Modelo.",
+            "O Adaptador."
+        ],
+        "resposta": "C. O Modelo."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Antipadrões",
+            "Copia e Cola"
+        ],
+        "questão": "A Programação Copia e Cola é um Antipadrão que leva a qual resultado negativo?",
+        "alternativas": [
+            "A incapacidade de reutilizar código entre projetos.",
+            "A concentração de toda a funcionalidade em uma única classe (The Blob).",
+            "A replicação de código existente em vez de criar soluções genéricas, gerando inconsistência na manutenção e bugs.",
+            "O acúmulo de código que não tem mais utilidade (Âncora do Barco)."
+        ],
+        "resposta": "C. A replicação de código existente em vez de criar soluções genéricas, gerando inconsistência na manutenção e bugs."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Antipadrões",
+            "Spaghetti Code"
+        ],
+        "questão": "O Código Espaguete (Spaghetti Code) é um programa cuja estrutura é quase incompreensível. Qual Antipadrão estrutural tem consequências negativas semelhantes, devido à falta de coesão?",
+        "alternativas": [
+            "Âncora do Barco.",
+            "Programação por Permutação.",
+            "The Blob (Objeto Deus).",
+            "Martelo de Ouro."
+        ],
+        "resposta": "C. The Blob (Objeto Deus)."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Padrões de Arquitetura",
+            "Desvantagem em Camadas"
+        ],
+        "questão": "Qual das seguintes situações representa uma desvantagem da Arquitetura em Camadas?",
+        "alternativas": [
+            "Maior facilidade na substituição de partes do sistema.",
+            "Aumento da segurança e confiabilidade do sistema.",
+            "O desempenho pode ser afetado devido à necessidade de passar por múltiplas camadas para processar uma requisição.",
+            "A modularidade facilita o desenvolvimento distribuído."
+        ],
+        "resposta": "C. O desempenho pode ser afetado devido à necessidade de passar por múltiplas camadas para processar uma requisição."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Padrões Comportamentais",
+            "Atribuição de Responsabilidade"
+        ],
+        "questão": "Os Padrões Comportamentais GoF tratam primariamente de:",
+        "alternativas": [
+            "A criação, composição e representação de objetos (Criacionais).",
+            "A organização de classes e objetos para construir uma estrutura maior (Estruturais).",
+            "A atribuição de responsabilidade entre objetos e a maneira como a comunicação é afetada.",
+            "A definição do esqueleto estrutural do sistema (Arquiteturais)."
+        ],
+        "resposta": "C. A atribuição de responsabilidade entre objetos e a maneira como a comunicação é afetada."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Padrões Estruturais",
+            "Composite"
+        ],
+        "questão": "O principal problema que o padrão Composite resolve é a necessidade de tratar sistemas de objetos simples e compostos (estruturas de árvore) da mesma maneira, fornecendo:",
+        "alternativas": [
+            "Uma interface para trocar dinamicamente o algoritmo.",
+            "Uma classe Singleton para o elemento raiz.",
+            "Uma interface comum para ambos os tipos de objeto.",
+            "Uma solução para o problema de lock pessimista."
+        ],
+        "resposta": "C. Uma interface comum para ambos os tipos de objeto."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Padrões de UI",
+            "Acordeão"
+        ],
+        "questão": "O padrão Acordeão é usado para apresentar informações detalhadas em um formato compacto e colapsável. Qual é o padrão de UI que trata do problema de organizar conteúdo visual e funcional de forma independente em blocos visuais?",
+        "alternativas": [
+            "Paginação.",
+            "Search Box.",
+            "Cards (Cartões).",
+            "Top-level navigation."
+        ],
+        "resposta": "C. Cards (Cartões)."
+    }
+]

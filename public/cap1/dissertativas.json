@@ -1,0 +1,77 @@
+[
+    {
+        "tipo": "dissertativo",
+        "tópicos": [
+            "Suporte de Software",
+            "Manutenção de Software",
+            "Manutenibilidade"
+        ],
+        "questão": "Explique a distinção conceitual entre <strong>Suporte de Software</strong> e <strong>Manutenção de Software</strong>, e defina o que é a <strong>Manutenibilidade</strong> no contexto da Engenharia de Software.",
+        "resposta": "<p>O <strong>Suporte de Software</strong> engloba um conjunto de atividades que corrige bugs, adapta o software a mudanças no ambiente, melhora-o com base em pedidos dos envolvidos e realiza reengenharia, começando na coleta de requisitos e terminando com a aposentadoria do sistema. Ele pode ser considerado uma atividade de apoio.</p><p>A <strong>Manutenção de Software</strong>, por sua vez, é uma função que se incorpora ao suporte e se concentra especificamente em corrigir defeitos, adaptar o software a um ambiente em mudança e melhorar a funcionalidade para atender aos clientes. A manutenção é uma atividade dispendiosa, podendo consumir de 60% a 70% dos recursos.</p><p>A <strong>Manutenibilidade</strong> é um indicativo qualitativo da facilidade de corrigir, adaptar ou melhorar o software. Um software 'manutenível' apresenta modularidade eficaz, utiliza padrões de projeto e foi construído usando padrões e convenções de codificação bem definidos.</p>"
+    },
+    {
+        "tipo": "dissertativo",
+        "tópicos": [
+            "Engenharia Reversa",
+            "Análise de Sistemas"
+        ],
+        "questão": "A Engenharia Reversa (ER) foca em três partes principais de um sistema para recuperação do projeto. Descreva quais são essas três partes (Dados, Processamento e Interfaces de Usuário), detalhando brevemente qual o objetivo da ER em relação à <strong>Engenharia Reversa para entender os Dados</strong>.",
+        "resposta": "<p>A Engenharia Reversa (ER) se concentra em três partes principais do sistema: <strong>Dados</strong>, <strong>Processamento</strong> e <strong>Interfaces de Usuário (UI)</strong>. O objetivo da ER é analisar o programa para identificar seus componentes e inter-relações e criar representações em um nível mais elevado de abstração do que o código-fonte.</p><p>Em relação à <strong>Engenharia Reversa para entender os Dados</strong>, essa atividade ocorre em diferentes níveis de abstração e frequentemente é a primeira tarefa da reengenharia. O foco é a recuperação das estruturas internas de dados do programa (como classes de objetos) e a arquitetura de banco de dados.</p><p>Em um nível de sistema, estruturas de dados globais (como arquivos ou bancos de dados) podem passar por engenharia reversa para acomodar novos paradigmas de gerenciamento de banco de dados.</p>"
+    },
+    {
+        "tipo": "dissertativo",
+        "tópicos": [
+            "Leis de Evolução de Software de Lehman",
+            "Reengenharia"
+        ],
+        "questão": "A Teoria Unificada para a Evolução do Software de Lehman estabelece que sistemas tipo E (os que evoluem em contextos reais) devem ser adaptados continuamente. Escolha duas Leis de Lehman e explique como elas justificam a necessidade de se investir em reengenharia proativa, em vez de apenas manutenção reativa.",
+        "resposta": "<p>Duas Leis de Lehman que justificam o investimento em reengenharia proativa são:</p><p>1) <strong>Lei da Mudança Contínua</strong>: Afirma que o software implementado em um contexto de computação real deve ser adaptado continuamente, ou se tornará progressivamente menos satisfatório.</p><p>2) <strong>Lei da Complexidade Crescente</strong>: Estabelece que, à medida que um sistema tipo E evolui, sua complexidade aumenta, a menos que seja feito um trabalho ativo para mantê-la ou reduzi-la.</p><p>Essas leis exigem uma abordagem proativa (como a reengenharia), pois a manutenção reativa apenas corrige defeitos ou adapta-se passivamente. A reengenharia é o processo de evolução que aplica práticas modernas para combater a complexidade crescente e evitar que a qualidade diminua (Lei da Qualidade em Declínio), mantendo o sistema viável.</p>"
+    },
+    {
+        "tipo": "dissertativo",
+        "tópicos": [
+            "Reengenharia de Software",
+            "Processo de Reengenharia"
+        ],
+        "questão": "Descreva o modelo de processo cíclico de reengenharia de software, citando e explicando brevemente as três primeiras atividades que antecedem a Reestruturação do Código e qual é o propósito da <strong>Engenharia Direta</strong> no ciclo.",
+        "resposta": "<p>O modelo de processo de reengenharia de software é cíclico e define seis atividades principais. As três atividades iniciais que antecedem a Reestruturação do Código são:</p><p>1) <strong>Análise de Inventário</strong>: Avaliação de todas as aplicações ativas (tamanho, idade, criticidade nos negócios, manutenibilidade) para identificar candidatas à reengenharia e alocar recursos.</p><p>2) <strong>Reestruturação dos Documentos</strong>: Lida com a documentação deficiente de sistemas legados, escolhendo a opção de documentação mais apropriada (mínima, apenas alterações, ou documentação total de um sistema fundamental).</p><p>3) <strong>Engenharia Reversa (ER)</strong>: Analisa o programa para extrair informações do projeto (dados, arquitetura e procedural) e criar uma representação em um nível mais elevado de abstração.</p><p>O propósito da <strong>Engenharia Direta</strong>, que é a atividade final do ciclo, é utilizar as informações de projeto recuperadas e reestruturadas para alterar ou reconstituir o sistema. A Engenharia Direta geralmente recria a função do sistema existente, mas <strong>acrescenta novas funções</strong> ou melhora o desempenho geral, integrando novos requisitos de usuário e tecnologia.</p>"
+    },
+    {
+        "tipo": "dissertativo",
+        "tópicos": [
+            "Suporte Proativo",
+            "Dívida Técnica"
+        ],
+        "questão": "A primeira tarefa que os engenheiros de software precisam completar antes de responder a qualquer solicitação de manutenção é entender o sistema, que muitas vezes possui 'débito técnico'. Explique o que é a <strong>Dívida Técnica</strong> e por que o <strong>Suporte Proativo de Software</strong> (que inclui manutenção preventiva e perfectiva) é a abordagem preferível para lidar com a qualidade, em contraste com o conserto reativo de defeitos.",
+        "resposta": "<p>A <strong>Dívida Técnica</strong> (ou débito técnico) é o custo acumulado de decisões inadequadas no desenvolvimento, causado por desenvolvedores que agregam recursos sem documentá-los ou sem considerar seu impacto no sistema como um todo. Ela se manifesta como código mal estruturado e más decisões arquiteturais.</p><p>O <strong>Suporte Proativo de Software</strong>, que inclui manutenção preventiva e perfectiva, é preferível ao conserto reativo porque o conserto de software é caro e demorado, e a abordagem proativa exige que os engenheiros criem ferramentas e processos para antecipar problemas.</p><p>Essa proatividade busca indicadores de que o produto pode ter problemas de qualidade, permitindo que os desenvolvedores planejem a evolução ou refatoração do produto antes que os clientes descubram falhas críticas e fiquem insatisfeitos.</p>"
+    },
+    {
+        "tipo": "dissertativo",
+        "tópicos": [
+            "Análise de Custo-Benefício",
+            "Reengenharia"
+        ],
+        "questão": "No modelo de Custo-Benefício para Reengenharia, os custos associados à manutenção continuada ($Cmanut$) dependem dos parâmetros P1, P2 e P3. Para calcular os custos associados à reengenharia ($Creeng$), são necessários os parâmetros P4, P5, P6 e P7. Descreva o que representam <strong>P4, P5, P6 e P7</strong> e explique por que a determinação precisa desses valores é crucial para a decisão estratégica de prosseguir com a reengenharia.",
+        "resposta": "<p>Para calcular os custos projetados após a reengenharia ($Creeng$), são definidos os seguintes parâmetros:</p><ul><li><strong>P4 = Custo de manutenção anual previsto após a reengenharia.</strong></li><li><strong>P5 = Custo anual previsto das operações após a reengenharia.</strong></li><li><strong>P6 = Valor de negócio anual previsto após a reengenharia.</strong></li><li><strong>P7 = Custos estimados da reengenharia (custos iniciais do projeto).</strong></li></ul><p>A determinação precisa desses valores (P4 a P7) é crucial porque a decisão de realizar a reengenharia é estratégica e absorve recursos.</p><p>A análise de custo-benefício compara o custo do estado atual ($Cmanut$) com os custos projetados da reengenharia ($Creeng$). A precisão de P4, P5 e P6 é vital, pois eles definem o retorno futuro do investimento, garantindo que a reengenharia resulte em uma redução nos custos de manutenção e suporte (P4, P5) e um aumento no valor de negócio (P6), tornando a estratégia eficiente em termos de custo.</p>"
+    },
+    {
+        "tipo": "dissertativo",
+        "tópicos": [
+            "Refatoração",
+            "Engenharia Direta",
+            "Arquitetura"
+        ],
+        "questão": "Há uma diferença sutil, mas importante, entre <strong>Refatoração de Software</strong> e <strong>Engenharia Direta</strong> no processo de evolução. Explique qual é essa diferença, focando na distinção de escopo (módulo vs. arquitetura) e no objetivo de mudança de comportamento do sistema.",
+        "resposta": "<p>A Refatoração de Software (ou reestruturação) é o processo de alterar um sistema para melhorar sua estrutura interna, mas sem alterar o seu comportamento externo (funcionalidade). Seu escopo geralmente se concentra nos detalhes de projeto de módulos e estruturas de dados locais. Ela é aplicada quando a arquitetura básica é sólida e apenas as partes técnicas internas precisam de retrabalho.</p><p>Em contraste, a Engenharia Direta utiliza as informações recuperadas do projeto não só para reconstituir o sistema, mas também para alterá-lo. Se a refatoração for além dos limites dos módulos e abranger a arquitetura do software, ou se ela recriar a função existente e <strong>acrescentar novas funções</strong>, melhorando o desempenho geral e integrando novos requisitos de usuário, ela passa a ser considerada Engenharia Direta.</p>"
+    },
+    {
+        "tipo": "dissertativo",
+        "tópicos": [
+            "Refatoração de Dados",
+            "Reestruturação de Dados",
+            "Impacto Arquitetural"
+        ],
+        "questão": "Explique as duas formas mais simples de reprojeto de dados (padronização de registro e racionalização de nomes de dados) que ocorrem na Refatoração de Dados. Em seguida, diferencie a <strong>Reestruturação dos Dados</strong> da Reestruturação do Código quanto ao seu nível de abstração e ao impacto que a mudança de dados impõe sobre a arquitetura do sistema.",
+        "resposta": "<p>A Refatoração de Dados se inicia com a análise do código-fonte, buscando extrair itens de dados e objetos. As duas formas mais simples de reprojeto de dados são:</p><p>1) Padronização de registro de dados: esclarece as definições de dados para obter consistência entre nomes de itens de dados ou formatos de registros físicos em uma estrutura de dados existente.</p><p>2) Racionalização de nomes de dados: garante que todas as convenções de nomes de dados estejam de acordo com os padrões locais e elimina pseudônimos (aliases).</p><p>A Reestruturação dos Dados é uma atividade de reengenharia completa que ocorre em um nível de abstração relativamente alto, diferentemente da reestruturação de código que é de baixo nível. Como a arquitetura de dados tem forte influência sobre a arquitetura do programa e os algoritmos que a constituem, mudanças nos dados (como a transformação de um formato de arquivo para um sistema de banco de dados relacional) resultarão, invariavelmente, em mudanças de arquitetura ou em nível de código.</p>"
+    }
+]

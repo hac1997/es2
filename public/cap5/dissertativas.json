@@ -1,0 +1,78 @@
+[
+    {
+        "tipo": "dissertativo",
+        "tópicos": [
+            "Qualidade de Software",
+            "Visões da Qualidade",
+            "Satisfação do Usuário"
+        ],
+        "questão": "Defina a Qualidade de Software no sentido mais geral e cite duas das cinco visões propostas por David Garvin para descrever a qualidade, focando na perspectiva do Usuário e do Fabricante. Como a Satisfação do Usuário é definida por Robert Glass?",
+        "resposta": "No sentido mais geral, a Qualidade de Software pode ser definida como: uma gestão de qualidade efetiva aplicada de modo a criar um produto útil que forneça valor mensurável para aqueles que o produzem e para aqueles que o utilizam. As visões de Garvin incluem a Visão do Usuário, que mede a qualidade em termos da capacidade do software de atender às metas e objetivos específicos do usuário, e a Visão do Fabricante, que define a qualidade como a conformidade do produto com suas especificações originais. A Satisfação do Usuário, segundo Robert Glass, é a combinação de produto compatível + boa qualidade + entrega dentro do orçamento e do prazo previsto."
+    },
+    {
+        "tipo": "dissertativo",
+        "tópicos": [
+            "Custo da Qualidade (CoQ)",
+            "Aumento de Custo de Erros",
+            "Lei de Meskimen"
+        ],
+        "questão": "Liste e defina os três componentes principais do Custo da Qualidade (CoQ). Explique o impacto do ciclo de desenvolvimento no custo de correção de erros, usando como base a comparação entre o custo médio de correção na fase de Codificação e na fase de Manutenção (pós-entrega). O que a Lei de Meskimen sintetiza sobre este dilema?",
+        "resposta": "Os três componentes do Custo da Qualidade (CoQ) são: 1) Custos de Prevenção (custos para evitar defeitos antes que ocorram, como planejamento e revisões), 2) Custos de Avaliação (custos para compreender a condição do produto, como revisões técnicas, coleta de métricas e testes), e 3) Custos de Falhas (custos que desaparecem se nenhum erro surge, divididos em falhas internas e externas). O custo relativo para corrigir erros aumenta drasticamente à medida que o projeto avança. O custo médio para corrigir um defeito durante a codificação é de aproximadamente US$ 977 por erro, mas na fase de manutenção (após a entrega) sobe para US$ 14.102 por erro. A Lei de Meskimen sintetiza o dilema da qualidade ao enunciar: “Nunca há tempo para fazer a coisa certa, mas sempre há tempo para fazê-la de novo”."
+    },
+    {
+        "tipo": "dissertativo",
+        "tópicos": [
+            "Verificação e Validação (V&V)",
+            "Teste como Rede de Segurança"
+        ],
+        "questão": "Diferencie Verificação de Validação no contexto de V&V, incluindo a pergunta-chave associada a cada conceito (segundo Boehm). Explique por que o teste de software não deve ser encarado como uma 'rede de segurança' capaz de consertar todos os problemas de qualidade.",
+        "resposta": "A Verificação refere-se ao conjunto de tarefas que garantem que o software implemente corretamente uma função específica, sendo a pergunta-chave: “Estamos criando o produto corretamente?”. A Validação refere-se ao conjunto de tarefas que asseguram que o software foi criado e pode ser rastreado segundo os requisitos do cliente, sendo a pergunta-chave: “Estamos criando o produto certo?”. O teste não deve ser visto como uma rede de segurança, pois o teste não pode adicionar qualidade. Se a qualidade não for incorporada por meio de um processo de engenharia de software eficaz (métodos sólidos, revisões técnicas), o teste não pode ser aplicado no final do processo para consertar todos os problemas."
+    },
+    {
+        "tipo": "dissertativo",
+        "tópicos": [
+            "Teste de Unidade",
+            "Scaffolding",
+            "Driver vs. Stub"
+        ],
+        "questão": "O Teste de Unidade (ou Componente) é o primeiro nível de teste. Qual é o foco principal deste teste em relação ao código interno? Explique o que é Scaffolding e diferencie os dois softwares auxiliares que o compõem, Pseudocontrolador (Driver) e Pseudocontrolado (Stub).",
+        "resposta": "O Teste de Unidade foca na menor unidade de projeto do software (componente, módulo ou classe). O foco principal é a lógica interna de processamento e as estruturas de dados dentro dos limites do componente. Scaffolding (estrutura temporária) é o código auxiliar necessário para criar um framework de teste para isolar o componente em um ambiente de teste. O Pseudocontrolador (Driver) simula o módulo chamador (superior), aceitando os dados de teste e passando-os para o componente a ser testado. O Pseudocontrolado (Stub) simula os módulos subordinados (chamados pelo componente testado), retornando valores simulados e imitando o comportamento dos módulos ausentes."
+    },
+    {
+        "tipo": "dissertativo",
+        "tópicos": [
+            "Teste Caixa-Branca",
+            "Complexidade Ciclomática"
+        ],
+        "questão": "Qual é o principal foco do Teste Caixa-Branca (também chamado Teste Estrutural) e quais são dois objetivos de cobertura que ele busca? Explique o que a métrica Complexidade Ciclomática ($mathbf{V(G)}$) quantifica e qual seu propósito no Teste de Caminho Básico.",
+        "resposta": "O Teste Caixa-Branca (ou Estrutural) usa a estrutura de controle interna descrita no projeto no nível de componentes para derivar casos de teste. Dois objetivos de cobertura são: garantir que todos os caminhos independentes de um módulo foram exercitados pelo menos uma vez, e exercitar todas as decisões lógicas nos seus estados verdadeiro e falso. A Complexidade Ciclomática ($mathbf{V(G)}$) é uma métrica de software que fornece uma medida quantitativa da complexidade lógica de um programa. Seu propósito no Teste de Caminho Básico é definir o número de caminhos independentes no conjunto-base de um programa, fornecendo um limite superior para a quantidade de testes que devem ser realizados para garantir que todos os comandos sejam executados."
+    },
+    {
+        "tipo": "dissertativo",
+        "tópicos": [
+            "Teste Caixa-Preta",
+            "Particionamento de Equivalência",
+            "Análise de Valor Limite"
+        ],
+        "questão": "Qual é o principal foco do Teste Caixa-Preta (também chamado Teste Comportamental) em relação à estrutura e aos requisitos? Explique a diferença complementar entre as técnicas de Particionamento de Equivalência e Análise de Valor Limite (BVA) no projeto de casos de teste.",
+        "resposta": "O Teste Caixa-Preta foca nos requisitos funcionais do software e no domínio das informações (entradas e saídas), sem considerar a estrutura de controle interna. O Particionamento de Equivalência divide o domínio de entrada em classes de dados válidas e inválidas, de modo que a seleção de um único caso de teste em uma classe pressupõe que os demais valores da mesma classe terão o mesmo resultado, reduzindo o número de testes necessários. A Análise de Valor Limite (BVA) é uma técnica complementar que se concentra em selecionar casos de teste nas fronteiras (limites) das classes de equivalência, pois a experiência mostra que um número maior de erros ocorre nessas transições."
+    },
+    {
+        "tipo": "dissertativo",
+        "tópicos": [
+            "Teste de Integração Incremental",
+            "Top-Down vs. Bottom-Up"
+        ],
+        "questão": "Por que a Integração Não Incremental (Big Bang) é uma abordagem ineficaz para o Teste de Integração? Descreva a principal diferença entre as estratégias de Integração Descendente (Top-Down) e Integração Ascendente (Bottom-Up) em termos de ordem de construção e uso de scaffolding.",
+        "resposta": "A Integração Não Incremental (Big Bang) é ineficaz porque todos os componentes são combinados antecipadamente, e o programa inteiro é testado de uma vez, resultando em caos e tornando o isolamento das causas dos erros muito difícil. A Integração Descendente (Top-Down) começa pelo módulo de controle principal e prossegue para baixo, substituindo inicialmente os módulos subordinados por Pseudocontrolados (Stubs). A Integração Ascendente (Bottom-Up) começa pelos módulos atômicos (níveis mais baixos), combinando-os em agregados (clusters) e testando-os com Pseudocontroladores (Drivers) que simulam os módulos superiores."
+    },
+    {
+        "tipo": "dissertativo",
+        "tópicos": [
+            "Teste de Regressão",
+            "Teste Fumaça (Smoke Test)"
+        ],
+        "questão": "Defina o Teste de Regressão e explique seu objetivo crucial em um projeto incremental. O que é o Teste Fumaça (Smoke Test), qual o seu propósito, e como ele se relaciona com a Integração Contínua?",
+        "resposta": "O Teste de Regressão é a reexecução do mesmo subconjunto de testes que já foram executados. Seu objetivo crucial é assegurar que as alterações realizadas (seja por integração de novos módulos, refatoração ou correção de bugs) não tenham propagado efeitos colaterais indesejados. O Teste Fumaça (Smoke Test) é uma abordagem diária de teste de integração que realiza uma série de testes para descobrir erros 'bloqueadores' (show-stoppers) que impediriam a execução correta da construção. O Teste Fumaça é frequentemente usado em conjunto com a Integração Contínua (CI), que exige a fusão de componentes uma ou mais vezes ao dia, pois garante uma checagem de saúde rápida do sistema após cada build."
+    }
+]

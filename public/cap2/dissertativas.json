@@ -1,0 +1,102 @@
+[
+    {
+        "tipo": "dissertativo",
+        "tópicos": [
+            "Modelos de Processo Prescritivo",
+            "Fluxo de Processo",
+            "Modelo Cascata"
+        ],
+        "questão": "Descreva o Fluxo de Processo Linear (Modelo Cascata), identificando suas cinco atividades metodológicas genéricas (Comunicação, Planejamento, Modelagem, Construção e Entrega). Explique por que, apesar de ser o paradigma mais antigo, ele é frequentemente inadequado para projetos de software modernos e cite dois problemas associados ao seu uso.",
+        "resposta": "<p>O Fluxo de Processo Linear (Modelo Cascata) executa as cinco atividades metodológicas em sequência, começando com a comunicação e culminando com a entrega. As atividades são: Comunicação, Planejamento, Modelagem, Construção e Entrega.</p><p>O modelo Cascata é inadequado para projetos modernos e em constante mudança porque ele pressupõe que os requisitos são bem compreendidos e estáveis.</p><p>Dois problemas associados são: 1) Projetos reais raramente seguem o fluxo sequencial proposto, e 2) É difícil para o cliente estabelecer explicitamente todas as necessidades no início do projeto, resultando em software operacional que só estará disponível próximo ao final do projeto.</p>"
+    },
+    {
+        "tipo": "dissertativo",
+        "tópicos": [
+            "Modelos Evolucionários",
+            "Prototipação",
+            "Modelo Espiral"
+        ],
+        "questão": "Diferencie o Modelo de Prototipação do Modelo Espiral em termos de objetivo primário e como cada um lida com a mitigação de riscos. Explique a principal ressalva técnica ao uso de um protótipo puro.",
+        "resposta": "<p>O Modelo de Prototipação é frequentemente usado quando os requisitos são obscuros. Seu objetivo é identificar e refinar os requisitos do software, entregando rapidamente um protótipo para feedback do cliente. O Modelo de Prototipação auxilia na compreensão do que deve ser construído, mas corre o risco de que os envolvidos vejam o protótipo (que pode ter sido feito com concessões na implementação) como o sistema final, sem que a qualidade global ou a manutenção a longo prazo tenham sido consideradas.</p><p>Já o Modelo Espiral é um modelo evolucionário que une a natureza iterativa da prototipação aos aspectos sistemáticos do modelo Cascata. Seu principal foco em cada circuito é a análise de riscos (levados em conta à medida que cada revolução é realizada). Ele usa a prototipação como mecanismo de redução de riscos, e o software é desenvolvido em uma série de versões evolucionárias cada vez mais completas.</p>"
+    },
+    {
+        "tipo": "dissertativo",
+        "tópicos": [
+            "Agilidade",
+            "Manifesto Ágil",
+            "Custo das Mudanças"
+        ],
+        "questão": "Explique o que é a Agilidade no contexto da engenharia de software e cite dois dos quatro Valores do Manifesto Ágil. Como a adoção de um processo ágil bem elaborado impacta o custo das mudanças ao longo do ciclo de desenvolvimento, em comparação com os processos convencionais?",
+        "resposta": "<p>Agilidade é uma filosofia que abrange a estruturação e atitudes de equipe para facilitar a comunicação, entrega rápida de software operacional, e adaptação às mudanças. Dois valores do Manifesto Ágil são: Indivíduos e interações acima de processos e ferramentas e Software em funcionamento acima de documentação abrangente (ou Colaboração com o cliente acima de negociação contratual ou Responder a mudanças acima de seguir um plano).</p><p>Um processo ágil bem elaborado é capaz de 'achatar' a curva de custo das mudanças ao longo do tempo. Em processos convencionais, o custo das mudanças aumenta de forma não linear à medida que o projeto avança (sendo muito caro fazer grandes mudanças nas fases finais); já os processos ágeis, por serem incrementais e iterativos, permitem assimilar alterações posteriormente em um projeto sem um impacto significativo nos custos ou no tempo.</p>"
+    },
+    {
+        "tipo": "dissertativo",
+        "tópicos": [
+            "Scrum",
+            "Artefatos do Scrum",
+            "Papéis do Scrum"
+        ],
+        "questão": "Descreva os três Artefatos Principais do Scrum (Backlog do Produto, Backlog do Sprint e Incremento). Explique a responsabilidade do Product Owner em relação ao Backlog do Produto e quem define que o Incremento está 'pronto' para ser demonstrado.",
+        "resposta": "<p>Os três Artefatos Principais do Scrum são: 1) Backlog do Produto (lista priorizada de requisitos ou características que agregam valor de negócio para o cliente); 2) Backlog do Sprint (subconjunto de itens do Backlog do Produto selecionado para ser completado no sprint ativo atual); e 3) Incremento (a união de todos os itens completados nos sprints anteriores e no sprint atual, que é uma versão utilizável do software entregue).</p><p>O Product Owner é responsável por ordenar os itens no Backlog do Produto para cumprir as metas mais importantes dos envolvidos e é a única pessoa que pode decidir encerrar um sprint antecipadamente. A Equipe de Desenvolvimento é quem decide quando o incremento está pronto e pode ser demonstrado para o Product Owner.</p>"
+    },
+    {
+        "tipo": "dissertativo",
+        "tópicos": [
+            "Planejamento",
+            "Estimativa",
+            "Viabilidade"
+        ],
+        "questão": "O planejamento de software é uma atividade iterativa que se torna mais precisa com o tempo (Cone da Incerteza). Cite e defina os três fatores intrínsecos do projeto que afetam a confiabilidade das estimativas. Em que consiste a Viabilidade de um projeto?",
+        "resposta": "<p>A confiabilidade das estimativas é afetada pela: 1) Complexidade do Projeto (uma medida relativa afetada pela familiaridade com esforços passados, sendo que a complexidade alta aumenta a incerteza); 2) Tamanho do Projeto (à medida que o tamanho aumenta, a interdependência entre os vários elementos do software cresce rapidamente, dificultando a decomposição); e 3) Grau de Incerteza Estrutural (o grau em que os requisitos foram solidificados, a facilidade de separação das funções e a natureza hierárquica das informações).</p><p>A Viabilidade do projeto consiste em determinar se o sistema pode ser criado usando a tecnologia, o dinheiro, o tempo e os outros recursos disponíveis, sendo uma consideração importante, mas não a mais crucial, que é o risco de negócio.</p>"
+    },
+    {
+        "tipo": "dissertativo",
+        "tópicos": [
+            "Estimativa",
+            "Dimensionamento",
+            "Harmonização"
+        ],
+        "questão": "Explique o que é a Harmonização de Estimativas e por que ela é necessária no planejamento. Quais são as duas principais causas de divergência nas estimativas que a equipe deve investigar durante o processo de harmonização?",
+        "resposta": "<p>A Harmonização de Estimativas é a comparação e conciliação de duas ou mais estimativas independentes, obtidas por abordagens diferentes (como LOC, Pontos de Função, Processo ou Casos de Uso), para verificar a confiabilidade dos resultados. A harmonização é necessária porque a estimativa é mais arte do que ciência, e o uso de múltiplas técnicas proporciona maior segurança e reduz o risco inerente.</p><p>Estimativas que divergem muito podem ser atribuídas a duas principais causas: 1) O escopo do projeto não é entendido adequadamente ou foi mal interpretado pelo planejador, ou 2) Os dados de produtividade (métricas de referência) usados para as técnicas de estimativa baseada em problema são inadequados para a aplicação ou foram mal aplicados.</p>"
+    },
+    {
+        "tipo": "dissertativo",
+        "tópicos": [
+            "Gestão de Riscos",
+            "Risco Proativo vs. Reativo",
+            "Débito Técnico"
+        ],
+        "questão": "Diferencie as estratégias de risco Reativa (Modo de Combate a Incêndio) e Proativa em projetos de software. Defina o Débito Técnico e explique por que a acumulação de Débito Técnico é um risco que se agrava com o tempo.",
+        "resposta": "<p>Uma estratégia de risco Reativa monitora o projeto à procura de riscos, mas a equipe não faz nada até que o problema ocorra, entrando em 'modo de combate a incêndio' para corrigi-lo. Em contraste, a estratégia Proativa começa muito antes do trabalho técnico, identificando os riscos em potencial, avaliando sua probabilidade e impacto, e estabelecendo um plano de gestão (RMMM) para evitá-los ou controlá-los de maneira eficaz.</p><p>O Débito Técnico é o termo usado para descrever os custos (esforço, tempo e recursos) associados ao adiamento de atividades como documentação e refatoração. O débito técnico não pago aumenta com o tempo, pois os problemas não resolvidos introduzidos no projeto são agravados, hipotecando o futuro do projeto.</p>"
+    },
+    {
+        "tipo": "dissertativo",
+        "tópicos": [
+            "Gestão de Riscos",
+            "Análise de Risco",
+            "RMMM"
+        ],
+        "questão": "Explique como é calculada a Exposição ao Risco (RE) e qual seu propósito. Descreva, em linhas gerais, os três componentes do plano RMMM (Mitigação, Monitoramento e Gestão) e sua função na estratégia proativa de risco.",
+        "resposta": "<p>A Exposição ao Risco (RE) é determinada pela relação $RE = P \times C$, onde $P$ é a probabilidade de ocorrência de um risco e $C$ é o custo (impacto ou perda) para o projeto, caso o risco ocorra. O propósito da RE é quantificar a ameaça e priorizar os riscos, permitindo que os recursos sejam alocados onde terão maior impacto.</p><p>Os três componentes do plano RMMM são: 1) Mitigação: Estratégias para evitar o risco ou reduzir sua probabilidade/impacto antes que ocorra; 2) Monitoramento: Acompanhamento dos fatores (gatilhos) que podem indicar se o risco está se tornando mais ou menos provável, garantindo que as etapas de mitigação estejam sendo aplicadas; e 3) Gestão (ou Contingência): O plano de ação para ser executado caso os esforços de mitigação falhem e o risco se torne uma realidade, garantindo uma resposta controlada e eficaz.</p>"
+    },
+    {
+        "tipo": "dissertativo",
+        "tópicos": [
+            "Métricas",
+            "Definições de Métricas",
+            "Software Analytics"
+        ],
+        "questão": "No contexto da medição de software, defina e diferencie claramente Medida, Métrica e Indicador. Explique o que é Análise de Software (Software Analytics) e qual o seu propósito principal.",
+        "resposta": "<p>Uma Medida é um único ponto de dado coletado (e.g., o número de erros descobertos). Uma Métrica de software relaciona medidas individuais de alguma maneira (e.g., o número médio de erros encontrados por revisão). Um Indicador é uma métrica ou combinação de métricas que fornece informações sobre o processo ou produto, sendo usado para tomar decisões gerenciais (e.g., 'a qualidade do produto está caindo').</p><p>A Análise de Software (Software Analytics) é a análise computacional sistemática de dados de engenharia de software para fornecer aos gerentes e engenheiros insights e observações significativas, capacitando-os para a tomada de melhores decisões. Seu propósito é traduzir grandes conjuntos de dados dinâmicos em conselhos atuais e acionáveis, como prever defeitos ou avaliar a estabilidade do protótipo em evolução.</p>"
+    },
+    {
+        "tipo": "dissertativo",
+        "tópicos": [
+            "Métricas de Qualidade",
+            "DRE",
+            "Complexidade Ciclomática"
+        ],
+        "questão": "Defina e forneça a fórmula da Eficiência na Remoção de Defeitos (DRE), explicando o que um valor de DRE próximo a 1,0 indica para a equipe de desenvolvimento. Explique também o que a Complexidade Ciclomática quantifica e qual é o seu valor máximo recomendado para um módulo, do ponto de vista de manutenibilidade.",
+        "resposta": "<p>A Eficiência na Remoção de Defeitos (DRE) é uma medida da capacidade de filtragem das ações de garantia de qualidade e controle aplicadas ao longo do processo. Sua fórmula é $DRE = E / (E + D)$, onde $E$ é o número de erros encontrados antes que o software seja fornecido ao usuário final e $D$ é o número de defeitos descobertos depois que o software é entregue. Um valor de DRE próximo a 1,0 é o ideal e indica que a equipe está encontrando erros de forma eficaz, antes que se tornem defeitos.</p><p>A Complexidade Ciclomática quantifica o número de caminhos lineares independentes em um programa. O valor máximo para um módulo é frequentemente citado como 10, pois valores altos (acima de 10) sugerem maior complexidade de teste e manutenibilidade mais baixa.</p>"
+    }
+]

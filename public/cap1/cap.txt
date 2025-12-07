@@ -1,0 +1,97 @@
+SUPORTE, MANUTENÇÃO E REENGENHARIA DE SOFTWARE
+Os conceitos-chave tratados abordam a estratégia de suporte, manutenção e evolução de software, incluindo as técnicas de engenharia reversa e reengenharia de sistemas legados.
+CONCEITOS-CHAVE IDENTIFICADOS
+Os principais conceitos identificados nas fontes são:
+• **Suporte de Software**
+• **Manutenção de Software** (Corretiva, Adaptativa, Perfectiva, Preventiva)
+• **Suportabilidade** e **Manutenibilidade**
+• **Evolução** e **Reengenharia de Software**
+• **Leis da Evolução do Software de Lehman**
+• **Engenharia Reversa (ER)**
+• **Análise Estática** e **Análise Dinâmica** (Técnicas de ER)
+• **Refatoração** (Código, Dados, Arquitetura)
+• **Engenharia Direta**
+• **Dívida Técnica**
+• **Análise de Inventário**
+• **Reestruturação dos Documentos**
+• **Análise de Custo-Benefício** (para Reengenharia)
+
+--------------------------------------------------------------------------------
+RESUMO CONCEITUAL CONCISO E COMPLETO
+1. Suporte e Manutenção de Software
+O **suporte de software** é um conjunto contínuo de atividades que corrige bugs, adapta o software a mudanças no ambiente, melhora-o com base em pedidos dos envolvidos e realiza reengenharia para aprimorar funcionalidade e desempenho. Ele se inicia com a coleta de requisitos e termina com a aposentadoria do sistema. A **suportabilidade** é a capacidade de fornecer suporte a um sistema durante toda sua vida útil, envolvendo o provimento de infraestrutura, software adicional e mão de obra.
+A **manutenção de software** é uma função que corrige defeitos, adapta o software a ambientes em mudança e melhora a funcionalidade para atender aos clientes. Ela é uma atividade dispendiosa, podendo consumir de 60% a 70% dos recursos. A **manutenibilidade** é um indicador qualitativo da facilidade de corrigir, adaptar ou melhorar um software.
+Os quatro tipos de manutenção são: **corretiva** (corrige falhas/defeitos), **adaptativa** (adapta o software a novas necessidades ambientais), **perfectiva** (adiciona novas funcionalidades) e **preventiva** (previne a decadência do sistema). O suporte proativo foca em antecipar e resolver problemas de qualidade antes que se tornem emergências, sendo preferível ao conserto reativo.
+2. Evolução e Reengenharia de Software
+O software deve evoluir continuamente para se manter satisfatório devido a um ambiente de tecnologia e negócios que muda rapidamente. A **evolução de software** é o processo de reengenharia que cria versões existentes com maior qualidade e melhor manutenibilidade.
+A **Teoria Unificada para a Evolução do Software (Leis de Lehman)** descreve essa necessidade. As leis incluem:
+- Sistemas no mundo real devem ser adaptados continuamente (**Lei da Mudança Contínua**).
+- A complexidade de um sistema aumenta com a evolução, a menos que haja trabalho para reduzi-la (**Lei da Complexidade Crescente**).
+- O conteúdo funcional deve ser continuamente ampliado para manter a satisfação do usuário (**Lei do Crescimento Contínuo**).
+- A qualidade diminui se o sistema não for rigorosamente mantido e adaptado (**Lei da Qualidade em Declínio**).
+A **reengenharia de software** utiliza um sistema existente como base para gerar um novo sistema com qualidade equivalente à de um software criado usando práticas modernas. É aplicada em sistemas legados que possuem **dívida técnica**, o custo acumulado de código mal estruturado e más decisões arquiteturais.
+O processo de reengenharia é cíclico e inclui as atividades:
+- **Análise de Inventário**: Avaliação do portfólio de aplicações ativas.
+- **Reestruturação dos Documentos**: Criação ou atualização de documentação.
+- **Engenharia Reversa**.
+- **Refatoração do Código**: Modificação do código para melhorar a estrutura interna sem alterar o comportamento externo.
+- **Reestruturação dos Dados**: Reprojeto dos dados, o que pode causar mudanças arquiteturais.
+- **Engenharia Direta**: Utiliza as informações recuperadas para alterar ou reconstituir o sistema, melhorando sua qualidade e integrando novos requisitos.
+A viabilidade da reengenharia é determinada pela **Análise de Custo-Benefício**, comparando o custo da manutenção continuada (Cmanut) com os custos projetados da reengenharia (Creeng).
+3. Engenharia Reversa e Análise de Software
+A **Engenharia Reversa (ER)** é o processo de analisar um programa para identificar seus componentes e inter-relações e criar representações do sistema em um nível mais abstrato do que o código-fonte. A ER é essencial para entender o sistema antes de modificações.
+A ER foca em três partes:
+• Dados: Entender estruturas internas de dados (classes de objetos) e a arquitetura de banco de dados.
+• Processamento: Entender as abstrações procedurais e criar um diagrama de blocos que representa a interação entre abstrações funcionais.
+• Interfaces de Usuário (UI): Especificar a estrutura e o comportamento da interface para recriá-la, possivelmente com uma nova metáfora de interação.
+As técnicas de análise de software se dividem em:
+• **Análise Estática**: Análise do software sem executá-lo, focando na estrutura do código-fonte ou binários. Objetivos incluem reconstruir a estrutura e analisar a complexidade de funções (O(1), O(n), O(n²)). Ferramentas como SonarQube são usadas. A desmontagem (disassembly) e a decompilação são usadas para código binário.
+• **Análise Dinâmica**: Análise do comportamento do software enquanto ele está em execução. Permite identificar comportamentos ocultos e não requer acesso ao código-fonte. Os métodos incluem depuração e monitoramento de chamadas de sistema.
+4. Refatoração e Reestruturação
+A **Refatoração** (software refactoring) é a modificação do código para melhorar a estrutura interna e manutenibilidade sem alterar seu comportamento externo. Ela é usada quando a arquitetura básica é sólida. A refatoração de código inclui a remoção de código duplicado e o encapsulamento de campos.
+A **Refatoração de Dados** começa com a análise do código-fonte e reprojeto dos dados, incluindo padronização de registro de dados e racionalização de nomes de dados. A **Reestruturação do Código** é uma técnica mais ampla, visando ajustar a arquitetura e modularidade, como a separação de responsabilidades ou a conversão para orientado a objetos. Se a refatoração for além dos módulos e mudar a arquitetura, ela é classificada como **Engenharia Direta**.
+
+
+Glossário de Termos-Chave
+Termo
+Definição
+**Análise de Custo-Benefício**
+Um processo para avaliar a viabilidade financeira de um projeto de reengenharia, comparando os custos de manutenção contínua de um sistema com os custos e benefícios projetados da reengenharia.
+**Análise de Inventário**
+A primeira etapa do processo de reengenharia, que envolve a criação de um inventário de todas as aplicações de uma organização, detalhando informações como tamanho, idade e criticalidade de negócio para identificar os principais candidatos à reengenharia.
+**Análise Dinâmica**
+Uma técnica de engenharia reversa que analisa o comportamento de um software enquanto ele está em execução, observando suas interações com o sistema, rede e memória para identificar comportamentos ocultos ou vulnerabilidades.
+**Análise Estática**
+Uma técnica de engenharia reversa que analisa um software sem executá-lo, concentrando-se na estrutura do código-fonte, bytecode ou arquivos binários para compreender a lógica, identificar vulnerabilidades e detectar padrões de codificação ruins.
+**Dívida Técnica**
+O custo acumulado de decisões inadequadas no desenvolvimento de software (como código mal estruturado ou pressão por prazos) que resulta em maior custo e esforço para manutenções e evoluções futuras.
+**Engenharia Direta**
+A fase final do processo de reengenharia, que utiliza as informações de projeto recuperadas para alterar ou reconstituir um sistema existente, geralmente com o objetivo de melhorar sua qualidade geral e incorporar novas funcionalidades.
+**Engenharia Reversa**
+O processo de analisar um sistema de software para identificar seus componentes e suas inter-relações, criando representações do sistema em um nível de abstração mais elevado para entender seu funcionamento e, se necessário, redocumentá-lo.
+**Evolução de Software**
+O processo contínuo pelo qual um software passa por mudanças ao longo do tempo, seja para corrigir erros, adaptar-se a novos ambientes, adicionar funcionalidades ou passar por reengenharia para se modernizar.
+**Manutenção Adaptativa**
+Um tipo de manutenção focado em modificar o software para se adaptar a mudanças em seu ambiente, como um novo sistema operacional ou hardware.
+**Manutenção Corretiva**
+Um tipo de manutenção focado em diagnosticar e corrigir defeitos, falhas e bugs relatados pelos usuários após o lançamento do software.
+**Manutenção de Software**
+O conjunto de atividades realizadas após a entrega do software para corrigir falhas (corretiva), adaptar a mudanças (adaptativa) ou melhorar o sistema com novas funcionalidades (perfectiva e preventiva).
+**Manutenção Perfectiva**
+Um tipo de manutenção que expande o software além de seus requisitos funcionais originais, implementando melhorias e novas características solicitadas pelos usuários.
+**Manutenção Preventiva**
+Uma atividade de manutenção proativa que envolve fazer alterações em um programa de computador para que ele possa ser corrigido, adaptado e melhorado mais facilmente no futuro.
+**Manutenibilidade**
+Um indicativo qualitativo da facilidade com que um software pode ser corrigido, adaptado ou melhorado. Um software com alta manutenibilidade é modular, bem documentado e segue padrões de codificação claros.
+**Refatoração**
+O processo de alterar a estrutura interna de um sistema de software para melhorar sua qualidade (por exemplo, legibilidade, coesão) sem alterar seu comportamento externo observável.
+**Reengenharia de Software**
+Um processo abrangente de analisar, modificar e, se necessário, reimplementar um sistema existente para melhorar significativamente sua qualidade, desempenho, manutenibilidade e adaptabilidade, frequentemente aplicado a sistemas legados.
+**Reestruturação de Código**
+Uma atividade que modifica o código-fonte para gerar um projeto que produz a mesma função, mas com maior qualidade, conformidade com padrões e melhor estrutura do que o programa original.
+**Reestruturação de Dados**
+Uma atividade de reengenharia completa que analisa e modifica a arquitetura de dados de uma aplicação, podendo transformar formatos de arquivo ou migrar para novos paradigmas de banco de dados para melhorar a eficácia.
+**Suportabilidade**
+A capacidade de fornecer suporte a um sistema de software durante toda a sua vida útil, o que inclui não apenas a manutenção, mas também a provisão de infraestrutura, serviços e outros recursos necessários para manter o software operacional.
+**Suporte de Software**
+Um conjunto abrangente de atividades que ocorre ao longo do ciclo de vida de uma aplicação, incluindo manutenção, correção de bugs, adaptação, melhorias, reengenharia e suporte direto ao usuário.

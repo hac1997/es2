@@ -1,0 +1,438 @@
+[
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Modelos de Processo",
+            "Processo Unificado (PU)"
+        ],
+        "questão": "O Processo Unificado (PU) é uma tentativa de integrar os aspectos dos modelos tradicionais com princípios de desenvolvimento ágil. Qual das características a seguir é uma propriedade central do Processo Unificado?",
+        "alternativas": [
+            "A ênfase na documentação abrangente sobre a entrega de software funcional, seguindo o fluxo de processo linear.",
+            "O foco principal na análise de riscos em cada circuito, sendo uma combinação da prototipação com o modelo cascata.",
+            "Ser dirigido a casos de uso, centrado na arquitetura, e seguir um fluxo incremental e iterativo (Concepção, Elaboração, Construção, Transição, Produção).",
+            "A utilização exclusiva da Complexidade Ciclomática e Métodos Ponderados por Classe (WMC) para medir o progresso do projeto."
+        ],
+        "resposta": "C. Ser dirigido a casos de uso, centrado na arquitetura, e seguir um fluxo incremental e iterativo (Concepção, Elaboração, Construção, Transição, Produção)."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Processo de Software",
+            "Conjunto de Tarefas"
+        ],
+        "questão": "O Processo de Software é composto por Atividades Metodológicas (Comunicação, Planejamento, etc.), que são subdivididas em Ações, as quais, por sua vez, são definidas por um Conjunto de Tarefas (Task Set). Qual é a principal característica que define a adequação de um Conjunto de Tarefas para um projeto específico?",
+        "alternativas": [
+            "A exclusão de todos os artefatos de garantia da qualidade para manter a agilidade.",
+            "A rigidez e a formalidade do conjunto, que deve ser o mesmo para todos os projetos da organização.",
+            "A escolha do conjunto mais adequado às necessidades do projeto (natureza, tamanho, complexidade) e às características da equipe.",
+            "A obrigatoriedade de ter todas as cinco ações de engenharia de software para a atividade de comunicação, independentemente da complexidade."
+        ],
+        "resposta": "C. A escolha do conjunto mais adequado às necessidades do projeto (natureza, tamanho, complexidade) e às características da equipe."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Manifesto Ágil",
+            "Princípios da Agilidade"
+        ],
+        "questão": "Um dos doze Princípios da Agilidade afirma: 'A arte de maximizar o volume de trabalho não realizado'. O que este princípio, que enfatiza a simplicidade, encoraja a equipe ágil a fazer?",
+        "alternativas": [
+            "Aumentar o esforço de documentação e modelagem detalhada antes da codificação.",
+            "Implementar apenas o software operacional que atenda às necessidades do cliente, evitando funcionalidade extra que possa ser necessária no futuro.",
+            "Manter o ritmo do desenvolvimento insustentável para acelerar a colocação do produto no mercado.",
+            "Restringir a comunicação presencial para garantir que os desenvolvedores se concentrem na codificação."
+        ],
+        "resposta": "B. Implementar apenas o software operacional que atenda às necessidades do cliente, evitando funcionalidade extra que possa ser necessária no futuro."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Scrum",
+            "Eventos do Scrum"
+        ],
+        "questão": "Qual dos Eventos do Scrum é um encontro diário, limitado a 15 minutos, onde a Equipe de Desenvolvimento sincroniza suas atividades e o Scrum Master se concentra em identificar e remover obstáculos (impedimentos) que estão sendo encontrados?",
+        "alternativas": [
+            "Reunião de Planejamento do Sprint (Sprint Planning)",
+            "Reunião de Revisão do Sprint (Sprint Review)",
+            "Reunião Diária do Scrum (Daily Scrum)",
+            "Retrospectiva do Sprint (Sprint Retrospective)"
+        ],
+        "resposta": "C. Reunião Diária do Scrum (Daily Scrum)"
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Extreme Programming (XP)",
+            "Práticas Ágeis"
+        ],
+        "questão": "A Extreme Programming (XP) defende a Programação em Pares como uma prática central na atividade de Codificação. Qual o propósito primário dessa prática?",
+        "alternativas": [
+            "Garantir que apenas programadores sêniores trabalhem juntos para aumentar a velocidade do projeto.",
+            "Fornecer um mecanismo para solução de problemas em tempo real e garantia da qualidade em tempo real (revisão do código à medida que é criado).",
+            "Reduzir o custo de alterações ao longo do projeto, transferindo o risco de codificação para o cliente.",
+            "Limitar o Trabalho em Progresso (WIP) e visualizar o fluxo de trabalho no quadro Kanban."
+        ],
+        "resposta": "B. Fornecer um mecanismo para solução de problemas em tempo real e garantia da qualidade em tempo real (revisão do código à medida que é criado)."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Kanban",
+            "DevOps",
+            "Metodologias Ágeis"
+        ],
+        "questão": "O método Kanban é uma metodologia enxuta que, diferentemente do Scrum (baseado em time-boxing), foca primariamente em qual aspecto da gestão do fluxo de trabalho?",
+        "alternativas": [
+            "A realização de reuniões diárias com a duração fixa de 15 minutos (Daily Scrum).",
+            "A criação de um Product Owner que tem a palavra final sobre o Backlog do Produto.",
+            "A visualização do fluxo de trabalho e a limitação do Trabalho em Progresso (WIP) para reduzir o tempo de ciclo.",
+            "A integração contínua e o monitoramento proativo do produto entregue no ambiente de produção (DevOps)."
+        ],
+        "resposta": "C. A visualização do fluxo de trabalho e a limitação do Trabalho em Progresso (WIP) para reduzir o tempo de ciclo."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Planejamento",
+            "Cronograma"
+        ],
+        "questão": "Em relação à alocação de tempo e recursos em um projeto de software, qual conceito é crucial para garantir que o projeto não se arraste, limitando o tempo dedicado a cada tarefa ou incremento para garantir que o prazo final seja alcançado?",
+        "alternativas": [
+            "O Caminho Crítico (Critical Path), que identifica as tarefas que não podem ser atrasadas.",
+            "O Gráfico de Gantt, que é uma representação tabular do fluxo de tarefas.",
+            "A Equação do Software (que relaciona esforço e prazo de entrega).",
+            "A técnica de Caixa de Tempo (Time-boxing), usada para fixar a duração de incrementos e tarefas."
+        ],
+        "resposta": "D. A técnica de Caixa de Tempo (Time-boxing), usada para fixar a duração de incrementos e tarefas."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Planejamento",
+            "Estimativa de Esforço"
+        ],
+        "questão": "No contexto da Estimativa de Esforço, qual é o principal risco em tentar comprimir o prazo de entrega ($t_d$) de um projeto, além do valor limite de $0,75 t_d$, de acordo com a curva Putnam-Norden-Rayleigh (PNR) e a Equação do Software?",
+        "alternativas": [
+            "O projeto entra na 'região impossível', onde o esforço e o custo aumentam de forma não linear e o risco de fracasso se torna muito alto.",
+            "A produtividade média da organização (LOC/pm) é ajustada para um valor negativo.",
+            "O Cone da Incerteza se expande, tornando o cronograma detalhado irrelevante.",
+            "O número de Pontos de Função (FP) é reduzido em 50% devido à pressão por prazos."
+        ],
+        "resposta": "A. O projeto entra na 'região impossível', onde o esforço e o custo aumentam de forma não linear e o risco de fracasso se torna muito alto."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Estimativa",
+            "Pontos de Função"
+        ],
+        "questão": "As métricas orientadas a tamanho (LOC) e as orientadas a função (FP) são usadas na estimativa. Qual é o principal argumento dos proponentes dos Pontos de Função (FP) em relação à medida LOC?",
+        "alternativas": [
+            "LOC é independente da linguagem de programação e é mais fácil de ser contada após o código ser gerado.",
+            "FP é baseado em dados que têm maior probabilidade de serem conhecidos no início do projeto (domínio da informação) e é independente da linguagem.",
+            "FP penaliza programas bem projetados, mas menores, enquanto LOC favorece a clareza e a simplicidade.",
+            "LOC é uma medida indireta, enquanto FP fornece uma medida direta da produtividade do desenvolvedor."
+        ],
+        "resposta": "B. FP é baseado em dados que têm maior probabilidade de serem conhecidos no início do projeto (domínio da informação) e é independente da linguagem."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Gestão de Riscos",
+            "Categorias"
+        ],
+        "questão": "Durante a Identificação de Riscos, a equipe determina que a tecnologia blockchain escolhida para o sistema de votação nunca foi usada pelos desenvolvedores e que a integração com os sistemas legados de eleitores é incerta. Em qual categoria de risco primária esses problemas se encaixam?",
+        "alternativas": [
+            "Risco de Projeto (ameaça o cronograma/custo).",
+            "Risco de Negócio (ameaça a viabilidade do produto/empresa).",
+            "Risco de Desempenho (componente de risco).",
+            "Risco Técnico (ameaça a qualidade e a implementação)."
+        ],
+        "resposta": "D. Risco Técnico (ameaça a qualidade e a implementação)."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Gestão de Riscos",
+            "RMMM"
+        ],
+        "questão": "A equipe de projeto identificou um risco de alta probabilidade: o principal cliente pode perder o apoio da alta gerência, ameaçando o financiamento (risco de negócio). A equipe decide incluir no plano RMMM a atividade de Mitigação de risco. Qual ação representa uma estratégia de mitigação?",
+        "alternativas": [
+            "Reservar um fundo de contingência (dinheiro) para cobrir os custos, caso o risco se concretize (Gestão).",
+            "Desenvolver uma apresentação formal do produto para a alta gerência para garantir o comprometimento formal antes do início do projeto (Mitigação/Evitar).",
+            "Monitorar a atitude do cliente e a coesão da equipe (Monitoramento).",
+            "Aceitar que o risco pode ocorrer e não tomar nenhuma ação preventiva, pois o custo da mitigação é alto (Aceitar)."
+        ],
+        "resposta": "B. Desenvolver uma apresentação formal do produto para a alta gerência para garantir o comprometimento formal antes do início do projeto (Mitigação/Evitar)."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Gestão de Riscos",
+            "Exposição ao Risco"
+        ],
+        "questão": "Um risco de projeto foi identificado: A estimativa de esforço ($C$) pode ser subestimada, custando US$ 50.000 em retrabalho. A equipe de gestão estima que a probabilidade ($P$) desse risco ocorrer é de 60%. Qual é a Exposição ao Risco (RE) e o que esse valor representa?",
+        "alternativas": [
+            "RE = US$ 50.000. Representa o custo total caso o risco ocorra.",
+            "RE = 60%. Representa a probabilidade de o projeto falhar.",
+            "RE = US$ 30.000. Representa o custo esperado e quantificável do risco.",
+            "RE = US$ 80.000. Representa o valor do plano de contingência."
+        ],
+        "resposta": "C. RE = US$ 30.000. Representa o custo esperado e quantificável do risco."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Métricas",
+            "Complexidade Ciclomática"
+        ],
+        "questão": "A Complexidade Ciclomática $V(G)$ é uma métrica de produto essencial para avaliar a complexidade de teste. Ela é calculada pela fórmula $V(G) = D + 1$, onde $D$ é o número de decisões. Se uma função contém um `if-else`, um `while` e um `switch` com 4 cláusulas `case` (excluindo o default), qual é a complexidade ciclomática mínima dessa função?",
+        "alternativas": [
+            "$V(G) = 4$",
+            "$V(G) = 6$",
+            "$V(G) = 7$",
+            "$V(G) = 8$"
+        ],
+        "resposta": "C. $V(G) = 7$"
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Métricas",
+            "Definições"
+        ],
+        "questão": "Um gerente de projeto afirma que, com base nas métricas de produtividade, 'O projeto está com alto risco de atraso, e o cronograma deve ser ajustado'. Qual conceito de medição esse gerente está utilizando para a tomada de decisão?",
+        "alternativas": [
+            "Medida (valor numérico coletado).",
+            "Medição (ato de coleta).",
+            "Métrica (fórmula que relaciona medidas).",
+            "Indicador (interpretação da métrica para ação gerencial)."
+        ],
+        "resposta": "D. Indicador (interpretação da métrica para ação gerencial)."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Métricas Orientadas a Objeto",
+            "Acoplamento"
+        ],
+        "questão": "Qual métrica do conjunto CK (Chidamber e Kemerer) é usada para indicar o nível de interconexão de uma classe com outras, e que deve ser mantida baixa para reduzir a probabilidade de que a reutilização diminua ou que modificações se compliquem?",
+        "alternativas": [
+            "DIT (Profundidade da Árvore de Herança).",
+            "WMC (Métodos Ponderados por Classe).",
+            "LCOM (Falta de Coesão em Métodos).",
+            "CBO (Acoplamento entre Objetos de Classes)."
+        ],
+        "resposta": "D. CBO (Acoplamento entre Objetos de Classes)."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Métricas de Qualidade",
+            "Integridade"
+        ],
+        "questão": "Qual atributo de qualidade de software é medido pela capacidade de um sistema de resistir a ataques, sendo determinado pela probabilidade de ameaça e a probabilidade de segurança (de repelir o ataque)?",
+        "alternativas": [
+            "Correção.",
+            "Manutenibilidade.",
+            "Integridade.",
+            "Usabilidade."
+        ],
+        "resposta": "C. Integridade."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Gestão de Riscos",
+            "Débito Técnico"
+        ],
+        "questão": "Um time ágil inexperiente constantemente adia a refatoração do código, sob pressão para entregar novas funcionalidades a cada sprint. Qual risco técnico de longo prazo é agravado por essa prática?",
+        "alternativas": [
+            "Risco de Mercado, pois o produto não se encaixará na estratégia de negócios.",
+            "Risco de Prazos, pois os requisitos não estão estáveis.",
+            "Acúmulo de Débito Técnico, aumentando os custos de retrabalho e a complexidade do projeto no futuro.",
+            "Risco Estrutural, pois os testes automatizados serão ignorados."
+        ],
+        "resposta": "C. Acúmulo de Débito Técnico, aumentando os custos de retrabalho e a complexidade do projeto no futuro."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Métricas",
+            "LOC vs FP"
+        ],
+        "questão": "Qual é a principal limitação das métricas orientadas a tamanho (LOC) que as métricas orientadas a função (FP) tentam contornar?",
+        "alternativas": [
+            "A dependência da linguagem de programação e a penalização de programas menores, mas bem projetados.",
+            "A necessidade de estimar o esforço de forma subjetiva, baseada em dados não objetivos.",
+            "A falta de capacidade de serem combinadas com dados históricos de produtividade.",
+            "O cálculo é baseado em dados subjetivos, em vez de objetivos, como as características de complexidade e domínio de informação."
+        ],
+        "resposta": "A. A dependência da linguagem de programação e a penalização de programas menores, mas bem projetados."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Estimativa",
+            "Recursos de Projeto"
+        ],
+        "questão": "Os recursos necessários para um projeto de software se dividem em três categorias principais. Qual opção lista corretamente estas categorias?",
+        "alternativas": [
+            "Comunicação, Planejamento e Construção.",
+            "Pessoas (Habilidades/Esforço), Software Reutilizável e Ambiente (Hardware/Software).",
+            "LOC, FP e UCPs.",
+            "Mitigação, Monitoramento e Gestão (RMMM)."
+        ],
+        "resposta": "B. Pessoas (Habilidades/Esforço), Software Reutilizável e Ambiente (Hardware/Software)."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Gestão de Riscos",
+            "Tabela de Riscos"
+        ],
+        "questão": "Ao criar uma Tabela de Riscos, os riscos são priorizados para que o gerente possa alocar recursos de gestão. Qual critério deve ser usado para determinar quais riscos se situam no topo da tabela e, portanto, exigem gerenciamento imediato?",
+        "alternativas": [
+            "Riscos imprevisíveis e com baixo impacto.",
+            "Riscos conhecidos e com probabilidade inferior a 5%.",
+            "Riscos de alta probabilidade de ocorrência e alto impacto (Exposição ao Risco alta).",
+            "Riscos de negócio com impacto negligenciável."
+        ],
+        "resposta": "C. Riscos de alta probabilidade de ocorrência e alto impacto (Exposição ao Risco alta)."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Agilidade",
+            "XP"
+        ],
+        "questão": "Na Extreme Programming (XP), a atividade de Planejamento (o 'jogo do planejamento') se inicia com a criação de Histórias de Usuário. Qual é a função primária dessas histórias de usuário?",
+        "alternativas": [
+            "Servir como artefato final de documentação técnica para o cliente.",
+            "Descrever o resultado, as características e a funcionalidade solicitados para o software, sendo escritas pelo cliente.",
+            "Estabelecer a complexidade ciclomática do sistema antes da codificação.",
+            "Definir a Viabilidade Técnica e o Caminho Crítico do projeto."
+        ],
+        "resposta": "B. Descrever o resultado, as características e a funcionalidade solicitados para o software, sendo escritas pelo cliente."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "PU",
+            "Fases"
+        ],
+        "questão": "Qual fase do Processo Unificado (PU) foca em refinar e expandir os casos de uso preliminares e na criação da base da arquitetura do software (modelo de caso de uso, modelo de análise, etc.)?",
+        "alternativas": [
+            "Concepção.",
+            "Elaboração.",
+            "Construção.",
+            "Transição."
+        ],
+        "resposta": "B. Elaboração."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Cronograma",
+            "Rede de Tarefas"
+        ],
+        "questão": "Qual artefato de planejamento é uma representação gráfica do fluxo de tarefas de um projeto que é utilizada para mostrar as dependências entre elas e determinar o Caminho Crítico?",
+        "alternativas": [
+            "Gráfico de Gantt.",
+            "Rede de Tarefas (ou Rede de Atividades).",
+            "Formulário de Informações de Risco (RIS).",
+            "Backlog do Produto."
+        ],
+        "resposta": "B. Rede de Tarefas (ou Rede de Atividades)."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Métricas",
+            "DRE"
+        ],
+        "questão": "Uma equipe de desenvolvimento encontrou 192 erros ($E$) antes de entregar o software. Após um ano de uso, os clientes relataram 8 defeitos ($D$). Qual a DRE (Eficiência na Remoção de Defeitos) e o que isso indica?",
+        "alternativas": [
+            "DRE = 0,96 (192/200). Indica que a capacidade de filtragem de erros da equipe é muito alta.",
+            "DRE = 192. Indica a Complexidade Ciclomática do projeto.",
+            "DRE = 8. Indica que os erros estão se tornando defeitos em um ritmo alto.",
+            "DRE = 0,96 (192/200). Indica que a Manutenibilidade do software é baixa."
+        ],
+        "resposta": "A. DRE = 0,96 (192/200). Indica que a capacidade de filtragem de erros da equipe é muito alta."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Métricas",
+            "LOC/Complexidade"
+        ],
+        "questão": "Um módulo tem uma Complexidade Ciclomática de 18. O que essa métrica sugere sobre esse módulo específico?",
+        "alternativas": [
+            "É um código simples com alta manutenibilidade (V(G) < 10).",
+            "É um código complexo (V(G) > 10), com maior probabilidade de erros e maior dificuldade de teste e manutenção.",
+            "É um módulo orientado a objetos com baixo acoplamento (CBO).",
+            "É um módulo com alta coesão em métodos (LCOM baixa)."
+        ],
+        "resposta": "B. É um código complexo (V(G) > 10), com maior probabilidade de erros e maior dificuldade de teste e manutenção."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Métricas",
+            "OO Design"
+        ],
+        "questão": "Uma classe no projeto CasaSegura tem um LCOM (Falta de Coesão em Métodos) muito alto. Qual é o resultado esperado de um alto valor de LCOM?",
+        "alternativas": [
+            "Maior reutilização de métodos e maior profundidade na árvore de herança (DIT).",
+            "Aumento da complexidade do projeto de classe, sugerindo que os métodos podem ser fracamente acoplados aos atributos, ou que a classe deveria ser dividida.",
+            "Redução da complexidade de teste, pois o número de sequências de testes diminui.",
+            "Aumento da eficiência na remoção de defeitos (DRE) para a classe."
+        ],
+        "resposta": "B. Aumento da complexidade do projeto de classe, sugerindo que os métodos podem ser fracamente acoplados aos atributos, ou que a classe deveria ser dividida."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Métricas",
+            "Processo/Projeto"
+        ],
+        "questão": "Qual das seguintes afirmações representa uma diretriz fundamental da Etiqueta de Métricas de Software?",
+        "alternativas": [
+            "As métricas devem ser usadas para avaliar e recompensar o desempenho individual da equipe.",
+            "Os dados de métricas que indicam uma área com problema devem ser considerados negativos e puníveis.",
+            "Não se deve ser obsessivo sobre uma única métrica, e as métricas nunca devem ser usadas para ameaçar indivíduos ou equipes.",
+            "A Complexidade Ciclomática é uma métrica de processo que deve ser mantida pública."
+        ],
+        "resposta": "C. Não se deve ser obsessivo sobre uma única métrica, e as métricas nunca devem ser usadas para ameaçar indivíduos ou equipes."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Gestão de Riscos",
+            "Estratégias Ágeis"
+        ],
+        "questão": "Qual estratégia ágil de mitigação de riscos reduz o risco de rejeição do produto e garante validação constante, limitando o prejuízo se algo der errado?",
+        "alternativas": [
+            "Programação em Pares (XP).",
+            "Implementação do modelo Cascata para requisitos.",
+            "Entrega de incrementos frequentes e curtos (time-boxing).",
+            "Apenas o uso da Complexidade Ciclomática (V(G)) para medir o risco técnico."
+        ],
+        "resposta": "C. Entrega de incrementos frequentes e curtos (time-boxing)."
+    },
+    {
+        "tipo": "multi",
+        "tópicos": [
+            "Planejamento",
+            "Dimensionamento"
+        ],
+        "questão": "Ao realizar uma estimativa baseada em Pontos de Caso de Uso (UCPs), o cálculo considera vários fatores. Qual aspecto do sistema NÃO é diretamente levado em consideração no cálculo do Peso do Caso de Uso Não Ajustado (UUCW), mas sim na avaliação dos Atores ou Fatores de Complexidade?",
+        "alternativas": [
+            "O número e a complexidade dos Casos de Uso.",
+            "A complexidade da interface de usuário (GUI, API).",
+            "O número de transações envolvidas no Caso de Uso.",
+            "O número de classes necessárias para a implementação."
+        ],
+        "resposta": "B. A complexidade da interface de usuário (GUI, API)."
+    }
+]
