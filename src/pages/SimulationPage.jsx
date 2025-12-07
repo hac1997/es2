@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import QuizManager from '../components/QuizManager';
 
 export default function SimulationPage() {

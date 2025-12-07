@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import LatexRenderer from './LatexRenderer';
 
 export default function QuizManager({ questions = [] }) {
@@ -55,7 +55,7 @@ export default function QuizManager({ questions = [] }) {
         <div className="space-y-12">
 
             {questions.map((q, idx) => {
-                const isAnswered = !!answers[idx];
+
                 const userAnswer = answers[idx];
 
                 return (

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import QuestionDissertative from '../components/QuestionDissertative';
 import QuizManager from '../components/QuizManager';
@@ -142,6 +142,7 @@ export default function ChapterPage() {
         setError(null);
 
         const fetchData = async () => {
+            let textLoaded = false;
             try {
                 // Load Text Content instead of HTML
                 try {
@@ -149,6 +150,7 @@ export default function ChapterPage() {
                     if (textRes.ok) {
                         const text = await textRes.text();
                         setTextContent(text);
+                        textLoaded = true;
                     } else {
                         console.warn(`Text content not found for ${id}`);
                     }
@@ -181,7 +183,7 @@ export default function ChapterPage() {
 
             } catch (err) {
                 console.error(err);
-                if (!textContent) {
+                if (!textLoaded) {
                     setError('Ocorreu um erro ao carregar os dados principais do capítulo.');
                 }
             } finally {

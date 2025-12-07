@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { NavLink, Outlet, useNavigate } from 'react-router-dom';
-import { Menu, X, BookOpen, ChevronRight, ClipboardList } from 'lucide-react';
+import { Menu, X, ChevronRight, ClipboardList } from 'lucide-react';
 
 export default function MainLayout() {
     const [chapters, setChapters] = useState([]);

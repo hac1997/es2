@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import LatexRenderer from './LatexRenderer';
 
-export default function QuestionDissertative({ question, topics = [], answer }) {
+export default function QuestionDissertative({ question, answer }) {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
