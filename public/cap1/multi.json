@@ -70,7 +70,7 @@
             "O(1), complexidade constante.",
             "O(n), complexidade linear.",
             "O(n²), complexidade quadrática, refletindo o uso de loops aninhados.",
-            "O($log$ n), complexidade logarítmica."
+            "O(log n), complexidade logarítmica."
         ],
         "resposta": "C. O(n²), complexidade quadrática, refletindo o uso de loops aninhados."
     },

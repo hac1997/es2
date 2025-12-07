@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import LatexRenderer from './LatexRenderer';
 
 export default function QuestionDissertative({ question, topics = [], answer }) {
     const [isOpen, setIsOpen] = useState(false);
@@ -8,10 +9,9 @@ export default function QuestionDissertative({ question, topics = [], answer }) 
             <div className="p-6">
                 {/* Topics removed as per request */}
 
-                <div
-                    className="text-gray-700 mb-5 text-justify leading-7"
-                    dangerouslySetInnerHTML={{ __html: question }}
-                />
+                <div className="text-gray-700 mb-5 text-justify leading-7">
+                    <LatexRenderer>{question}</LatexRenderer>
+                </div>
 
                 {/* Toggle Button */}
                 <button
@@ -27,10 +27,9 @@ export default function QuestionDissertative({ question, topics = [], answer }) 
                 <div className="bg-gray-50 px-6 py-4 border-t border-gray-200">
                     <div className="prose prose-sm max-w-none text-gray-700">
                         <h4 className="text-sm font-semibold text-gray-900 uppercase tracking-wider mb-2">Resposta Esperada:</h4>
-                        <div
-                            className="text-justify [&_p]:mb-4 last:[&_p]:mb-0"
-                            dangerouslySetInnerHTML={{ __html: answer }}
-                        />
+                        <div className="text-justify [&_p]:mb-4 last:[&_p]:mb-0">
+                            <LatexRenderer>{answer}</LatexRenderer>
+                        </div>
                     </div>
                 </div>
             )}

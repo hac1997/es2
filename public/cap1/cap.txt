@@ -1,7 +1,8 @@
 SUPORTE, MANUTENÇÃO E REENGENHARIA DE SOFTWARE
-Os conceitos-chave tratados abordam a estratégia de suporte, manutenção e evolução de software, incluindo as técnicas de engenharia reversa e reengenharia de sistemas legados.
-CONCEITOS-CHAVE IDENTIFICADOS
-Os principais conceitos identificados nas fontes são:
+Conteúdo baseado nos slides 2 e 3 e no capítulo 27 - Uma estratégia para o suporte de software. Abaixo estao os conceitos chaves: 
+
+CONCEITOS-CHAVE
+
 • **Suporte de Software**
 • **Manutenção de Software** (Corretiva, Adaptativa, Perfectiva, Preventiva)
 • **Suportabilidade** e **Manutenibilidade**
@@ -17,7 +18,8 @@ Os principais conceitos identificados nas fontes são:
 • **Análise de Custo-Benefício** (para Reengenharia)
 
 --------------------------------------------------------------------------------
-RESUMO CONCEITUAL CONCISO E COMPLETO
+RESUMO 
+
 1. Suporte e Manutenção de Software
 O **suporte de software** é um conjunto contínuo de atividades que corrige bugs, adapta o software a mudanças no ambiente, melhora-o com base em pedidos dos envolvidos e realiza reengenharia para aprimorar funcionalidade e desempenho. Ele se inicia com a coleta de requisitos e termina com a aposentadoria do sistema. A **suportabilidade** é a capacidade de fornecer suporte a um sistema durante toda sua vida útil, envolvendo o provimento de infraestrutura, software adicional e mão de obra.
 A **manutenção de software** é uma função que corrige defeitos, adapta o software a ambientes em mudança e melhora a funcionalidade para atender aos clientes. Ela é uma atividade dispendiosa, podendo consumir de 60% a 70% dos recursos. A **manutenibilidade** é um indicador qualitativo da facilidade de corrigir, adaptar ou melhorar um software.
@@ -29,23 +31,23 @@ A **Teoria Unificada para a Evolução do Software (Leis de Lehman)** descreve e
 - A complexidade de um sistema aumenta com a evolução, a menos que haja trabalho para reduzi-la (**Lei da Complexidade Crescente**).
 - O conteúdo funcional deve ser continuamente ampliado para manter a satisfação do usuário (**Lei do Crescimento Contínuo**).
 - A qualidade diminui se o sistema não for rigorosamente mantido e adaptado (**Lei da Qualidade em Declínio**).
-A **reengenharia de software** utiliza um sistema existente como base para gerar um novo sistema com qualidade equivalente à de um software criado usando práticas modernas. É aplicada em sistemas legados que possuem **dívida técnica**, o custo acumulado de código mal estruturado e más decisões arquiteturais.
+A reengenharia de software é um processo estratégico e abrangente de analisar, modificar e, se necessário, reimplementar um sistema existente. O objetivo é melhorar significativamente a sua qualidade, desempenho, manutenibilidade e adaptabilidade, transformando um sistema existente na base para gerar um novo sistema com a mesma qualidade de um software construído utilizando práticas modernas de engenharia. É frequentemente aplicada em sistemas legados, onde o custo de manter uma linha de código pode ser 20 a 40 vezes maior que o custo de seu desenvolvimento inicial. A reengenharia é necessária para reduzir a dívida técnica, que é o custo acumulado de código mal estruturado e más decisões arquiteturais. Outros objetivos incluem a melhoria da manutenibilidade, aprimoramento da performance, melhoria da segurança e adaptação a novas tecnologias.
 O processo de reengenharia é cíclico e inclui as atividades:
-- **Análise de Inventário**: Avaliação do portfólio de aplicações ativas.
-- **Reestruturação dos Documentos**: Criação ou atualização de documentação.
-- **Engenharia Reversa**.
-- **Refatoração do Código**: Modificação do código para melhorar a estrutura interna sem alterar o comportamento externo.
-- **Reestruturação dos Dados**: Reprojeto dos dados, o que pode causar mudanças arquiteturais.
-- **Engenharia Direta**: Utiliza as informações recuperadas para alterar ou reconstituir o sistema, melhorando sua qualidade e integrando novos requisitos.
-A viabilidade da reengenharia é determinada pela **Análise de Custo-Benefício**, comparando o custo da manutenção continuada (Cmanut) com os custos projetados da reengenharia (Creeng).
+- **Análise de Inventário**: A primeira atividade, que envolve a criação de um inventário de todas as aplicações ativas (incluindo informações como tamanho, idade e criticalidade de negócio) para selecionar os candidatos à reengenharia.
+- **Reestruturação dos Documentos**: Criação ou atualização de documentação essencial, que geralmente é deficiente em sistemas legados, devendo alcançar um mínimo essencial.
+- **Engenharia Reversa**: O processo de recuperação do projeto que analisa o programa para identificar componentes, inter-relações e criar representações em um nível mais abstrato do que o código-fonte..
+- **Refatoração do Código**: Modificação do código-fonte para melhorar a estrutura interna (legibilidade e coesão) sem alterar o comportamento externo. Esta é a forma mais comum de reengenharia, aplicada em sistemas com arquitetura de programa sólida.
+- **Reestruturação dos Dados**: Uma atividade de reengenharia completa que dissecada a arquitetura de dados atual, define novos modelos de dados e pode envolver a transformação de formatos de arquivo ou migração para novos paradigmas de banco de dados. Mudanças nos dados invariavelmente resultam em mudanças de arquitetura ou código.
+- **Engenharia Direta**: Utiliza as informações recuperadas para alterar ou reconstituir o sistema, geralmente visando melhorar a qualidade geral e incorporar novos requisitos de usuário e tecnologia, ampliando a capacidade da aplicação antiga. Se a refatoração se estender para a arquitetura, ela se torna Engenharia Direta.
+A viabilidade da reengenharia é determinada pela **Análise de Custo-Benefício**, comparando o custo da manutenção continuada ($Cmanut$) com os custos projetados da reengenharia ($Creeng$).
 3. Engenharia Reversa e Análise de Software
 A **Engenharia Reversa (ER)** é o processo de analisar um programa para identificar seus componentes e inter-relações e criar representações do sistema em um nível mais abstrato do que o código-fonte. A ER é essencial para entender o sistema antes de modificações.
 A ER foca em três partes:
-• Dados: Entender estruturas internas de dados (classes de objetos) e a arquitetura de banco de dados.
-• Processamento: Entender as abstrações procedurais e criar um diagrama de blocos que representa a interação entre abstrações funcionais.
-• Interfaces de Usuário (UI): Especificar a estrutura e o comportamento da interface para recriá-la, possivelmente com uma nova metáfora de interação.
+• Dados: Entender estruturas internas de dados (classes de objetos) e a arquitetura de banco de dados. Isso pode envolver passos como criar um modelo de objeto inicial e refinar classes provisórias.
+• Processamento: Entender as abstrações procedurais, analisando o código em vários níveis de abstração (sistema, programa, componente, padrão e instruções) e criando um diagrama de blocos que representa a interação entre abstrações funcionais.
+• Interfaces de Usuário (UI): Especificar a estrutura e o comportamento da interface, respondendo a perguntas sobre as ações básicas e a resposta comportamental do sistema, a fim de recriá-la, possivelmente com uma nova metáfora de interação.
 As técnicas de análise de software se dividem em:
-• **Análise Estática**: Análise do software sem executá-lo, focando na estrutura do código-fonte ou binários. Objetivos incluem reconstruir a estrutura e analisar a complexidade de funções (O(1), O(n), O(n²)). Ferramentas como SonarQube são usadas. A desmontagem (disassembly) e a decompilação são usadas para código binário.
+• **Análise Estática**: Análise do software sem executá-lo, focando na estrutura do código-fonte ou binários. Objetivos incluem reconstruir a estrutura e analisar a complexidade de funções ($O(1)$, $O(n)$, $O(n^2)$). Ferramentas como SonarQube são usadas. A desmontagem (disassembly) e a decompilação são usadas para código binário.
 • **Análise Dinâmica**: Análise do comportamento do software enquanto ele está em execução. Permite identificar comportamentos ocultos e não requer acesso ao código-fonte. Os métodos incluem depuração e monitoramento de chamadas de sistema.
 4. Refatoração e Reestruturação
 A **Refatoração** (software refactoring) é a modificação do código para melhorar a estrutura interna e manutenibilidade sem alterar seu comportamento externo. Ela é usada quando a arquitetura básica é sólida. A refatoração de código inclui a remoção de código duplicado e o encapsulamento de campos.

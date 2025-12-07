@@ -48,15 +48,6 @@
     {
         "tipo": "dissertativo",
         "tópicos": [
-            "Análise de Custo-Benefício",
-            "Reengenharia"
-        ],
-        "questão": "No modelo de Custo-Benefício para Reengenharia, os custos associados à manutenção continuada ($Cmanut$) dependem dos parâmetros P1, P2 e P3. Para calcular os custos associados à reengenharia ($Creeng$), são necessários os parâmetros P4, P5, P6 e P7. Descreva o que representam <strong>P4, P5, P6 e P7</strong> e explique por que a determinação precisa desses valores é crucial para a decisão estratégica de prosseguir com a reengenharia.",
-        "resposta": "<p>Para calcular os custos projetados após a reengenharia ($Creeng$), são definidos os seguintes parâmetros:</p><ul><li><strong>P4 = Custo de manutenção anual previsto após a reengenharia.</strong></li><li><strong>P5 = Custo anual previsto das operações após a reengenharia.</strong></li><li><strong>P6 = Valor de negócio anual previsto após a reengenharia.</strong></li><li><strong>P7 = Custos estimados da reengenharia (custos iniciais do projeto).</strong></li></ul><p>A determinação precisa desses valores (P4 a P7) é crucial porque a decisão de realizar a reengenharia é estratégica e absorve recursos.</p><p>A análise de custo-benefício compara o custo do estado atual ($Cmanut$) com os custos projetados da reengenharia ($Creeng$). A precisão de P4, P5 e P6 é vital, pois eles definem o retorno futuro do investimento, garantindo que a reengenharia resulte em uma redução nos custos de manutenção e suporte (P4, P5) e um aumento no valor de negócio (P6), tornando a estratégia eficiente em termos de custo.</p>"
-    },
-    {
-        "tipo": "dissertativo",
-        "tópicos": [
             "Refatoração",
             "Engenharia Direta",
             "Arquitetura"

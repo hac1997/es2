@@ -23,7 +23,7 @@ O CUSTO DA QUALIDADE (COQ)
 • **Custos de Falhas**: Custos que desapareceriam se não houvesse erros.
     - **Falhas Internas**: Erros detectados antes da entrega (custo de reformulações/reparos).
     - **Falhas Externas**: Defeitos encontrados após a entrega (suporte, perda de negócios/má reputação).
-Os custos relativos para corrigir erros aumentam drasticamente ao longo do ciclo de desenvolvimento. O custo médio para corrigir um defeito durante a codificação é de US977;duranteostestesdosistema,US 7.136; e na manutenção, US$ 14.102. A **Lei de Meskimen** resume: “Nunca há tempo para fazer a coisa certa, mas sempre há tempo para fazê-la de novo”.
+Os custos relativos para corrigir erros aumentam drasticamente ao longo do ciclo de desenvolvimento. O custo médio para corrigir um defeito durante a codificação é de US\$ 977; durante os testes do sistema, US\$ 7.136; e na manutenção, US\$ 14.102. A **Lei de Meskimen** resume: “Nunca há tempo para fazer a coisa certa, mas sempre há tempo para fazê-la de novo”.
 A segurança de software está inteiramente relacionada à qualidade. Para construir um sistema seguro, deve-se focar na eliminação de falhas (problemas de arquitetura) e bugs (problemas de implementação) ao longo de todo o ciclo. Decisões administrativas, como estimativas e cronogramas apertados, podem subverter as melhores práticas de engenharia de software e levar ao abandono de atividades que produziriam maior qualidade.
 2. Estratégia de Teste de Software (V&V)
 **Teste de Software** é um conjunto de atividades planejadas para revelar erros. Ele é parte do conceito mais amplo de Verificação e Validação (V&V):
@@ -37,9 +37,9 @@ O **Scaffolding** (estrutura temporária) é necessário para testar componentes
 • **Pseudocontrolado (Stub)**: Simula os módulos subordinados (chamados pelo componente testado), retornando valores simulados. Drivers e stubs são softwares auxiliares que não são fornecidos com o produto final.
 4. Tipos de Teste de Componente (Caixa-Branca e Caixa-Preta)
 TESTE CAIXA-BRANCA (WHITE-BOX)
-Focaliza a estrutura de controle interna do código. É usado para criar casos de teste que garantam que todos os caminhos independentes e todas as decisões lógicas sejam exercitados.
+40: Focaliza a estrutura de controle interna do código. É usado para criar casos de teste que garantam que todos os caminhos independentes e todas as decisões lógicas sejam exercitados.
 • **Teste de Caminho Básico**: Técnica que permite derivar uma medida da complexidade lógica e usá-la para definir um conjunto-base de caminhos de execução, garantindo que todas as instruções do programa sejam executadas pelo menos uma vez.
-• **Complexidade Ciclomática (V(G))**: Métrica de software que fornece uma medida quantitativa da complexidade lógica de um programa. Define o número de caminhos independentes no conjunto-base (limite superior para o número de testes). Pode ser calculada pelo número de regiões, por V(G)=E−N+2 (arestas e nós) ou V(G)=P+1 (nós predicados).
+• **Complexidade Ciclomática ($V(G)$)**: Métrica de software que fornece uma medida quantitativa da complexidade lógica de um programa. Define o número de caminhos independentes no conjunto-base (limite superior para o número de testes). Pode ser calculada pelo número de regiões, por $V(G)=E-N+2$ (arestas e nós) ou $V(G)=P+1$ (nós predicados).
 TESTE CAIXA-PRETA (BLACK-BOX)
 Focaliza os requisitos funcionais do software e o domínio das informações (entradas e saídas), sem considerar a estrutura interna. Tenta encontrar erros em funções incorretas/ausentes, erros de interface e erros de comportamento.
 • **Particionamento de Equivalência**: Divide o domínio de entrada em classes de dados válidas e inválidas, reduzindo o número de testes, pois se um valor da classe funciona, os outros da mesma classe também funcionarão.
@@ -61,7 +61,7 @@ Em sistemas OO, a classe é a menor unidade testável. O **Teste de Classe** (te
 O **Teste de Regressão** é a reexecução do mesmo subconjunto de testes após qualquer alteração (integração de novos módulos, refatoração). O objetivo é assegurar que as alterações não tenham propagado efeitos colaterais indesejados.
 
 --------------------------------------------------------------------------------
-RESUMO CONCEITUAL COMPLETO: QUALIDADE E TESTES
+RESUMO
 A **Qualidade de Software** é essencial, definida como a aplicação de uma gestão de qualidade efetiva para criar um produto útil que gere valor mensurável para produtores e usuários. O conceito é multifacetado, com visões que abrangem a conformidade com especificações (**Visão do Fabricante**) e a satisfação de objetivos (**Visão do Usuário**).
 O **Dilema da Qualidade** exige encontrar um equilíbrio, pois a busca pelo software "perfeito" é inviável, e o conceito de software “bom o suficiente” é perigoso em domínios críticos. O **Custo da Qualidade (CoQ)** se divide em **Prevenção**, **Avaliação** e **Falhas** (internas ou externas). Corrigir erros nas fases iniciais (Requisitos/Projeto) é drasticamente mais barato do que corrigi-los em Testes ou Manutenção. A **Lei de Meskimen** sintetiza: “Nunca há tempo para fazer a coisa certa, mas sempre há tempo para fazê-la de novo”.
 A qualidade é alcançada por meio de **Verificação** (criando o produto corretamente?) e **Validação** (criando o produto certo?). O **Teste** é um processo sistemático que deve ser incremental, começando no **Teste de Unidade** (componentes isolados) e progredindo para o **Teste de Integração** (interfaces e colaborações). O **Grupo de Teste Independente (ITG)** pode assumir o teste de ordem superior para mitigar o conflito de interesses.
@@ -75,29 +75,56 @@ Estratégias de Teste de Integração: O teste de integração é incremental (e
 O **Teste de Regressão** é a reexecução de testes existentes após qualquer alteração. É crucial para garantir que novas alterações não propaguem efeitos colaterais indesejados.
 
 --------------------------------------------------------------------------------
-GLOSSÁRIO DE CONCEITOS-CHAVE
-• **Qualidade de Software** (Definição Geral): Gestão de qualidade efetiva aplicada para criar um produto útil que forneça valor mensurável para aqueles que o produzem e utilizam.
-• **Visão do Usuário**: Qualidade medida pela capacidade do software de atender aos objetivos do usuário.
-• **Visão do Fabricante**: Qualidade como conformidade com as especificações originais do produto.
-• **ISO 25010 (Modelo de Qualidade de Produto)**: Norma que define características como Adequação Funcional, Confiabilidade, Segurança, Manutenibilidade, entre outras.
-• **Custo da Qualidade (CoQ)**: Inclui custos de Prevenção, Avaliação e Falhas (internas ou externas).
-• **Lei de Meskimen**: O ditado "Nunca há tempo para fazer a coisa certa, mas sempre há tempo para fazê-la de novo".
-• **Verificação**: Tarefa que garante que o produto está sendo desenvolvido corretamente (Estamos criando o produto corretamente?).
-• **Validação**: Tarefa que garante que o software atende às necessidades do cliente (Estamos criando o produto certo?).
-• **Teste de Unidade (Componente)**: Foco na menor unidade de projeto (módulo, classe); visa erros na lógica interna e variáveis locais.
-• **Scaffolding**: Estrutura temporária de software auxiliar (Driver/Stub) para criar um ambiente de teste isolado.
-    - **Pseudocontrolador (Driver)**: Simula o módulo chamador (superior) do componente testado.
-    - **Pseudocontrolado (Stub)**: Simula módulos subordinados (chamados) pelo componente testado.
-• **Teste Caixa-Branca (White-Box)**: Foca na estrutura de controle interna do código.
-• **Teste de Caminho Básico**: Técnica que define o conjunto-base de caminhos de execução linearmente independentes.
-• **Complexidade Ciclomática (V(G))**: Métrica que fornece o limite superior para o número de caminhos independentes que precisam ser testados.
-• **Teste Caixa-Preta (Black-Box)**: Foca nos requisitos funcionais (entradas e saídas) sem olhar a estrutura interna.
-• **Particionamento de Equivalência**: Método que divide o domínio de entrada em classes de dados válidas e inválidas para derivar casos de teste.
-• **Análise de Valor Limite (BVA)**: Técnica que seleciona casos de teste nas fronteiras dos domínios de entrada e saída.
-• **Teste de Integração**: Técnica sistemática para construir e testar a arquitetura de software, focando nas interfaces entre componentes.
-• **Integração Descendente (Top-Down)**: Começa pelo módulo principal, usando stubs para simular os módulos inferiores.
-• **Integração Ascendente (Bottom-Up)**: Começa pelos módulos atômicos de baixo nível, usando drivers para simular os módulos superiores.
-• **Teste Fumaça (Smoke Test)**: Abordagem diária de teste de integração que realiza uma checagem rápida para expor erros “bloqueadores” (show-stoppers).
-• **Teste de Regressão**: Reexecução de um subconjunto de testes para garantir que as alterações não introduziram efeitos colaterais indesejados no software já funcional.
-• **Teste Baseado em Sequências de Execução**: Estratégia de integração OO que testa o conjunto de classes colaboradoras necessário para responder a um evento do sistema.
-• **Teste Baseado em Cenários**: Teste de validação (caixa-preta) que foca no que o usuário faz, usando casos de uso como base para detectar erros de interação.
+Glossário de Termos-Chave
+Termo
+Definição
+**Qualidade de Software** (Definição Geral)
+Gestão de qualidade efetiva aplicada para criar um produto útil que forneça valor mensurável para aqueles que o produzem e utilizam.
+**Visão do Usuário**
+Qualidade medida pela capacidade do software de atender aos objetivos do usuário.
+**Visão do Fabricante**
+Qualidade como conformidade com as especificações originais do produto.
+**ISO 25010 (Modelo de Qualidade de Produto)**
+Norma que define características como Adequação Funcional, Confiabilidade, Segurança, Manutenibilidade, entre outras.
+**Custo da Qualidade (CoQ)**
+Inclui custos de Prevenção, Avaliação e Falhas (internas ou externas).
+**Lei de Meskimen**
+O ditado "Nunca há tempo para fazer a coisa certa, mas sempre há tempo para fazê-la de novo".
+**Verificação**
+Tarefa que garante que o produto está sendo desenvolvido corretamente (Estamos criando o produto corretamente?).
+**Validação**
+Tarefa que garante que o software atenda às necessidades do cliente (Estamos criando o produto certo?).
+**Teste de Unidade (Componente)**
+Foco na menor unidade de projeto (módulo, classe); visa erros na lógica interna e variáveis locais.
+**Scaffolding**
+Estrutura temporária de software auxiliar (Driver/Stub) para criar um ambiente de teste isolado.
+**Pseudocontrolador (Driver)**
+Simula o módulo chamador (superior) do componente testado.
+**Pseudocontrolado (Stub)**
+Simula módulos subordinados (chamados) pelo componente testado.
+**Teste Caixa-Branca (White-Box)**
+Foca na estrutura de controle interna do código.
+**Teste de Caminho Básico**
+Técnica que define o conjunto-base de caminhos de execução linearmente independentes.
+**Complexidade Ciclomática (V(G))**
+Métrica que fornece o limite superior para o número de caminhos independentes que precisam ser testados.
+**Teste Caixa-Preta (Black-Box)**
+Foca nos requisitos funcionais (entradas e saídas) sem olhar a estrutura interna.
+**Particionamento de Equivalência**
+Método que divide o domínio de entrada em classes de dados válidas e inválidas para derivar casos de teste.
+**Análise de Valor Limite (BVA)**
+Técnica que seleciona casos de teste nas fronteiras dos domínios de entrada e saída.
+**Teste de Integração**
+Técnica sistemática para construir e testar a arquitetura de software, focando nas interfaces entre componentes.
+**Integração Descendente (Top-Down)**
+Começa pelo módulo principal, usando stubs para simular os módulos inferiores.
+**Integração Ascendente (Bottom-Up)**
+Começa pelos módulos atômicos de baixo nível, usando drivers para simular os módulos superiores.
+**Teste Fumaça (Smoke Test)**
+Abordagem diária de teste de integração que realiza uma checagem rápida para expor erros “bloqueadores” (show-stoppers).
+**Teste de Regressão**
+Reexecução de um subconjunto de testes para garantir que as alterações não introduziram efeitos colaterais indesejados no software já funcional.
+**Teste Baseado em Sequências de Execução**
+Estratégia de integração OO que testa o conjunto de classes colaboradoras necessário para responder a um evento do sistema.
+**Teste Baseado em Cenários**
+Teste de validação (caixa-preta) que foca no que o usuário faz, usando casos de uso como base para detectar erros de interação.

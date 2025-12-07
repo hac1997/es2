@@ -1,4 +1,8 @@
 PROJETO BASEADO EM PADRÕES: CONCEITOS FUNDAMENTAIS
+
+
+PROJETO BASEADO EM PADRÕES
+
 O projeto baseado em padrões envolve a criação de uma nova aplicação através da busca por um conjunto de soluções comprovadas para problemas claramente delineados. Um **Padrão de Projeto** descreve um problema recorrente no ambiente, o **Contexto** onde o problema reside e o cerne de uma solução para que possa ser reutilizada repetidamente. A ideia é evitar 'reinventar a roda', o que é ineficiente e arriscado. A história dos padrões começou com o arquiteto **Christopher Alexander**, e suas ideias foram traduzidas para o software, resultando em dezenas de repositórios de padrões hoje.
 Um padrão de projeto é caracterizado como uma 'regra de três partes que expressa uma relação entre um **Contexto**, um **Problema** e uma **Solução**'. O **Contexto** permite ao leitor compreender o ambiente e as restrições que limitam a aplicação da solução. O **Sistema de Forças** é um conjunto de requisitos, limitações e restrições que influenciam a interpretação do problema e a aplicação eficiente da solução, mesmo quando essas forças são contraditórias. Padrões evitam que se 'invente uma nova roda' que não seja perfeitamente redonda.
 O processo de projeto baseado em padrões envolve examinar o modelo de requisitos para isolar a hierarquia de problemas, subdividir o espaço de problemas por tipo (arquitetura, componentes, interfaces do usuário), e pesquisar repositórios em busca de um padrão de projeto no nível de abstração apropriado. O artefato resultante é um modelo de projeto que representa a arquitetura, a interface do usuário e os detalhes em nível de componentes.
@@ -35,29 +39,10 @@ Uma **Linguagem de Padrões** engloba um conjunto de padrões inter-relacionados
 • **Código Espaguete (Spaghetti Code)**: Programa com estrutura caótica e incompreensível, devido à falta de separação de responsabilidades.
 • **Martelo de Ouro (Silver Bullet)**: Pressupor que uma solução técnica favorita resolverá sempre qualquer problema, resultando em complexidade desnecessária.
 • **Programação Copia e Cola**: Replicar código existente em vez de criar soluções genéricas, gerando inconsistência e bugs.
-CONCEITOS-CHAVE IDENTIFICADOS
-• **Padrão de Projeto**: Solução comprovada para um problema recorrente.
-• **Contexto**, **Problema** e **Solução**: As três partes fundamentais de um padrão.
-• **Sistema de Forças**: Requisitos e restrições (muitas vezes contraditórias) que influenciam a escolha da solução.
-• **Padrões Generativos**: Descrevem um aspecto repetível do sistema e fornecem uma forma de construir esse aspecto.
-• **Padrões Criacionais (GoF)**: Focam na criação de objetos (**Singleton**, **Factory Method**).
-• **Padrões Estruturais (GoF)**: Focam na organização e integração de classes (**Adapter**, **Composite**).
-• **Padrões Comportamentais (GoF)**: Focam na atribuição de responsabilidade e comunicação (**Observer**, **Strategy**).
-• **Padrões de Arquitetura**: Soluções de alto nível para problemas estruturais (**Monolítica**, **Camadas**, **MVC**, **Hexagonal**).
-• **Arquitetura Monolítica**: Implementação em um único processo de execução.
-• **Arquitetura em Camadas**: Separação hierárquica de responsabilidades.
-• **Modelo-Visão-Controlador (MVC)**: Separação da lógica de negócio (**Modelo**), apresentação (**Visão**) e coordenação (**Controlador**).
-• **Arquitetura Hexagonal (Ports & Adapters)**: Domínio agnóstico de tecnologia, comunicando-se por **Portas** e **Adaptadores**.
-• **Padrões de Projeto para Interfaces do Usuário**: Soluções recorrentes para problemas de interação (Search Box, Paginação, Cards, Acordeão).
-• **Frameworks**: Miniarquitetura reutilizável que serve de esqueleto (possui 'pontos de conexão').
-• **Linguagem de Padrões**: Conjunto de padrões inter-relacionados para um domínio específico.
-• **Idiomas (Idioms)**: Padrões de implementação de baixo nível, específicos de uma linguagem de programação.
-• **Antipadrões**: Soluções ruins e más práticas repetidas.
-• **The Blob (Objeto Deus)**: Classe única com muitas responsabilidades (baixo coesão e alto acoplamento).
-• **Martelo de Ouro (Silver Bullet)**: Aplicação indiscriminada de uma solução favorita.
+
 
 --------------------------------------------------------------------------------
-RESUMO CONCEITUAL CONCISO E COMPLETO
+RESUMO 
 O **Projeto Baseado em Padrões** consiste em buscar e aplicar soluções comprovadas para problemas de projeto recorrentes, evitando a ineficiência e o risco de reinventar soluções. Um **Padrão de Projeto** é definido por um **Contexto**, um **Problema** (recorrente) e o cerne de uma **Solução** que pode ser reutilizada. O **Sistema de Forças** é o conjunto de requisitos, limitações e restrições que guiam a escolha da solução mais eficiente, mesmo que as forças sejam contraditórias. O foco está nos **Padrões Generativos**, que fornecem uma forma de construir aspectos repetíveis do sistema, e que podem ser aplicados sucessivamente para gerar uma solução mais ampla (Generatividade).
 Os padrões são classificados por nível de abstração:
 1. **Padrões de Arquitetura**: Operam no nível mais alto de abstração (o 'esqueleto' do sistema) e são independentes de linguagem.
@@ -74,25 +59,48 @@ Um **Framework** é uma "miniarquitetura" reutilizável, um esqueleto maior que 
 **Antipadrões** são soluções comuns, mas falhas, que resultam em baixa qualidade. Exemplos incluem **The Blob (ou Objeto Deus)**, que concentra grande quantidade de atributos e operações em uma única classe, resultando em alto acoplamento e dificuldade de manutenção. Outros incluem **Código Espaguete** (estrutura caótica) e **Martelo de Ouro** (uso indiscriminado de uma solução técnica favorita). O uso de Antipadrões é valioso para guiar a refatoração e auxiliar revisores técnicos a identificar más práticas.
 
 
-RESUMO - CONCEITOS-CHAVE
-• **Padrão de Projeto**: Solução comprovada para um problema recorrente.
-• **Contexto**, **Problema** e **Solução**: As três partes fundamentais de um padrão.
-• **Sistema de Forças**: Requisitos e restrições (muitas vezes contraditórias) que influenciam a escolha da solução.
-• **Padrões Generativos**: Descrevem um aspecto repetível do sistema e fornecem uma forma de construir esse aspecto.
-• **Padrões Criacionais (GoF)**: Focam na criação de objetos (**Singleton**, **Factory Method**).
-• **Padrões Estruturais (GoF)**: Focam na organização e integração de classes (**Adapter**, **Composite**).
-• **Padrões Comportamentais (GoF)**: Focam na atribuição de responsabilidade e comunicação (**Observer**, **Strategy**).
-• **Padrões de Arquitetura**: Soluções de alto nível para problemas estruturais.
-• **Arquitetura Monolítica**: Implementação em um único processo de execução.
-• **Arquitetura em Camadas**: Separação hierárquica de responsabilidades.
-• **Modelo-Visão-Controlador (MVC)**: Separação da lógica de negócio (**Modelo**), apresentação (**Visão**) e coordenação (**Controlador**).
-• **Arquitetura Hexagonal (Ports & Adapters)**: Domínio agnóstico de tecnologia, comunicando-se por **Portas** e **Adaptadores**.
-• **Padrões de Projeto para Interfaces do Usuário**: Soluções recorrentes para problemas de interação (Search Box, Paginação, Cards, Acordeão).
-• **Frameworks**: Miniarquitetura reutilizável que serve de esqueleto (possui 'pontos de conexão').
-• **Linguagem de Padrões**: Conjunto de padrões inter-relacionados para um domínio específico.
-• **Idiomas (Idioms)**: Padrões de implementação de baixo nível, específicos de uma linguagem de programação.
-• **Antipadrões**: Soluções ruins e más práticas repetidas.
-• **The Blob (Objeto Deus)**: Classe única com muitas responsabilidades (baixo coesão e alto acoplamento).
-• **Martelo de Ouro (Silver Bullet)**: Aplicação indiscriminada de uma solução favorita.
-• **Código Espaguete (Spaghetti Code)**: Programa com estrutura caótica.
-• **Programação Copia e Cola**: Replicar código em vez de criar soluções genéricas.
+Glossário de Termos-Chave
+Termo
+Definição
+**Padrão de Projeto**
+Solução comprovada para um problema recorrente.
+**Contexto**, **Problema** e **Solução**
+As três partes fundamentais de um padrão.
+**Sistema de Forças**
+Requisitos e restrições (muitas vezes contraditórias) que influenciam a escolha da solução.
+**Padrões Generativos**
+Descrevem um aspecto repetível do sistema e fornecem uma forma de construir esse aspecto.
+**Padrões Criacionais (GoF)**
+Focam na criação de objetos (**Singleton**, **Factory Method**).
+**Padrões Estruturais (GoF)**
+Focam na organização e integração de classes (**Adapter**, **Composite**).
+**Padrões Comportamentais (GoF)**
+Focam na atribuição de responsabilidade e comunicação (**Observer**, **Strategy**).
+**Padrões de Arquitetura**
+Soluções de alto nível para problemas estruturais.
+**Arquitetura Monolítica**
+Implementação em um único processo de execução.
+**Arquitetura em Camadas**
+Separação hierárquica de responsabilidades.
+**Modelo-Visão-Controlador (MVC)**
+Separação da lógica de negócio (**Modelo**), apresentação (**Visão**) e coordenação (**Controlador**).
+**Arquitetura Hexagonal (Ports & Adapters)**
+Domínio agnóstico de tecnologia, comunicando-se por **Portas** e **Adaptadores**.
+**Padrões de Projeto para Interfaces do Usuário**
+Soluções recorrentes para problemas de interação (Search Box, Paginação, Cards, Acordeão).
+**Frameworks**
+Miniarquitetura reutilizável que serve de esqueleto (possui 'pontos de conexão').
+**Linguagem de Padrões**
+Conjunto de padrões inter-relacionados para um domínio específico.
+**Idiomas (Idioms)**
+Padrões de implementação de baixo nível, específicos de uma linguagem de programação.
+**Antipadrões**
+Soluções ruins e más práticas repetidas.
+**The Blob (Objeto Deus)**
+Classe única com muitas responsabilidades (baixo coesão e alto acoplamento).
+**Martelo de Ouro (Silver Bullet)**
+Aplicação indiscriminada de uma solução favorita.
+**Código Espaguete (Spaghetti Code)**
+Programa com estrutura caótica.
+**Programação Copia e Cola**
+Replicar código em vez de criar soluções genéricas.

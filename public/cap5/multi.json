@@ -80,7 +80,7 @@
             "Teste Caixa-Branca",
             "V(G) Cálculo"
         ],
-        "questão": "A Complexidade Ciclomática ($mathbf{V(G)}$) pode ser calculada de três maneiras, incluindo a contagem do número de regiões do grafo de fluxo, ou através da fórmula $mathbf{V(G) = P + 1}$. O que $mathbf{P}$ representa nesta fórmula?",
+        "questão": "A Complexidade Ciclomática ($V(G)$) pode ser calculada de três maneiras, incluindo a contagem do número de regiões do grafo de fluxo, ou através da fórmula $V(G) = P + 1$. O que $P$ representa nesta fórmula?",
         "alternativas": [
             "O número total de comandos procedurais.",
             "O número de arestas do grafo de fluxo.",

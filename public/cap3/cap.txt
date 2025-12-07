@@ -51,29 +51,8 @@ O **Determinismo** e a **Reprodutibilidade** são essenciais para evitar o probl
 Os **Benefícios da CI** incluem: feedback rápido, qualidade consistente, previsibilidade e reprodutibilidade, melhoria da colaboração, segurança shift-left e geração de métricas.
 A certificação de que um projeto utiliza CI de forma eficaz é feita através de perguntas como: a equipe integra diariamente o código na linha principal (main/master)? Os testes e builds são executados de maneira automatizada? E, quando um build quebra, a equipe conserta em aproximadamente 10 minutos?
 
---------------------------------------------------------------------------------
-RESUMO CONCEITUAL COMPLETO: GERENCIAMENTO DE REPOSITÓRIOS E INTEGRAÇÃO CONTÍNUA
-Os conceitos-chave tratados nestas fontes abordam o histórico da gestão de código, a evolução dos sistemas de controle de versão (VCS) para o modelo distribuído (Git), as estratégias modernas de organização de repositórios (Mono-repo vs. Multi-repo), modelos de ramificação e os princípios técnicos da Integração Contínua (CI).
-CONCEITOS-CHAVE IDENTIFICADOS
-• **Histórico do Gerenciamento de Código**: Cartões Perfurados (1950s/60s), Fitas Magnéticas (1970s), Discos e SCCS (1980s).
-• **Estratégias de Lock**: Lock Pessimista (SCCS, bloqueia módulo) e Lock Otimista (SVN, permite múltiplos check-outs).
-• **Sistemas de Controle de Versão (VCS)**: SCCS, RCS, CVS, Subversion (SVN), Git.
-• **Git**: Velocidade, Segurança, Trabalho Distribuído, Ramificações e Mesclagens Eficientes.
-• **Plataformas Colaborativas**: GitHub, GitLab, Bitbucket (uso de Pull Requests/Merge Requests e CI/CD Actions).
-• **Organização de Repositórios**: Multi-repo e Mono-repo (administração mais simples, refatorações globais).
-• **Boas Práticas de Ramificação**: Commits Simples, Ramos de Vida Curta (evitam atrasos e burocracia).
-• **Tipos de Ramos**: Temporários, Feature, Historical (staging/production), Environment, Maintenance (release/hotfix).
-• **Modelos de Ramificação**: Trunk-based, Feature Branch Workflow, GitHub Flow, GitLab Flow, Git Flow.
-• **Sincronização de Ramos**: Mesclagem (Merge - cria merge commit) e Alteração da Base (Rebase - histórico linear).
-• **Integração Contínua (CI)**: Resposta ao "Integration Hell" (integração tardia, builds manuais).
-• **Pilares da CI**: Integrações Pequenas e Frequentes, Automação de Builds e Testes, Feedback Rápido.
-• **Conceitos de CI**: Pipeline as Code, Gatilhos (Triggers), Runner, Jobs, Matriz, Cache, Artefatos, Segredos.
-• **Pipeline Canônico**: Checkout & Setup, Instalação de Dependências, Checagens Rápidas, Testes (Unidade/Integração), Análise Estática/Segurança, Build, Publicação de Artefatos.
-• **Determinismo e Reprodutibilidade**: Fixar Versões (lockfiles), Ambiente Imutável, Idempotência (mesmo commit gera mesmo resultado), Dados Efêmeros.
-• **Certificação de CI**: Integração Diária na Linha Principal, Builds Automatizados, Conserto de Build Quebrado em ± 10 minutos.
 
 --------------------------------------------------------------------------------
-RESUMO CONCEITUAL CONCISO E COMPLETO
 1. Evolução do Gerenciamento de Repositórios e Controle de Versão
 O controle de código evoluiu de métodos físicos, como cartões perfurados (décadas de 1950/60) onde o check-out era a posse física do cartão, e fitas magnéticas (década de 1970), que usavam um quadro de alfinetes para indicar posse, para ferramentas digitais.
 Na década de 1980, com o uso de discos, surgiram ferramentas como **SCCS**, que utilizavam **lock pessimista**, bloqueando o módulo para garantir posse exclusiva durante a edição. O **Subversion (SVN)**, nos anos 2000, introduziu o **lock otimista**, permitindo múltiplos check-outs simultâneos e exigindo que os conflitos fossem resolvidos antes do check-in.
@@ -98,6 +77,43 @@ O **Pipeline Canônico** inclui: Checkout & Setup (obter código e preparar o am
 4. Determinismo, Idempotência e Certificação
 O **Determinismo** e a **Reprodutibilidade** são cruciais para a CI, garantindo que o resultado do build não seja afetado por fatores externos. Isso exige: fixar versões das dependências (usando lockfiles); utilizar ambiente imutável (runners padronizados); e garantir a **Idempotência** (o mesmo commit deve sempre produzir o mesmo resultado).
 A **Certificação da CI** envolve três critérios principais:
-1. O código é integrado diariamente na linha principal (main/master)?
-2. Os testes e builds são executados de maneira automatizada?
-3. Quando o build quebra, a equipe conserta em aproximadamente 10 minutos?
+• O código é integrado diariamente na linha principal (main/master)?
+• Os testes e builds são executados de maneira automatizada?
+• Quando o build quebra, a equipe conserta em aproximadamente 10 minutos?
+
+--------------------------------------------------------------------------------
+Glossário de Termos-Chave
+Termo
+Definição
+**Histórico do Gerenciamento de Código**
+Evolução das ferramentas de controle, desde Cartões Perfurados e Fitas Magnéticas até Discos e SCCS.
+**Estratégias de Lock**
+Métodos de controle de concorrência: Lock Pessimista (bloqueia módulo, ex: SCCS) e Lock Otimista (permite múltiplos check-outs, ex: SVN).
+**Sistemas de Controle de Versão (VCS)**
+Ferramentas como SCCS, RCS, CVS, Subversion (SVN) e Git.
+**Git**
+VCS distribuído focado em velocidade, segurança, ramificações e mesclagens eficientes.
+**Plataformas Colaborativas**
+Serviços como GitHub, GitLab e Bitbucket que oferecem Pull Requests/Merge Requests e CI/CD Actions.
+**Organização de Repositórios**
+Estratégias como Multi-repo (isolamento) e Mono-repo (simplicidade e refatoração global).
+**Boas Práticas de Ramificação**
+Uso de Commits Simples e Ramos de Vida Curta para evitar atrasos e burocracia na integração.
+**Tipos de Ramos**
+Categorias como Temporários, Feature, Historical (staging/production), Environment e Maintenance (release/hotfix).
+**Modelos de Ramificação**
+Fluxos de trabalho como Trunk-based, Feature Branch Workflow, GitHub Flow, GitLab Flow e Git Flow.
+**Sincronização de Ramos**
+Métodos de integração: Mesclagem (Merge - cria merge commit) e Alteração da Base (Rebase - histórico linear).
+**Integração Contínua (CI)**
+Prática de integração frequente para evitar o "Integration Hell".
+**Pilares da CI**
+Integrações Pequenas e Frequentes, Automação de Builds e Testes, e Feedback Rápido.
+**Conceitos de CI**
+Elementos do pipeline: Pipeline as Code, Gatilhos, Runner, Jobs, Matriz, Cache, Artefatos e Segredos.
+**Pipeline Canônico**
+Etapas padrão: Checkout, Instalação de Dependências, Checagens Rápidas, Testes, Análise Estática/Segurança, Build e Publicação.
+**Determinismo e Reprodutibilidade**
+Garantia de consistência através de Versões Fixas (lockfiles), Ambiente Imutável e Idempotência.
+**Certificação de CI**
+Critérios: Integração Diária na Linha Principal, Builds Automatizados e Conserto de Build Quebrado em ± 10 minutos.

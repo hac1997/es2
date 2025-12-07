@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import LatexRenderer from './LatexRenderer';
 
 export default function QuizManager({ questions = [] }) {
     const [answers, setAnswers] = useState({}); // { index: selectedOptionString }
@@ -65,10 +66,9 @@ export default function QuizManager({ questions = [] }) {
                             </span>
                             <div className="flex-1">
                                 {/* Topics removed as per request */}
-                                <div
-                                    className="text-gray-700 mb-6 font-medium leading-7 text-justify"
-                                    dangerouslySetInnerHTML={{ __html: q.questão }}
-                                />
+                                <div className="text-gray-700 mb-6 font-medium leading-7 text-justify">
+                                    <LatexRenderer>{q.questão}</LatexRenderer>
+                                </div>
 
                                 <div className="space-y-3">
                                     {q.alternativas?.map((opt, optIdx) => (
@@ -88,7 +88,9 @@ export default function QuizManager({ questions = [] }) {
                                                     onChange={() => handleSelect(idx, opt)}
                                                     className="mt-1"
                                                 />
-                                                <span className="text-gray-800 text-justify">{opt}</span>
+                                                <span className="text-gray-800 text-justify">
+                                                    <LatexRenderer>{opt}</LatexRenderer>
+                                                </span>
                                             </div>
                                         </label>
                                     ))}
@@ -104,8 +106,10 @@ export default function QuizManager({ questions = [] }) {
                                         ) : (
                                             <div className="text-red-700 bg-red-50 p-4 rounded border border-red-200">
                                                 <div className="font-bold mb-2">✕ Resposta Incorreta</div>
-                                                <div className="mb-2">Sua resposta: {userAnswer}</div>
-                                                <div className="font-semibold bg-white/50 p-2 rounded">Resposta correta: {q.resposta}</div>
+                                                <div className="mb-2">Sua resposta: <LatexRenderer>{userAnswer}</LatexRenderer></div>
+                                                <div className="font-semibold bg-white/50 p-2 rounded">
+                                                    Resposta correta: <LatexRenderer>{q.resposta}</LatexRenderer>
+                                                </div>
                                             </div>
                                         )}
                                     </div>

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import QuestionDissertative from '../components/QuestionDissertative';
 import QuizManager from '../components/QuizManager';
+import LatexRenderer from '../components/LatexRenderer'; // [NEW]
 
 const TextRenderer = ({ content }) => {
     if (!content) return null;
@@ -12,9 +13,13 @@ const TextRenderer = ({ content }) => {
         const parts = text.split(/(\*\*.*?\*\*)/g);
         return parts.map((part, index) => {
             if (part.startsWith('**') && part.endsWith('**')) {
-                return <strong key={index} className="font-bold text-gray-900">{part.slice(2, -2)}</strong>;
+                return (
+                    <strong key={index} className="font-bold text-gray-900">
+                        <LatexRenderer>{part.slice(2, -2)}</LatexRenderer>
+                    </strong>
+                );
             }
-            return part;
+            return <LatexRenderer key={index}>{part}</LatexRenderer>;
         });
     };
 
